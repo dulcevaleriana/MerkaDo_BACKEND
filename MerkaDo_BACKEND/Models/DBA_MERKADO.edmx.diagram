@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d547cca7d7a044aa9d6b3bac68688b53" Name="Diagram1">
+        <EntityTypeShape EntityType="DBA_MERKAModel.CARRITO_COMPRAS_" Width="1.5" PointX="18" PointY="24.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.CATEGORIA_PRODUCTO" Width="1.5" PointX="11.25" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.CLIENTES__" Width="1.5" PointX="3" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.COMENTARIO" Width="1.5" PointX="5.25" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.COMPRA__" Width="1.5" PointX="10.5" PointY="33.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.CORREO_EMAIL_MARKETING_" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.CUPONES_" Width="1.5" PointX="8.25" PointY="33.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.DESCUENTOS_" Width="1.5" PointX="8.25" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.DIA_FERIADO_" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.EMPRESAS__" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.ENTREGAS_" Width="1.5" PointX="12.75" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.ESTADISTICAS_" Width="1.5" PointX="3" PointY="30.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.GENERO" Width="1.5" PointX="0.75" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.HISTORIAL_COMPRA_" Width="1.5" PointX="5.25" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.LISTA_PRODUCTO_" Width="1.5" PointX="15.75" PointY="24.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.LISTADO_PAQUETE_COMPRA_" Width="1.5" PointX="8.25" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.LOG_ACTION__" Width="1.5" PointX="3" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.MENSAJE__" Width="1.5" PointX="8.25" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.METODO_ENVIO" Width="1.5" PointX="8.25" PointY="36.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.NOTIFICACION_" Width="1.5" PointX="6" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.PREGUNTAS_FRECUENTES_" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.PRODUCTO__" Width="1.5" PointX="13.5" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.ROL_USUARIO" Width="1.5" PointX="0.75" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.SALA__" Width="1.5" PointX="9" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.SALA_USUARIO__" Width="1.5" PointX="11.25" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.SOBRE_NOSOTROS_" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.STATUS_COMPRA_" Width="1.5" PointX="11.25" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.SUCURSAL_" Width="1.5" PointX="11.25" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.SUPERMERCADO_" Width="1.5" PointX="9" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.TARJETA_CREDITO_" Width="1.5" PointX="5.25" PointY="48.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.TARJETA_MEMBRESIA_" Width="1.5" PointX="5.25" PointY="51.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.TARJETA_REGALO_" Width="1.5" PointX="5.25" PointY="54.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.TIPO_DOCUMENTO" Width="1.5" PointX="0.75" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.TIPO_ESTADISTICAS_" Width="1.5" PointX="0.75" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.TIPO_MENSAJE__" Width="1.5" PointX="6" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.TIPO_NOTIFICACION_" Width="1.5" PointX="0.75" PointY="29.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.TIPO_SALA__" Width="1.5" PointX="6.75" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.TIPO_STATUS_COMPRA" Width="1.5" PointX="9" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.USUARIO__" Width="1.5" PointX="3" PointY="18.25" IsExpanded="true" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__CARRITO_C__lista__0B91BA14" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__COMPRA____carrit__7F2BE32F" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__HISTORIAL__carri__14270015" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__LISTADO_P__carri__0E6E26BF" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__DESCUENTO__categ__07C12930" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__PRODUCTO___categ__05D8E0BE" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__CLIENTES___gener__75A278F5" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__CLIENTES___tipoD__76969D2E" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__COMENTARI__produ__1DB06A4F" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__COMENTARI__usuar__1CBC4616" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__COMPRA____cupone__01142BA1" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__COMPRA____descue__02084FDA" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__COMPRA____metodo__02FC7413" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__COMPRA____tarjet__00200768" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__ENTREGAS___compr__151B244E" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__DESCUENTO__produ__06CD04F7" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__DESCUENTO__usuar__08B54D69" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__ENTREGAS___statu__17F790F9" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__ENTREGAS___usuar__160F4887" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__ENTREGAS___usuar__17036CC0" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__ESTADISTI__tipoE__1BC821DD" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__USUARIO____gener__6EF57B66" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__HISTORIAL__histo__123EB7A3" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__HISTORIAL__usuar__1332DBDC" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__LISTA_PRO__produ__0C85DE4D" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__LISTADO_P__usuar__0D7A0286" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__LOG_ACTIO__rolId__74AE54BC" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__LOG_ACTIO__tipoE__72C60C4A" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__LOG_ACTIO__tipoN__71D1E811" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__LOG_ACTIO__usuar__73BA3083" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__MENSAJE____salaI__787EE5A0" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__MENSAJE____tipoM__797309D9" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__MENSAJE____tipoS__7A672E12" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__MENSAJE____usuar__778AC167" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__NOTIFICAC__rolId__18EBB532" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__NOTIFICAC__tipoN__19DFD96B" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__NOTIFICAC__usuar__1AD3FDA4" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__PRODUCTO___sucur__03F0984C" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__PRODUCTO___super__04E4BC85" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__USUARIO____rolId__70DDC3D8" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__SALA____tipoSala__7B5B524B" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__SALA_USUA__salaI__7C4F7684" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__SALA_USUA__usuar__7D439ABD" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__STATUS_CO__statu__10566F31" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__STATUS_CO__usuar__0F624AF8" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__STATUS_CO__usuar__114A936A" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__SUCURSAL___encar__6D0D32F4" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__SUCURSAL___super__6E01572D" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__USUARIO____sucur__6FE99F9F" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__TARJETA_C__usuar__7E37BEF6" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__TARJETA_M__usuar__09A971A2" ManuallyRouted="false" />
+        <AssociationConnector Association="DBA_MERKAModel.FK__TARJETA_R__usuar__0A9D95DB" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

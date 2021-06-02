@@ -1,0 +1,107 @@
+﻿@model MerkaDo_BACKEND.Models.SUCURSAL_
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SUCURSAL_</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombreSucursal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreSucursal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.direccionSucursal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.direccionSucursal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.horarioApertura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.horarioApertura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.horarioCierre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.horarioCierre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.diaFeriado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.diaFeriado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.horarioAperturaSabado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.horarioAperturaSabado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.horarioCierreSabado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.horarioCierreSabado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.horarioAperturaDomingo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.horarioAperturaDomingo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.horarioCierreDomingo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.horarioCierreDomingo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.USUARIO__.nombreUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.USUARIO__.nombreUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SUPERMERCADO_.nombreSupermercado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SUPERMERCADO_.nombreSupermercado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.sucursalId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

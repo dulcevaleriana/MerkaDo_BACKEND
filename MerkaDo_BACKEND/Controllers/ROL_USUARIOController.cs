@@ -11,12 +11,13 @@ using MerkaDo_BACKEND.Models;
 
 namespace MerkaDo_BACKEND.Controllers
 {
-    [RoutePrefix("Api/rolUsuario")]
+    [RoutePrefix("Api/RolUsuario")]
     public class ROL_USUARIOController : Controller
     {
         private DBA_MERKAEntities db = new DBA_MERKAEntities();
 
         // GET: ROL_USUARIO
+        [Route("listUsuario")]
         public async Task<ActionResult> Index()
         {
             return View(await db.ROL_USUARIO.ToListAsync());

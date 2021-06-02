@@ -11,108 +11,108 @@ using MerkaDo_BACKEND.Models;
 
 namespace MerkaDo_BACKEND.Controllers
 {
-    [RoutePrefix("Api/rolUsuario")]
-    public class ROL_USUARIOController : Controller
+    [RoutePrefix("Api/Genero")]
+    public class GENEROesController : Controller
     {
         private DBA_MERKAEntities db = new DBA_MERKAEntities();
 
-        // GET: ROL_USUARIO
+        // GET: GENEROes
         public async Task<ActionResult> Index()
         {
-            return View(await db.ROL_USUARIO.ToListAsync());
+            return View(await db.GENEROes.ToListAsync());
         }
 
-        // GET: ROL_USUARIO/Details/5
+        // GET: GENEROes/Details/5
         public async Task<ActionResult> Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            ROL_USUARIO rOL_USUARIO = await db.ROL_USUARIO.FindAsync(id);
-            if (rOL_USUARIO == null)
+            GENERO gENERO = await db.GENEROes.FindAsync(id);
+            if (gENERO == null)
             {
                 return HttpNotFound();
             }
-            return View(rOL_USUARIO);
+            return View(gENERO);
         }
 
-        // GET: ROL_USUARIO/Create
+        // GET: GENEROes/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: ROL_USUARIO/Create
+        // POST: GENEROes/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "rolId,nombreRol")] ROL_USUARIO rOL_USUARIO)
+        public async Task<ActionResult> Create([Bind(Include = "generoId,nombreGenero")] GENERO gENERO)
         {
             if (ModelState.IsValid)
             {
-                db.ROL_USUARIO.Add(rOL_USUARIO);
+                db.GENEROes.Add(gENERO);
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
 
-            return View(rOL_USUARIO);
+            return View(gENERO);
         }
 
-        // GET: ROL_USUARIO/Edit/5
+        // GET: GENEROes/Edit/5
         public async Task<ActionResult> Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            ROL_USUARIO rOL_USUARIO = await db.ROL_USUARIO.FindAsync(id);
-            if (rOL_USUARIO == null)
+            GENERO gENERO = await db.GENEROes.FindAsync(id);
+            if (gENERO == null)
             {
                 return HttpNotFound();
             }
-            return View(rOL_USUARIO);
+            return View(gENERO);
         }
 
-        // POST: ROL_USUARIO/Edit/5
+        // POST: GENEROes/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "rolId,nombreRol")] ROL_USUARIO rOL_USUARIO)
+        public async Task<ActionResult> Edit([Bind(Include = "generoId,nombreGenero")] GENERO gENERO)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(rOL_USUARIO).State = EntityState.Modified;
+                db.Entry(gENERO).State = EntityState.Modified;
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
-            return View(rOL_USUARIO);
+            return View(gENERO);
         }
 
-        // GET: ROL_USUARIO/Delete/5
+        // GET: GENEROes/Delete/5
         public async Task<ActionResult> Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            ROL_USUARIO rOL_USUARIO = await db.ROL_USUARIO.FindAsync(id);
-            if (rOL_USUARIO == null)
+            GENERO gENERO = await db.GENEROes.FindAsync(id);
+            if (gENERO == null)
             {
                 return HttpNotFound();
             }
-            return View(rOL_USUARIO);
+            return View(gENERO);
         }
 
-        // POST: ROL_USUARIO/Delete/5
+        // POST: GENEROes/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> DeleteConfirmed(int id)
         {
-            ROL_USUARIO rOL_USUARIO = await db.ROL_USUARIO.FindAsync(id);
-            db.ROL_USUARIO.Remove(rOL_USUARIO);
+            GENERO gENERO = await db.GENEROes.FindAsync(id);
+            db.GENEROes.Remove(gENERO);
             await db.SaveChangesAsync();
             return RedirectToAction("Index");
         }

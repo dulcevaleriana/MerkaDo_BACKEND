@@ -1,30 +1,31 @@
-﻿@model MerkaDo_BACKEND.Models.SUCURSAL_
+﻿@model MerkaDo_BACKEND.Models.SUPERMERCADO_
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Delete";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Details</h2>
+<h2>Delete</h2>
 
+<h3>Are you sure you want to delete this?</h3>
 <div>
-    <h4>SUCURSAL_</h4>
+    <h4>SUPERMERCADO_</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.nombreSucursal)
+            @Html.DisplayNameFor(model => model.nombreSupermercado)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.nombreSucursal)
+            @Html.DisplayFor(model => model.nombreSupermercado)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.direccionSucursal)
+            @Html.DisplayNameFor(model => model.direccionSupermercado)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.direccionSucursal)
+            @Html.DisplayFor(model => model.direccionSupermercado)
         </dd>
 
         <dt>
@@ -83,17 +84,14 @@
             @Html.DisplayFor(model => model.horarioCierreDomingo)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.SUPERMERCADO_.nombreSupermercado)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.SUPERMERCADO_.nombreSupermercado)
-        </dd>
-
     </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.sucursalId }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>

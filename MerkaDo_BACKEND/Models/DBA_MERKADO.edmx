@@ -313,7 +313,6 @@
           <Property Name="sucursalId" Type="int" Nullable="false" />
           <Property Name="nombreSucursal" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="direccionSucursal" Type="varchar" MaxLength="100" Nullable="false" />
-          <Property Name="encargadoSucursal" Type="int" Nullable="false" />
           <Property Name="supermercadoId" Type="int" Nullable="false" />
           <Property Name="horarioApertura" Type="datetime" Nullable="false" />
           <Property Name="horarioCierre" Type="datetime" Nullable="false" />
@@ -330,7 +329,6 @@
           <Property Name="supermercadoId" Type="int" Nullable="false" />
           <Property Name="nombreSupermercado" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="direccionSupermercado" Type="varchar" MaxLength="100" Nullable="false" />
-          <Property Name="encargadoSupermercado" Type="int" Nullable="false" />
           <Property Name="horarioApertura" Type="datetime" Nullable="false" />
           <Property Name="horarioCierre" Type="datetime" Nullable="false" />
           <Property Name="diaFeriado" Type="bit" Nullable="false" />
@@ -957,18 +955,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__SUCURSAL___encar__6D0D32F4">
-          <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
-          <End Role="SUCURSAL_" Type="Self.SUCURSAL_" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="USUARIO__">
-              <PropertyRef Name="usuarioId" />
-            </Principal>
-            <Dependent Role="SUCURSAL_">
-              <PropertyRef Name="encargadoSucursal" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK__SUCURSAL___super__6E01572D">
           <End Role="SUPERMERCADO_" Type="Self.SUPERMERCADO_" Multiplicity="1" />
           <End Role="SUCURSAL_" Type="Self.SUCURSAL_" Multiplicity="*" />
@@ -1268,10 +1254,6 @@
           <AssociationSet Name="FK__STATUS_CO__usuar__114A936A" Association="Self.FK__STATUS_CO__usuar__114A936A">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="STATUS_COMPRA_" EntitySet="STATUS_COMPRA_" />
-          </AssociationSet>
-          <AssociationSet Name="FK__SUCURSAL___encar__6D0D32F4" Association="Self.FK__SUCURSAL___encar__6D0D32F4">
-            <End Role="USUARIO__" EntitySet="USUARIO__" />
-            <End Role="SUCURSAL_" EntitySet="SUCURSAL_" />
           </AssociationSet>
           <AssociationSet Name="FK__SUCURSAL___super__6E01572D" Association="Self.FK__SUCURSAL___super__6E01572D">
             <End Role="SUPERMERCADO_" EntitySet="SUPERMERCADO_" />
@@ -1680,7 +1662,6 @@
           <Property Name="sucursalId" Type="Int32" Nullable="false" />
           <Property Name="nombreSucursal" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="direccionSucursal" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="encargadoSucursal" Type="Int32" Nullable="false" />
           <Property Name="supermercadoId" Type="Int32" Nullable="false" />
           <Property Name="horarioApertura" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="horarioCierre" Type="DateTime" Nullable="false" Precision="3" />
@@ -1690,9 +1671,8 @@
           <Property Name="horarioAperturaDomingo" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="horarioCierreDomingo" Type="DateTime" Nullable="false" Precision="3" />
           <NavigationProperty Name="PRODUCTO__" Relationship="Self.FK__PRODUCTO___sucur__03F0984C" FromRole="SUCURSAL_" ToRole="PRODUCTO__" />
-          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__SUCURSAL___encar__6D0D32F4" FromRole="SUCURSAL_" ToRole="USUARIO__" />
           <NavigationProperty Name="SUPERMERCADO_" Relationship="Self.FK__SUCURSAL___super__6E01572D" FromRole="SUCURSAL_" ToRole="SUPERMERCADO_" />
-          <NavigationProperty Name="USUARIO__1" Relationship="Self.FK__USUARIO____sucur__6FE99F9F" FromRole="SUCURSAL_" ToRole="USUARIO__" />
+          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__USUARIO____sucur__6FE99F9F" FromRole="SUCURSAL_" ToRole="USUARIO__" />
         </EntityType>
         <EntityType Name="SUPERMERCADO_">
           <Key>
@@ -1701,7 +1681,6 @@
           <Property Name="supermercadoId" Type="Int32" Nullable="false" />
           <Property Name="nombreSupermercado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="direccionSupermercado" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="encargadoSupermercado" Type="Int32" Nullable="false" />
           <Property Name="horarioApertura" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="horarioCierre" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="diaFeriado" Type="Boolean" Nullable="false" />
@@ -1829,8 +1808,7 @@
           <NavigationProperty Name="SALA_USUARIO__" Relationship="Self.FK__SALA_USUA__usuar__7D439ABD" FromRole="USUARIO__" ToRole="SALA_USUARIO__" />
           <NavigationProperty Name="STATUS_COMPRA_" Relationship="Self.FK__STATUS_CO__usuar__0F624AF8" FromRole="USUARIO__" ToRole="STATUS_COMPRA_" />
           <NavigationProperty Name="STATUS_COMPRA_1" Relationship="Self.FK__STATUS_CO__usuar__114A936A" FromRole="USUARIO__" ToRole="STATUS_COMPRA_" />
-          <NavigationProperty Name="SUCURSAL_" Relationship="Self.FK__SUCURSAL___encar__6D0D32F4" FromRole="USUARIO__" ToRole="SUCURSAL_" />
-          <NavigationProperty Name="SUCURSAL_1" Relationship="Self.FK__USUARIO____sucur__6FE99F9F" FromRole="USUARIO__" ToRole="SUCURSAL_" />
+          <NavigationProperty Name="SUCURSAL_" Relationship="Self.FK__USUARIO____sucur__6FE99F9F" FromRole="USUARIO__" ToRole="SUCURSAL_" />
           <NavigationProperty Name="TARJETA_CREDITO_" Relationship="Self.FK__TARJETA_C__usuar__7E37BEF6" FromRole="USUARIO__" ToRole="TARJETA_CREDITO_" />
           <NavigationProperty Name="TARJETA_MEMBRESIA_" Relationship="Self.FK__TARJETA_M__usuar__09A971A2" FromRole="USUARIO__" ToRole="TARJETA_MEMBRESIA_" />
           <NavigationProperty Name="TARJETA_REGALO_" Relationship="Self.FK__TARJETA_R__usuar__0A9D95DB" FromRole="USUARIO__" ToRole="TARJETA_REGALO_" />
@@ -2387,18 +2365,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__SUCURSAL___encar__6D0D32F4">
-          <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
-          <End Role="SUCURSAL_" Type="Self.SUCURSAL_" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="USUARIO__">
-              <PropertyRef Name="usuarioId" />
-            </Principal>
-            <Dependent Role="SUCURSAL_">
-              <PropertyRef Name="encargadoSucursal" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK__SUCURSAL___super__6E01572D">
           <End Role="SUPERMERCADO_" Type="Self.SUPERMERCADO_" Multiplicity="1" />
           <End Role="SUCURSAL_" Type="Self.SUCURSAL_" Multiplicity="*" />
@@ -2682,10 +2648,6 @@
           <AssociationSet Name="FK__STATUS_CO__usuar__114A936A" Association="Self.FK__STATUS_CO__usuar__114A936A">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="STATUS_COMPRA_" EntitySet="STATUS_COMPRA_" />
-          </AssociationSet>
-          <AssociationSet Name="FK__SUCURSAL___encar__6D0D32F4" Association="Self.FK__SUCURSAL___encar__6D0D32F4">
-            <End Role="USUARIO__" EntitySet="USUARIO__" />
-            <End Role="SUCURSAL_" EntitySet="SUCURSAL_" />
           </AssociationSet>
           <AssociationSet Name="FK__SUCURSAL___super__6E01572D" Association="Self.FK__SUCURSAL___super__6E01572D">
             <End Role="SUPERMERCADO_" EntitySet="SUPERMERCADO_" />
@@ -3048,7 +3010,6 @@
                 <ScalarProperty Name="sucursalId" ColumnName="sucursalId" />
                 <ScalarProperty Name="nombreSucursal" ColumnName="nombreSucursal" />
                 <ScalarProperty Name="direccionSucursal" ColumnName="direccionSucursal" />
-                <ScalarProperty Name="encargadoSucursal" ColumnName="encargadoSucursal" />
                 <ScalarProperty Name="supermercadoId" ColumnName="supermercadoId" />
                 <ScalarProperty Name="horarioApertura" ColumnName="horarioApertura" />
                 <ScalarProperty Name="horarioCierre" ColumnName="horarioCierre" />
@@ -3066,7 +3027,6 @@
                 <ScalarProperty Name="supermercadoId" ColumnName="supermercadoId" />
                 <ScalarProperty Name="nombreSupermercado" ColumnName="nombreSupermercado" />
                 <ScalarProperty Name="direccionSupermercado" ColumnName="direccionSupermercado" />
-                <ScalarProperty Name="encargadoSupermercado" ColumnName="encargadoSupermercado" />
                 <ScalarProperty Name="horarioApertura" ColumnName="horarioApertura" />
                 <ScalarProperty Name="horarioCierre" ColumnName="horarioCierre" />
                 <ScalarProperty Name="diaFeriado" ColumnName="diaFeriado" />

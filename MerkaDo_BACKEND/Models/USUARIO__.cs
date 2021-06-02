@@ -29,7 +29,6 @@ namespace MerkaDo_BACKEND.Models
             this.SALA_USUARIO__ = new HashSet<SALA_USUARIO__>();
             this.STATUS_COMPRA_ = new HashSet<STATUS_COMPRA_>();
             this.STATUS_COMPRA_1 = new HashSet<STATUS_COMPRA_>();
-            this.SUCURSAL_ = new HashSet<SUCURSAL_>();
             this.TARJETA_CREDITO_ = new HashSet<TARJETA_CREDITO_>();
             this.TARJETA_MEMBRESIA_ = new HashSet<TARJETA_MEMBRESIA_>();
             this.TARJETA_REGALO_ = new HashSet<TARJETA_REGALO_>();
@@ -72,9 +71,7 @@ namespace MerkaDo_BACKEND.Models
         public virtual ICollection<STATUS_COMPRA_> STATUS_COMPRA_ { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<STATUS_COMPRA_> STATUS_COMPRA_1 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<SUCURSAL_> SUCURSAL_ { get; set; }
-        public virtual SUCURSAL_ SUCURSAL_1 { get; set; }
+        public virtual SUCURSAL_ SUCURSAL_ { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TARJETA_CREDITO_> TARJETA_CREDITO_ { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

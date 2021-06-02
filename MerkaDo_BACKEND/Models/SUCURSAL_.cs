@@ -18,13 +18,12 @@ namespace MerkaDo_BACKEND.Models
         public SUCURSAL_()
         {
             this.PRODUCTO__ = new HashSet<PRODUCTO__>();
-            this.USUARIO__1 = new HashSet<USUARIO__>();
+            this.USUARIO__ = new HashSet<USUARIO__>();
         }
     
         public int sucursalId { get; set; }
         public string nombreSucursal { get; set; }
         public string direccionSucursal { get; set; }
-        public int encargadoSucursal { get; set; }
         public int supermercadoId { get; set; }
         public System.DateTime horarioApertura { get; set; }
         public System.DateTime horarioCierre { get; set; }
@@ -36,9 +35,8 @@ namespace MerkaDo_BACKEND.Models
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<PRODUCTO__> PRODUCTO__ { get; set; }
-        public virtual USUARIO__ USUARIO__ { get; set; }
         public virtual SUPERMERCADO_ SUPERMERCADO_ { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<USUARIO__> USUARIO__1 { get; set; }
+        public virtual ICollection<USUARIO__> USUARIO__ { get; set; }
     }
 }

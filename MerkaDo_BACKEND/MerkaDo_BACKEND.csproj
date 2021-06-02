@@ -172,6 +172,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ROL_USUARIOController.cs" />
     <Compile Include="Controllers\SUCURSAL_Controller.cs" />
+    <Compile Include="Controllers\SUPERMERCADO_Controller.cs" />
     <Compile Include="Controllers\USUARIO__Controller.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -322,8 +323,8 @@
     <Content Include="Global.asax" />
     <Content Include="Models\DBA_MERKADO.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>DBA_MERKADO.Context.cs</LastGenOutput>
       <DependentUpon>DBA_MERKADO.edmx</DependentUpon>
+      <LastGenOutput>DBA_MERKADO.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Models\DBA_MERKADO.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -388,16 +389,21 @@
     <Content Include="Views\GENEROes\Details.cshtml" />
     <Content Include="Views\GENEROes\Edit.cshtml" />
     <Content Include="Views\GENEROes\Index.cshtml" />
-    <Content Include="Views\SUCURSAL_\Create.cshtml" />
-    <Content Include="Views\SUCURSAL_\Delete.cshtml" />
-    <Content Include="Views\SUCURSAL_\Details.cshtml" />
-    <Content Include="Views\SUCURSAL_\Edit.cshtml" />
-    <Content Include="Views\SUCURSAL_\Index.cshtml" />
     <Content Include="Views\USUARIO__\Create.cshtml" />
     <Content Include="Views\USUARIO__\Delete.cshtml" />
     <Content Include="Views\USUARIO__\Details.cshtml" />
     <Content Include="Views\USUARIO__\Edit.cshtml" />
     <Content Include="Views\USUARIO__\Index.cshtml" />
+    <Content Include="Views\SUCURSAL_\Create.cshtml" />
+    <Content Include="Views\SUCURSAL_\Delete.cshtml" />
+    <Content Include="Views\SUCURSAL_\Details.cshtml" />
+    <Content Include="Views\SUCURSAL_\Edit.cshtml" />
+    <Content Include="Views\SUCURSAL_\Index.cshtml" />
+    <Content Include="Views\SUPERMERCADO_\Create.cshtml" />
+    <Content Include="Views\SUPERMERCADO_\Delete.cshtml" />
+    <Content Include="Views\SUPERMERCADO_\Details.cshtml" />
+    <Content Include="Views\SUPERMERCADO_\Edit.cshtml" />
+    <Content Include="Views\SUPERMERCADO_\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

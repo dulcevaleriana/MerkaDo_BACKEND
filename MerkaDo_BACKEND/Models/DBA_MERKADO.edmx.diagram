@@ -4,46 +4,46 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="d547cca7d7a044aa9d6b3bac68688b53" Name="Diagram1" ZoomLevel="40">
-        <EntityTypeShape EntityType="DBA_MERKAModel.CARRITO_COMPRAS_" Width="1.5" PointX="18" PointY="24.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.CATEGORIA_PRODUCTO" Width="1.5" PointX="11.25" PointY="12.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.CLIENTES__" Width="1.5" PointX="3" PointY="13.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.COMENTARIO" Width="1.5" PointX="5.25" PointY="20.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.COMPRA__" Width="1.5" PointX="10.5" PointY="33.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.CORREO_EMAIL_MARKETING_" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.CUPONES_" Width="1.5" PointX="8.25" PointY="33.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.DESCUENTOS_" Width="1.5" PointX="8.25" PointY="20.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.DIA_FERIADO_" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.EMPRESAS__" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.ENTREGAS_" Width="1.5" PointX="12.75" PointY="29.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.ESTADISTICAS_" Width="1.5" PointX="3" PointY="30.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.GENERO" Width="1.5" PointX="0.75" PointY="18.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.HISTORIAL_COMPRA_" Width="1.5" PointX="5.25" PointY="15.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.LISTA_PRODUCTO_" Width="1.5" PointX="15.75" PointY="24.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.LISTADO_PAQUETE_COMPRA_" Width="1.5" PointX="8.25" PointY="14.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.LOG_ACTION__" Width="1.5" PointX="3" PointY="26.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.MENSAJE__" Width="1.5" PointX="8.25" PointY="23.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.METODO_ENVIO" Width="1.5" PointX="8.25" PointY="36.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.NOTIFICACION_" Width="1.5" PointX="6" PointY="26.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.PREGUNTAS_FRECUENTES_" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.PRODUCTO__" Width="1.5" PointX="13.5" PointY="23.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.ROL_USUARIO" Width="1.5" PointX="0.75" PointY="26.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.SALA__" Width="1.5" PointX="9" PointY="8.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.SALA_USUARIO__" Width="1.5" PointX="11.25" PointY="20.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.SOBRE_NOSOTROS_" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.STATUS_COMPRA_" Width="1.5" PointX="11.25" PointY="16" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.SUCURSAL_" Width="1.5" PointX="11.25" PointY="23.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.SUPERMERCADO_" Width="1.5" PointX="9" PointY="28.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.TARJETA_CREDITO_" Width="1.5" PointX="5.25" PointY="48.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.TARJETA_MEMBRESIA_" Width="1.5" PointX="5.25" PointY="51.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.TARJETA_REGALO_" Width="1.5" PointX="5.25" PointY="54.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.TIPO_DOCUMENTO" Width="1.5" PointX="0.75" PointY="14.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.TIPO_ESTADISTICAS_" Width="1.5" PointX="0.75" PointY="23.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.TIPO_MENSAJE__" Width="1.5" PointX="6" PointY="23.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.TIPO_NOTIFICACION_" Width="1.5" PointX="0.75" PointY="29.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.TIPO_SALA__" Width="1.5" PointX="6.75" PointY="8.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.TIPO_STATUS_COMPRA" Width="1.5" PointX="9" PointY="11.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.USUARIO__" Width="1.5" PointX="3" PointY="18.25" IsExpanded="true" />
+      <Diagram DiagramId="7b4ccaef216b48599909e8a4cf42381f" Name="Diagram1">
+        <EntityTypeShape EntityType="DBA_MERKAModel.CARRITO_COMPRAS_" Width="1.5" PointX="6" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.CATEGORIA_PRODUCTO" Width="1.5" PointX="1.5" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.CLIENTES__" Width="1.5" PointX="12" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.COMENTARIO" Width="1.5" PointX="5.25" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.COMPRA__" Width="1.5" PointX="10.5" PointY="28.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.CORREO_EMAIL_MARKETING_" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.CUPONES_" Width="1.5" PointX="8.25" PointY="28" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.DESCUENTOS_" Width="1.5" PointX="8.25" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.DIA_FERIADO_" Width="1.5" PointX="3.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.EMPRESAS__" Width="1.5" PointX="11.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.ENTREGAS_" Width="1.5" PointX="12.75" PointY="22.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.ESTADISTICAS_" Width="1.5" PointX="3" PointY="27.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.GENERO" Width="1.5" PointX="0.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.HISTORIAL_COMPRA_" Width="1.5" PointX="5.25" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.LISTA_PRODUCTO_" Width="1.5" PointX="3.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.LISTADO_PAQUETE_COMPRA_" Width="1.5" PointX="8.25" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.LOG_ACTION__" Width="1.5" PointX="3" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.MENSAJE__" Width="1.5" PointX="8.25" PointY="21.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.METODO_ENVIO" Width="1.5" PointX="8.25" PointY="31.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.NOTIFICACION_" Width="1.5" PointX="6" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.PREGUNTAS_FRECUENTES_" Width="1.5" PointX="3.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.PRODUCTO__" Width="1.5" PointX="1.5" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.ROL_USUARIO" Width="1.5" PointX="0.75" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.SALA__" Width="1.5" PointX="9" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.SALA_USUARIO__" Width="1.5" PointX="11.25" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.SOBRE_NOSOTROS_" Width="1.5" PointX="11.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.STATUS_COMPRA_" Width="1.5" PointX="11.25" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.SUCURSAL_" Width="1.5" PointX="0.75" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.SUPERMERCADO_" Width="1.5" PointX="1.5" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.TARJETA_CREDITO_" Width="1.5" PointX="5.25" PointY="40.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.TARJETA_MEMBRESIA_" Width="1.5" PointX="5.25" PointY="44.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.TARJETA_REGALO_" Width="1.5" PointX="5.25" PointY="47.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.TIPO_DOCUMENTO" Width="1.5" PointX="9.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.TIPO_ESTADISTICAS_" Width="1.5" PointX="0.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.TIPO_MENSAJE__" Width="1.5" PointX="6" PointY="21.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.TIPO_NOTIFICACION_" Width="1.5" PointX="0.75" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.TIPO_SALA__" Width="1.5" PointX="6.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.TIPO_STATUS_COMPRA" Width="1.5" PointX="9" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.USUARIO__" Width="1.5" PointX="3" PointY="15.625" IsExpanded="true" />
         <AssociationConnector Association="DBA_MERKAModel.FK__CARRITO_C__lista__0B91BA14" ManuallyRouted="false" />
         <AssociationConnector Association="DBA_MERKAModel.FK__COMPRA____carrit__7F2BE32F" ManuallyRouted="false" />
         <AssociationConnector Association="DBA_MERKAModel.FK__HISTORIAL__carri__14270015" ManuallyRouted="false" />
@@ -90,7 +90,6 @@
         <AssociationConnector Association="DBA_MERKAModel.FK__STATUS_CO__statu__10566F31" ManuallyRouted="false" />
         <AssociationConnector Association="DBA_MERKAModel.FK__STATUS_CO__usuar__0F624AF8" ManuallyRouted="false" />
         <AssociationConnector Association="DBA_MERKAModel.FK__STATUS_CO__usuar__114A936A" ManuallyRouted="false" />
-        <AssociationConnector Association="DBA_MERKAModel.FK__SUCURSAL___encar__6D0D32F4" ManuallyRouted="false" />
         <AssociationConnector Association="DBA_MERKAModel.FK__SUCURSAL___super__6E01572D" ManuallyRouted="false" />
         <AssociationConnector Association="DBA_MERKAModel.FK__USUARIO____sucur__6FE99F9F" ManuallyRouted="false" />
         <AssociationConnector Association="DBA_MERKAModel.FK__TARJETA_C__usuar__7E37BEF6" ManuallyRouted="false" />

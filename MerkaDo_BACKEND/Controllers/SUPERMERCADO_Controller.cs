@@ -11,113 +11,108 @@ using MerkaDo_BACKEND.Models;
 
 namespace MerkaDo_BACKEND.Controllers
 {
-    [RoutePrefix("Api/Sucursal")]
-    public class SUCURSAL_Controller : Controller
+    [RoutePrefix("Api/Supermercado")]
+    public class SUPERMERCADO_Controller : Controller
     {
         private DBA_MERKAEntities db = new DBA_MERKAEntities();
 
-        // GET: SUCURSAL_
+        // GET: SUPERMERCADO_
         public async Task<ActionResult> Index()
         {
-            var sUCURSAL_ = db.SUCURSAL_.Include(s => s.SUPERMERCADO_);
-            return View(await sUCURSAL_.ToListAsync());
+            return View(await db.SUPERMERCADO_.ToListAsync());
         }
 
-        // GET: SUCURSAL_/Details/5
+        // GET: SUPERMERCADO_/Details/5
         public async Task<ActionResult> Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            SUCURSAL_ sUCURSAL_ = await db.SUCURSAL_.FindAsync(id);
-            if (sUCURSAL_ == null)
+            SUPERMERCADO_ sUPERMERCADO_ = await db.SUPERMERCADO_.FindAsync(id);
+            if (sUPERMERCADO_ == null)
             {
                 return HttpNotFound();
             }
-            return View(sUCURSAL_);
+            return View(sUPERMERCADO_);
         }
 
-        // GET: SUCURSAL_/Create
+        // GET: SUPERMERCADO_/Create
         public ActionResult Create()
         {
-            ViewBag.supermercadoId = new SelectList(db.SUPERMERCADO_, "supermercadoId", "nombreSupermercado");
             return View();
         }
 
-        // POST: SUCURSAL_/Create
+        // POST: SUPERMERCADO_/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "sucursalId,nombreSucursal,direccionSucursal,supermercadoId,horarioApertura,horarioCierre,diaFeriado,horarioAperturaSabado,horarioCierreSabado,horarioAperturaDomingo,horarioCierreDomingo")] SUCURSAL_ sUCURSAL_)
+        public async Task<ActionResult> Create([Bind(Include = "supermercadoId,nombreSupermercado,direccionSupermercado,horarioApertura,horarioCierre,diaFeriado,horarioAperturaSabado,horarioCierreSabado,horarioAperturaDomingo,horarioCierreDomingo")] SUPERMERCADO_ sUPERMERCADO_)
         {
             if (ModelState.IsValid)
             {
-                db.SUCURSAL_.Add(sUCURSAL_);
+                db.SUPERMERCADO_.Add(sUPERMERCADO_);
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.supermercadoId = new SelectList(db.SUPERMERCADO_, "supermercadoId", "nombreSupermercado", sUCURSAL_.supermercadoId);
-            return View(sUCURSAL_);
+            return View(sUPERMERCADO_);
         }
 
-        // GET: SUCURSAL_/Edit/5
+        // GET: SUPERMERCADO_/Edit/5
         public async Task<ActionResult> Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            SUCURSAL_ sUCURSAL_ = await db.SUCURSAL_.FindAsync(id);
-            if (sUCURSAL_ == null)
+            SUPERMERCADO_ sUPERMERCADO_ = await db.SUPERMERCADO_.FindAsync(id);
+            if (sUPERMERCADO_ == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.supermercadoId = new SelectList(db.SUPERMERCADO_, "supermercadoId", "nombreSupermercado", sUCURSAL_.supermercadoId);
-            return View(sUCURSAL_);
+            return View(sUPERMERCADO_);
         }
 
-        // POST: SUCURSAL_/Edit/5
+        // POST: SUPERMERCADO_/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "sucursalId,nombreSucursal,direccionSucursal,supermercadoId,horarioApertura,horarioCierre,diaFeriado,horarioAperturaSabado,horarioCierreSabado,horarioAperturaDomingo,horarioCierreDomingo")] SUCURSAL_ sUCURSAL_)
+        public async Task<ActionResult> Edit([Bind(Include = "supermercadoId,nombreSupermercado,direccionSupermercado,horarioApertura,horarioCierre,diaFeriado,horarioAperturaSabado,horarioCierreSabado,horarioAperturaDomingo,horarioCierreDomingo")] SUPERMERCADO_ sUPERMERCADO_)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(sUCURSAL_).State = EntityState.Modified;
+                db.Entry(sUPERMERCADO_).State = EntityState.Modified;
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
-            ViewBag.supermercadoId = new SelectList(db.SUPERMERCADO_, "supermercadoId", "nombreSupermercado", sUCURSAL_.supermercadoId);
-            return View(sUCURSAL_);
+            return View(sUPERMERCADO_);
         }
 
-        // GET: SUCURSAL_/Delete/5
+        // GET: SUPERMERCADO_/Delete/5
         public async Task<ActionResult> Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            SUCURSAL_ sUCURSAL_ = await db.SUCURSAL_.FindAsync(id);
-            if (sUCURSAL_ == null)
+            SUPERMERCADO_ sUPERMERCADO_ = await db.SUPERMERCADO_.FindAsync(id);
+            if (sUPERMERCADO_ == null)
             {
                 return HttpNotFound();
             }
-            return View(sUCURSAL_);
+            return View(sUPERMERCADO_);
         }
 
-        // POST: SUCURSAL_/Delete/5
+        // POST: SUPERMERCADO_/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> DeleteConfirmed(int id)
         {
-            SUCURSAL_ sUCURSAL_ = await db.SUCURSAL_.FindAsync(id);
-            db.SUCURSAL_.Remove(sUCURSAL_);
+            SUPERMERCADO_ sUPERMERCADO_ = await db.SUPERMERCADO_.FindAsync(id);
+            db.SUPERMERCADO_.Remove(sUPERMERCADO_);
             await db.SaveChangesAsync();
             return RedirectToAction("Index");
         }

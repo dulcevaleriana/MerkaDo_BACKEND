@@ -1,4 +1,4 @@
-﻿@model IEnumerable<MerkaDo_BACKEND.Models.SUCURSAL_>
+﻿@model IEnumerable<MerkaDo_BACKEND.Models.SUPERMERCADO_>
 
 @{
     ViewBag.Title = "Index";
@@ -13,10 +13,10 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.nombreSucursal)
+            @Html.DisplayNameFor(model => model.nombreSupermercado)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.direccionSucursal)
+            @Html.DisplayNameFor(model => model.direccionSupermercado)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.horarioApertura)
@@ -39,19 +39,16 @@
         <th>
             @Html.DisplayNameFor(model => model.horarioCierreDomingo)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.SUPERMERCADO_.nombreSupermercado)
-        </th>
         <th></th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.nombreSucursal)
+            @Html.DisplayFor(modelItem => item.nombreSupermercado)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.direccionSucursal)
+            @Html.DisplayFor(modelItem => item.direccionSupermercado)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.horarioApertura)
@@ -75,12 +72,9 @@
             @Html.DisplayFor(modelItem => item.horarioCierreDomingo)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.SUPERMERCADO_.nombreSupermercado)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.sucursalId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.sucursalId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.sucursalId })
+            @Html.ActionLink("Edit", "Edit", new { id=item.supermercadoId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.supermercadoId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.supermercadoId })
         </td>
     </tr>
 }

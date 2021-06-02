@@ -24,7 +24,6 @@ namespace MerkaDo_BACKEND.Models
         public int supermercadoId { get; set; }
         public string nombreSupermercado { get; set; }
         public string direccionSupermercado { get; set; }
-        public int encargadoSupermercado { get; set; }
         public System.DateTime horarioApertura { get; set; }
         public System.DateTime horarioCierre { get; set; }
         public bool diaFeriado { get; set; }

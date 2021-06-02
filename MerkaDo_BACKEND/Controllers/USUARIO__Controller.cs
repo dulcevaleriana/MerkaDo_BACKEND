@@ -19,7 +19,7 @@ namespace MerkaDo_BACKEND.Controllers
         // GET: USUARIO__
         public async Task<ActionResult> Index()
         {
-            var uSUARIO__ = db.USUARIO__.Include(u => u.GENERO).Include(u => u.ROL_USUARIO).Include(u => u.SUCURSAL_1);
+            var uSUARIO__ = db.USUARIO__.Include(u => u.GENERO).Include(u => u.ROL_USUARIO).Include(u => u.SUCURSAL_);
             return View(await uSUARIO__.ToListAsync());
         }
 

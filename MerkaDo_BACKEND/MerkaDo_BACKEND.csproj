@@ -170,6 +170,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\GENEROesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LOG_ACTION__Controller.cs" />
     <Compile Include="Controllers\ROL_USUARIOController.cs" />
     <Compile Include="Controllers\SUCURSAL_Controller.cs" />
     <Compile Include="Controllers\SUPERMERCADO_Controller.cs" />
@@ -404,6 +405,11 @@
     <Content Include="Views\SUPERMERCADO_\Details.cshtml" />
     <Content Include="Views\SUPERMERCADO_\Edit.cshtml" />
     <Content Include="Views\SUPERMERCADO_\Index.cshtml" />
+    <Content Include="Views\LOG_ACTION__\Create.cshtml" />
+    <Content Include="Views\LOG_ACTION__\Delete.cshtml" />
+    <Content Include="Views\LOG_ACTION__\Details.cshtml" />
+    <Content Include="Views\LOG_ACTION__\Edit.cshtml" />
+    <Content Include="Views\LOG_ACTION__\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -38,10 +38,10 @@ namespace MerkaDo_BACKEND.Models
         public string nombreUsuario { get; set; }
         public string apellidoUsuario { get; set; }
         public string imagenUsuario { get; set; }
-        public int cedulaUsuario { get; set; }
+        public string cedulaUsuario { get; set; }
         public int generoId { get; set; }
         public string correoCorporativoUsuario { get; set; }
-        public int TtelefonoUsuario { get; set; }
+        public string telefonoUsuario { get; set; }
         public int sucursalId { get; set; }
         public int rolId { get; set; }
     

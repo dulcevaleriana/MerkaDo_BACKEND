@@ -16,7 +16,7 @@ namespace MerkaDo_BACKEND.Models
     {
         public int usuarioId { get; set; }
         public string razonSocialEmpresa { get; set; }
-        public int telefonoEmpresa { get; set; }
+        public string telefonoEmpresa { get; set; }
         public string imagenEmpresa { get; set; }
         public int codigoPostalEmpresa { get; set; }
         public int RNC { get; set; }

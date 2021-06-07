@@ -114,7 +114,7 @@
           </Key>
           <Property Name="usuarioId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="razonSocialEmpresa" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="telefonoEmpresa" Type="int" Nullable="false" />
+          <Property Name="telefonoEmpresa" Type="varchar" MaxLength="14" Nullable="false" />
           <Property Name="imagenEmpresa" Type="varchar(max)" Nullable="false" />
           <Property Name="codigoPostalEmpresa" Type="int" Nullable="false" />
           <Property Name="RNC" Type="int" Nullable="false" />
@@ -420,10 +420,10 @@
           <Property Name="nombreUsuario" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="apellidoUsuario" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="imagenUsuario" Type="varchar(max)" Nullable="false" />
-          <Property Name="cedulaUsuario" Type="int" Nullable="false" />
+          <Property Name="cedulaUsuario" Type="varchar" MaxLength="13" Nullable="false" />
           <Property Name="generoId" Type="int" Nullable="false" />
           <Property Name="correoCorporativoUsuario" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="TtelefonoUsuario" Type="int" Nullable="false" />
+          <Property Name="telefonoUsuario" Type="varchar" MaxLength="14" Nullable="false" />
           <Property Name="sucursalId" Type="int" Nullable="false" />
           <Property Name="rolId" Type="int" Nullable="false" />
         </EntityType>
@@ -1419,7 +1419,7 @@
           </Key>
           <Property Name="usuarioId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="razonSocialEmpresa" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="telefonoEmpresa" Type="Int32" Nullable="false" />
+          <Property Name="telefonoEmpresa" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="imagenEmpresa" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="codigoPostalEmpresa" Type="Int32" Nullable="false" />
           <Property Name="RNC" Type="Int32" Nullable="false" />
@@ -1788,10 +1788,10 @@
           <Property Name="nombreUsuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="apellidoUsuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="imagenUsuario" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="cedulaUsuario" Type="Int32" Nullable="false" />
+          <Property Name="cedulaUsuario" Type="String" MaxLength="13" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="generoId" Type="Int32" Nullable="false" />
           <Property Name="correoCorporativoUsuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="TtelefonoUsuario" Type="Int32" Nullable="false" />
+          <Property Name="telefonoUsuario" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="sucursalId" Type="Int32" Nullable="false" />
           <Property Name="rolId" Type="Int32" Nullable="false" />
           <NavigationProperty Name="COMENTARIOs" Relationship="Self.FK__COMENTARI__usuar__1BC821DD" FromRole="USUARIO__" ToRole="COMENTARIO" />
@@ -3131,7 +3131,7 @@
                 <ScalarProperty Name="cedulaUsuario" ColumnName="cedulaUsuario" />
                 <ScalarProperty Name="generoId" ColumnName="generoId" />
                 <ScalarProperty Name="correoCorporativoUsuario" ColumnName="correoCorporativoUsuario" />
-                <ScalarProperty Name="TtelefonoUsuario" ColumnName="TtelefonoUsuario" />
+                <ScalarProperty Name="telefonoUsuario" ColumnName="telefonoUsuario" />
                 <ScalarProperty Name="sucursalId" ColumnName="sucursalId" />
                 <ScalarProperty Name="rolId" ColumnName="rolId" />
               </MappingFragment>

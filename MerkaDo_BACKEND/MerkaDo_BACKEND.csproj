@@ -173,6 +173,7 @@
     <Compile Include="Controllers\ROL_USUARIOController.cs" />
     <Compile Include="Controllers\SUCURSAL_Controller.cs" />
     <Compile Include="Controllers\SUPERMERCADO_Controller.cs" />
+    <Compile Include="Controllers\USUARIO__Controller.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -398,6 +399,11 @@
     <Content Include="Views\SUPERMERCADO_\Details.cshtml" />
     <Content Include="Views\SUPERMERCADO_\Edit.cshtml" />
     <Content Include="Views\SUPERMERCADO_\Index.cshtml" />
+    <Content Include="Views\USUARIO__\Create.cshtml" />
+    <Content Include="Views\USUARIO__\Delete.cshtml" />
+    <Content Include="Views\USUARIO__\Details.cshtml" />
+    <Content Include="Views\USUARIO__\Edit.cshtml" />
+    <Content Include="Views\USUARIO__\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

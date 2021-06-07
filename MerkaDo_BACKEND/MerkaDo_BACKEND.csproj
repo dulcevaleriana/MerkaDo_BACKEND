@@ -171,6 +171,7 @@
     <Compile Include="Controllers\GENEROesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ROL_USUARIOController.cs" />
+    <Compile Include="Controllers\SUCURSAL_Controller.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -386,6 +387,11 @@
     <Content Include="Views\GENEROes\Details.cshtml" />
     <Content Include="Views\GENEROes\Edit.cshtml" />
     <Content Include="Views\GENEROes\Index.cshtml" />
+    <Content Include="Views\SUCURSAL_\Create.cshtml" />
+    <Content Include="Views\SUCURSAL_\Delete.cshtml" />
+    <Content Include="Views\SUCURSAL_\Details.cshtml" />
+    <Content Include="Views\SUCURSAL_\Edit.cshtml" />
+    <Content Include="Views\SUCURSAL_\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

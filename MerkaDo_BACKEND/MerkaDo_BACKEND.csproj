@@ -173,138 +173,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\CARRITO_COMPRAS_.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\CATEGORIA_PRODUCTO.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\CLIENTES__.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\COMENTARIO.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\COMPRA__.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\CORREO_EMAIL_MARKETING_.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\CUPONES_.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DBA_MERKADO.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DBA_MERKADO.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DBA_MERKADO.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DBA_MERKADO.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DBA_MERKADO.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DESCUENTOS_.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DIA_FERIADO_.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\EMPRESAS__.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ENTREGAS_.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ESTADISTICAS_.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\GENERO.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\HISTORIAL_COMPRA_.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\LISTADO_PAQUETE_COMPRA_.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\LISTA_PRODUCTO_.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\LOG_ACTION__.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\MENSAJE__.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\METODO_ENVIO.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\NOTIFICACION_.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\PREGUNTAS_FRECUENTES_.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\PRODUCTO__.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ROL_USUARIO.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SALA_USUARIO__.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SALA__.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SOBRE_NOSOTROS_.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\STATUS_COMPRA_.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SUCURSAL_.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SUPERMERCADO_.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TARJETA_CREDITO_.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TARJETA_MEMBRESIA_.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TARJETA_REGALO_.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TIPO_DOCUMENTO.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TIPO_ESTADISTICAS_.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TIPO_MENSAJE__.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TIPO_NOTIFICACION_.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TIPO_SALA__.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TIPO_STATUS_COMPRA.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\USUARIO__.cs">
-      <DependentUpon>DBA_MERKADO.tt</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -316,16 +184,6 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Models\DBA_MERKADO.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>DBA_MERKADO.Context.cs</LastGenOutput>
-      <DependentUpon>DBA_MERKADO.edmx</DependentUpon>
-    </Content>
-    <Content Include="Models\DBA_MERKADO.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DBA_MERKADO.edmx</DependentUpon>
-      <LastGenOutput>DBA_MERKADO.cs</LastGenOutput>
-    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -347,13 +205,6 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
-    <EntityDeploy Include="Models\DBA_MERKADO.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DBA_MERKADO.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\DBA_MERKADO.edmx.diagram">
-      <DependentUpon>DBA_MERKADO.edmx</DependentUpon>
-    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -377,6 +228,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

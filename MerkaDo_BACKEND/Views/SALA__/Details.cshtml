@@ -1,0 +1,35 @@
+﻿@model MerkaDo_BACKEND.Models.SALA__
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SALA__</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fecha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TIPO_SALA__.nombreSala)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TIPO_SALA__.nombreSala)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.salaId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

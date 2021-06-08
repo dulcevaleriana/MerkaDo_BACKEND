@@ -175,8 +175,11 @@
     <Compile Include="Controllers\LOG_ACTION__Controller.cs" />
     <Compile Include="Controllers\MENSAJE__Controller.cs" />
     <Compile Include="Controllers\ROL_USUARIOController.cs" />
+    <Compile Include="Controllers\SALA_USUARIO__Controller.cs" />
+    <Compile Include="Controllers\SALA__Controller.cs" />
     <Compile Include="Controllers\SUCURSAL_Controller.cs" />
     <Compile Include="Controllers\SUPERMERCADO_Controller.cs" />
+    <Compile Include="Controllers\TIPO_MENSAJE__Controller.cs" />
     <Compile Include="Controllers\TIPO_SALA__Controller.cs" />
     <Compile Include="Controllers\USUARIO__Controller.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
@@ -434,6 +437,21 @@
     <Content Include="Views\TIPO_SALA__\Details.cshtml" />
     <Content Include="Views\TIPO_SALA__\Edit.cshtml" />
     <Content Include="Views\TIPO_SALA__\Index.cshtml" />
+    <Content Include="Views\SALA__\Create.cshtml" />
+    <Content Include="Views\SALA__\Delete.cshtml" />
+    <Content Include="Views\SALA__\Details.cshtml" />
+    <Content Include="Views\SALA__\Edit.cshtml" />
+    <Content Include="Views\SALA__\Index.cshtml" />
+    <Content Include="Views\SALA_USUARIO__\Create.cshtml" />
+    <Content Include="Views\SALA_USUARIO__\Delete.cshtml" />
+    <Content Include="Views\SALA_USUARIO__\Details.cshtml" />
+    <Content Include="Views\SALA_USUARIO__\Edit.cshtml" />
+    <Content Include="Views\SALA_USUARIO__\Index.cshtml" />
+    <Content Include="Views\TIPO_MENSAJE__\Create.cshtml" />
+    <Content Include="Views\TIPO_MENSAJE__\Delete.cshtml" />
+    <Content Include="Views\TIPO_MENSAJE__\Details.cshtml" />
+    <Content Include="Views\TIPO_MENSAJE__\Edit.cshtml" />
+    <Content Include="Views\TIPO_MENSAJE__\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -15,3 +15,16 @@ select,
 textarea {
     max-width: 280px;
 }
+
+ul.nav.navbar-nav {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 70px;
+    display: flex;
+    width: 80vw;
+}
+
+.container.body-content {
+    position: relative;
+    top: 80px;
+}

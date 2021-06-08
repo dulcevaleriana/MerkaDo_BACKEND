@@ -169,12 +169,15 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\CLIENTES__Controller.cs" />
+    <Compile Include="Controllers\EMPRESAS__Controller.cs" />
     <Compile Include="Controllers\GENEROesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LOG_ACTION__Controller.cs" />
+    <Compile Include="Controllers\MENSAJE__Controller.cs" />
     <Compile Include="Controllers\ROL_USUARIOController.cs" />
     <Compile Include="Controllers\SUCURSAL_Controller.cs" />
     <Compile Include="Controllers\SUPERMERCADO_Controller.cs" />
+    <Compile Include="Controllers\TIPO_SALA__Controller.cs" />
     <Compile Include="Controllers\USUARIO__Controller.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -416,6 +419,21 @@
     <Content Include="Views\CLIENTES__\Details.cshtml" />
     <Content Include="Views\CLIENTES__\Edit.cshtml" />
     <Content Include="Views\CLIENTES__\Index.cshtml" />
+    <Content Include="Views\EMPRESAS__\Create.cshtml" />
+    <Content Include="Views\EMPRESAS__\Delete.cshtml" />
+    <Content Include="Views\EMPRESAS__\Details.cshtml" />
+    <Content Include="Views\EMPRESAS__\Edit.cshtml" />
+    <Content Include="Views\EMPRESAS__\Index.cshtml" />
+    <Content Include="Views\MENSAJE__\Create.cshtml" />
+    <Content Include="Views\MENSAJE__\Delete.cshtml" />
+    <Content Include="Views\MENSAJE__\Details.cshtml" />
+    <Content Include="Views\MENSAJE__\Edit.cshtml" />
+    <Content Include="Views\MENSAJE__\Index.cshtml" />
+    <Content Include="Views\TIPO_SALA__\Create.cshtml" />
+    <Content Include="Views\TIPO_SALA__\Delete.cshtml" />
+    <Content Include="Views\TIPO_SALA__\Details.cshtml" />
+    <Content Include="Views\TIPO_SALA__\Edit.cshtml" />
+    <Content Include="Views\TIPO_SALA__\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

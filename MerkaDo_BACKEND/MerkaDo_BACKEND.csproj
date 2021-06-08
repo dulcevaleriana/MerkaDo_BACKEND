@@ -168,8 +168,10 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\CLIENTES__Controller.cs" />
     <Compile Include="Controllers\GENEROesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LOG_ACTION__Controller.cs" />
     <Compile Include="Controllers\ROL_USUARIOController.cs" />
     <Compile Include="Controllers\SUCURSAL_Controller.cs" />
     <Compile Include="Controllers\SUPERMERCADO_Controller.cs" />
@@ -404,6 +406,16 @@
     <Content Include="Views\USUARIO__\Details.cshtml" />
     <Content Include="Views\USUARIO__\Edit.cshtml" />
     <Content Include="Views\USUARIO__\Index.cshtml" />
+    <Content Include="Views\LOG_ACTION__\Create.cshtml" />
+    <Content Include="Views\LOG_ACTION__\Delete.cshtml" />
+    <Content Include="Views\LOG_ACTION__\Details.cshtml" />
+    <Content Include="Views\LOG_ACTION__\Edit.cshtml" />
+    <Content Include="Views\LOG_ACTION__\Index.cshtml" />
+    <Content Include="Views\CLIENTES__\Create.cshtml" />
+    <Content Include="Views\CLIENTES__\Delete.cshtml" />
+    <Content Include="Views\CLIENTES__\Details.cshtml" />
+    <Content Include="Views\CLIENTES__\Edit.cshtml" />
+    <Content Include="Views\CLIENTES__\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

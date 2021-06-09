@@ -168,6 +168,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\CARRITO_COMPRAS_Controller.cs" />
     <Compile Include="Controllers\CLIENTES__Controller.cs" />
     <Compile Include="Controllers\COMPRA__Controller.cs" />
     <Compile Include="Controllers\CUPONES_Controller.cs" />
@@ -176,6 +177,7 @@
     <Compile Include="Controllers\EMPRESAS__Controller.cs" />
     <Compile Include="Controllers\GENEROesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LISTA_PRODUCTO_Controller.cs" />
     <Compile Include="Controllers\LOG_ACTION__Controller.cs" />
     <Compile Include="Controllers\MENSAJE__Controller.cs" />
     <Compile Include="Controllers\PREGUNTAS_FRECUENTES_Controller.cs" />
@@ -512,6 +514,16 @@
     <Content Include="Views\TARJETA_REGALO_\Details.cshtml" />
     <Content Include="Views\TARJETA_REGALO_\Edit.cshtml" />
     <Content Include="Views\TARJETA_REGALO_\Index.cshtml" />
+    <Content Include="Views\CARRITO_COMPRAS_\Create.cshtml" />
+    <Content Include="Views\CARRITO_COMPRAS_\Delete.cshtml" />
+    <Content Include="Views\CARRITO_COMPRAS_\Details.cshtml" />
+    <Content Include="Views\CARRITO_COMPRAS_\Edit.cshtml" />
+    <Content Include="Views\CARRITO_COMPRAS_\Index.cshtml" />
+    <Content Include="Views\LISTA_PRODUCTO_\Create.cshtml" />
+    <Content Include="Views\LISTA_PRODUCTO_\Delete.cshtml" />
+    <Content Include="Views\LISTA_PRODUCTO_\Details.cshtml" />
+    <Content Include="Views\LISTA_PRODUCTO_\Edit.cshtml" />
+    <Content Include="Views\LISTA_PRODUCTO_\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

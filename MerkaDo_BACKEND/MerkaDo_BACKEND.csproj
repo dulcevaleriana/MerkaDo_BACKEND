@@ -171,6 +171,7 @@
     <Compile Include="Controllers\CARRITO_COMPRAS_Controller.cs" />
     <Compile Include="Controllers\CATEGORIA_PRODUCTOController.cs" />
     <Compile Include="Controllers\CLIENTES__Controller.cs" />
+    <Compile Include="Controllers\COMENTARIOsController.cs" />
     <Compile Include="Controllers\COMPRA__Controller.cs" />
     <Compile Include="Controllers\CORREO_EMAIL_MARKETING_Controller.cs" />
     <Compile Include="Controllers\CUPONES_Controller.cs" />
@@ -596,6 +597,11 @@
     <Content Include="Views\CATEGORIA_PRODUCTO\Details.cshtml" />
     <Content Include="Views\CATEGORIA_PRODUCTO\Edit.cshtml" />
     <Content Include="Views\CATEGORIA_PRODUCTO\Index.cshtml" />
+    <Content Include="Views\COMENTARIOs\Create.cshtml" />
+    <Content Include="Views\COMENTARIOs\Delete.cshtml" />
+    <Content Include="Views\COMENTARIOs\Details.cshtml" />
+    <Content Include="Views\COMENTARIOs\Edit.cshtml" />
+    <Content Include="Views\COMENTARIOs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

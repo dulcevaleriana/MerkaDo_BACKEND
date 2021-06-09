@@ -187,6 +187,7 @@
     <Compile Include="Controllers\SALA_USUARIO__Controller.cs" />
     <Compile Include="Controllers\SALA__Controller.cs" />
     <Compile Include="Controllers\SOBRE_NOSOTROS_Controller.cs" />
+    <Compile Include="Controllers\STATUS_COMPRA_Controller.cs" />
     <Compile Include="Controllers\SUCURSAL_Controller.cs" />
     <Compile Include="Controllers\SUPERMERCADO_Controller.cs" />
     <Compile Include="Controllers\TARJETA_CREDITO_Controller.cs" />
@@ -530,6 +531,11 @@
     <Content Include="Views\LISTADO_PAQUETE_COMPRA_\Details.cshtml" />
     <Content Include="Views\LISTADO_PAQUETE_COMPRA_\Edit.cshtml" />
     <Content Include="Views\LISTADO_PAQUETE_COMPRA_\Index.cshtml" />
+    <Content Include="Views\STATUS_COMPRA_\Create.cshtml" />
+    <Content Include="Views\STATUS_COMPRA_\Delete.cshtml" />
+    <Content Include="Views\STATUS_COMPRA_\Details.cshtml" />
+    <Content Include="Views\STATUS_COMPRA_\Edit.cshtml" />
+    <Content Include="Views\STATUS_COMPRA_\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

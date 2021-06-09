@@ -184,6 +184,7 @@
     <Compile Include="Controllers\LISTA_PRODUCTO_Controller.cs" />
     <Compile Include="Controllers\LOG_ACTION__Controller.cs" />
     <Compile Include="Controllers\MENSAJE__Controller.cs" />
+    <Compile Include="Controllers\NOTIFICACION_Controller.cs" />
     <Compile Include="Controllers\PREGUNTAS_FRECUENTES_Controller.cs" />
     <Compile Include="Controllers\PRODUCTO__Controller.cs" />
     <Compile Include="Controllers\ROL_USUARIOController.cs" />
@@ -554,6 +555,11 @@
     <Content Include="Views\ENTREGAS_\Details.cshtml" />
     <Content Include="Views\ENTREGAS_\Edit.cshtml" />
     <Content Include="Views\ENTREGAS_\Index.cshtml" />
+    <Content Include="Views\NOTIFICACION_\Create.cshtml" />
+    <Content Include="Views\NOTIFICACION_\Delete.cshtml" />
+    <Content Include="Views\NOTIFICACION_\Details.cshtml" />
+    <Content Include="Views\NOTIFICACION_\Edit.cshtml" />
+    <Content Include="Views\NOTIFICACION_\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

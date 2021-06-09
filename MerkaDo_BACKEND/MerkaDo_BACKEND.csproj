@@ -203,6 +203,7 @@
     <Compile Include="Controllers\TIPO_MENSAJE__Controller.cs" />
     <Compile Include="Controllers\TIPO_NOTIFICACION_Controller.cs" />
     <Compile Include="Controllers\TIPO_SALA__Controller.cs" />
+    <Compile Include="Controllers\TIPO_STATUS_COMPRAController.cs" />
     <Compile Include="Controllers\USUARIO__Controller.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -584,6 +585,11 @@
     <Content Include="Views\TIPO_DOCUMENTO\Details.cshtml" />
     <Content Include="Views\TIPO_DOCUMENTO\Edit.cshtml" />
     <Content Include="Views\TIPO_DOCUMENTO\Index.cshtml" />
+    <Content Include="Views\TIPO_STATUS_COMPRA\Create.cshtml" />
+    <Content Include="Views\TIPO_STATUS_COMPRA\Delete.cshtml" />
+    <Content Include="Views\TIPO_STATUS_COMPRA\Details.cshtml" />
+    <Content Include="Views\TIPO_STATUS_COMPRA\Edit.cshtml" />
+    <Content Include="Views\TIPO_STATUS_COMPRA\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

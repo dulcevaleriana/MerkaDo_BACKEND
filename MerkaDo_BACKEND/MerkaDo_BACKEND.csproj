@@ -179,6 +179,7 @@
     <Compile Include="Controllers\SALA__Controller.cs" />
     <Compile Include="Controllers\SUCURSAL_Controller.cs" />
     <Compile Include="Controllers\SUPERMERCADO_Controller.cs" />
+    <Compile Include="Controllers\TARJETA_CREDITO_Controller.cs" />
     <Compile Include="Controllers\TIPO_MENSAJE__Controller.cs" />
     <Compile Include="Controllers\TIPO_SALA__Controller.cs" />
     <Compile Include="Controllers\USUARIO__Controller.cs" />
@@ -452,6 +453,11 @@
     <Content Include="Views\TIPO_MENSAJE__\Details.cshtml" />
     <Content Include="Views\TIPO_MENSAJE__\Edit.cshtml" />
     <Content Include="Views\TIPO_MENSAJE__\Index.cshtml" />
+    <Content Include="Views\TARJETA_CREDITO_\Create.cshtml" />
+    <Content Include="Views\TARJETA_CREDITO_\Delete.cshtml" />
+    <Content Include="Views\TARJETA_CREDITO_\Details.cshtml" />
+    <Content Include="Views\TARJETA_CREDITO_\Edit.cshtml" />
+    <Content Include="Views\TARJETA_CREDITO_\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

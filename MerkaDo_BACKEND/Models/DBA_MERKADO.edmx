@@ -344,7 +344,7 @@
           <Property Name="tarjetaCreditoId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="usuarioId" Type="int" Nullable="false" />
           <Property Name="NombreTarjeta" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="NumeroTarjeta" Type="int" Nullable="false" />
+          <Property Name="NumeroTarjeta" Type="varchar" MaxLength="19" Nullable="false" />
           <Property Name="FechaVencimientoTarjeta" Type="date" Nullable="false" />
           <Property Name="CVV" Type="smallint" Nullable="false" />
         </EntityType>
@@ -1698,7 +1698,7 @@
           <Property Name="tarjetaCreditoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="usuarioId" Type="Int32" Nullable="false" />
           <Property Name="NombreTarjeta" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="NumeroTarjeta" Type="Int32" Nullable="false" />
+          <Property Name="NumeroTarjeta" Type="String" MaxLength="19" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="FechaVencimientoTarjeta" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="CVV" Type="Int16" Nullable="false" />
           <NavigationProperty Name="COMPRA__" Relationship="Self.FK__COMPRA____tarjet__7F2BE32F" FromRole="TARJETA_CREDITO_" ToRole="COMPRA__" />

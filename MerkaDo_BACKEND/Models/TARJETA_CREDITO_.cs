@@ -23,7 +23,7 @@ namespace MerkaDo_BACKEND.Models
         public int tarjetaCreditoId { get; set; }
         public int usuarioId { get; set; }
         public string NombreTarjeta { get; set; }
-        public int NumeroTarjeta { get; set; }
+        public string NumeroTarjeta { get; set; }
         public System.DateTime FechaVencimientoTarjeta { get; set; }
         public short CVV { get; set; }
     

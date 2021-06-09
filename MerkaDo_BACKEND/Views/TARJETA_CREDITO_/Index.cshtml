@@ -1,0 +1,58 @@
+﻿@model IEnumerable<MerkaDo_BACKEND.Models.TARJETA_CREDITO_>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NombreTarjeta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumeroTarjeta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaVencimientoTarjeta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CVV)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.USUARIO__.nombreUsuario)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NombreTarjeta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumeroTarjeta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaVencimientoTarjeta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CVV)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.USUARIO__.nombreUsuario)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.tarjetaCreditoId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.tarjetaCreditoId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.tarjetaCreditoId })
+        </td>
+    </tr>
+}
+
+</table>

@@ -187,6 +187,7 @@
     <Compile Include="Controllers\SUCURSAL_Controller.cs" />
     <Compile Include="Controllers\SUPERMERCADO_Controller.cs" />
     <Compile Include="Controllers\TARJETA_CREDITO_Controller.cs" />
+    <Compile Include="Controllers\TARJETA_MEMBRESIA_Controller.cs" />
     <Compile Include="Controllers\TIPO_MENSAJE__Controller.cs" />
     <Compile Include="Controllers\TIPO_SALA__Controller.cs" />
     <Compile Include="Controllers\USUARIO__Controller.cs" />
@@ -500,6 +501,11 @@
     <Content Include="Views\CUPONES_\Details.cshtml" />
     <Content Include="Views\CUPONES_\Edit.cshtml" />
     <Content Include="Views\CUPONES_\Index.cshtml" />
+    <Content Include="Views\TARJETA_MEMBRESIA_\Create.cshtml" />
+    <Content Include="Views\TARJETA_MEMBRESIA_\Delete.cshtml" />
+    <Content Include="Views\TARJETA_MEMBRESIA_\Details.cshtml" />
+    <Content Include="Views\TARJETA_MEMBRESIA_\Edit.cshtml" />
+    <Content Include="Views\TARJETA_MEMBRESIA_\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -177,6 +177,7 @@
     <Compile Include="Controllers\DIA_FERIADO_Controller.cs" />
     <Compile Include="Controllers\EMPRESAS__Controller.cs" />
     <Compile Include="Controllers\ENTREGAS_Controller.cs" />
+    <Compile Include="Controllers\ESTADISTICAS_Controller.cs" />
     <Compile Include="Controllers\GENEROesController.cs" />
     <Compile Include="Controllers\HISTORIAL_COMPRA_Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -560,6 +561,11 @@
     <Content Include="Views\NOTIFICACION_\Details.cshtml" />
     <Content Include="Views\NOTIFICACION_\Edit.cshtml" />
     <Content Include="Views\NOTIFICACION_\Index.cshtml" />
+    <Content Include="Views\ESTADISTICAS_\Create.cshtml" />
+    <Content Include="Views\ESTADISTICAS_\Delete.cshtml" />
+    <Content Include="Views\ESTADISTICAS_\Details.cshtml" />
+    <Content Include="Views\ESTADISTICAS_\Edit.cshtml" />
+    <Content Include="Views\ESTADISTICAS_\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

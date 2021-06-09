@@ -198,6 +198,7 @@
     <Compile Include="Controllers\TARJETA_CREDITO_Controller.cs" />
     <Compile Include="Controllers\TARJETA_MEMBRESIA_Controller.cs" />
     <Compile Include="Controllers\TARJETA_REGALO_Controller.cs" />
+    <Compile Include="Controllers\TIPO_DOCUMENTOController.cs" />
     <Compile Include="Controllers\TIPO_ESTADISTICAS_Controller.cs" />
     <Compile Include="Controllers\TIPO_MENSAJE__Controller.cs" />
     <Compile Include="Controllers\TIPO_NOTIFICACION_Controller.cs" />
@@ -578,6 +579,11 @@
     <Content Include="Views\TIPO_NOTIFICACION_\Details.cshtml" />
     <Content Include="Views\TIPO_NOTIFICACION_\Edit.cshtml" />
     <Content Include="Views\TIPO_NOTIFICACION_\Index.cshtml" />
+    <Content Include="Views\TIPO_DOCUMENTO\Create.cshtml" />
+    <Content Include="Views\TIPO_DOCUMENTO\Delete.cshtml" />
+    <Content Include="Views\TIPO_DOCUMENTO\Details.cshtml" />
+    <Content Include="Views\TIPO_DOCUMENTO\Edit.cshtml" />
+    <Content Include="Views\TIPO_DOCUMENTO\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

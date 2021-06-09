@@ -169,6 +169,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\CLIENTES__Controller.cs" />
+    <Compile Include="Controllers\COMPRA__Controller.cs" />
     <Compile Include="Controllers\EMPRESAS__Controller.cs" />
     <Compile Include="Controllers\GENEROesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -458,6 +459,11 @@
     <Content Include="Views\TARJETA_CREDITO_\Details.cshtml" />
     <Content Include="Views\TARJETA_CREDITO_\Edit.cshtml" />
     <Content Include="Views\TARJETA_CREDITO_\Index.cshtml" />
+    <Content Include="Views\COMPRA__\Create.cshtml" />
+    <Content Include="Views\COMPRA__\Delete.cshtml" />
+    <Content Include="Views\COMPRA__\Details.cshtml" />
+    <Content Include="Views\COMPRA__\Edit.cshtml" />
+    <Content Include="Views\COMPRA__\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

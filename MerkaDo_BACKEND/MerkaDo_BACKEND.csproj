@@ -177,6 +177,7 @@
     <Compile Include="Controllers\EMPRESAS__Controller.cs" />
     <Compile Include="Controllers\GENEROesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LISTADO_PAQUETE_COMPRA_Controller.cs" />
     <Compile Include="Controllers\LISTA_PRODUCTO_Controller.cs" />
     <Compile Include="Controllers\LOG_ACTION__Controller.cs" />
     <Compile Include="Controllers\MENSAJE__Controller.cs" />
@@ -524,6 +525,11 @@
     <Content Include="Views\LISTA_PRODUCTO_\Details.cshtml" />
     <Content Include="Views\LISTA_PRODUCTO_\Edit.cshtml" />
     <Content Include="Views\LISTA_PRODUCTO_\Index.cshtml" />
+    <Content Include="Views\LISTADO_PAQUETE_COMPRA_\Create.cshtml" />
+    <Content Include="Views\LISTADO_PAQUETE_COMPRA_\Delete.cshtml" />
+    <Content Include="Views\LISTADO_PAQUETE_COMPRA_\Details.cshtml" />
+    <Content Include="Views\LISTADO_PAQUETE_COMPRA_\Edit.cshtml" />
+    <Content Include="Views\LISTADO_PAQUETE_COMPRA_\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

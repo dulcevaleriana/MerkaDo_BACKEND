@@ -187,6 +187,7 @@
     <Compile Include="Controllers\LISTA_PRODUCTO_Controller.cs" />
     <Compile Include="Controllers\LOG_ACTION__Controller.cs" />
     <Compile Include="Controllers\MENSAJE__Controller.cs" />
+    <Compile Include="Controllers\METODO_ENVIOController.cs" />
     <Compile Include="Controllers\NOTIFICACION_Controller.cs" />
     <Compile Include="Controllers\PREGUNTAS_FRECUENTES_Controller.cs" />
     <Compile Include="Controllers\PRODUCTO__Controller.cs" />
@@ -602,6 +603,11 @@
     <Content Include="Views\COMENTARIOs\Details.cshtml" />
     <Content Include="Views\COMENTARIOs\Edit.cshtml" />
     <Content Include="Views\COMENTARIOs\Index.cshtml" />
+    <Content Include="Views\METODO_ENVIO\Create.cshtml" />
+    <Content Include="Views\METODO_ENVIO\Delete.cshtml" />
+    <Content Include="Views\METODO_ENVIO\Details.cshtml" />
+    <Content Include="Views\METODO_ENVIO\Edit.cshtml" />
+    <Content Include="Views\METODO_ENVIO\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

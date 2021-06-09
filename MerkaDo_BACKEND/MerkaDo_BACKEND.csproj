@@ -176,6 +176,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LOG_ACTION__Controller.cs" />
     <Compile Include="Controllers\MENSAJE__Controller.cs" />
+    <Compile Include="Controllers\PREGUNTAS_FRECUENTES_Controller.cs" />
     <Compile Include="Controllers\PRODUCTO__Controller.cs" />
     <Compile Include="Controllers\ROL_USUARIOController.cs" />
     <Compile Include="Controllers\SALA_USUARIO__Controller.cs" />
@@ -482,6 +483,11 @@
     <Content Include="Views\SOBRE_NOSOTROS_\Details.cshtml" />
     <Content Include="Views\SOBRE_NOSOTROS_\Edit.cshtml" />
     <Content Include="Views\SOBRE_NOSOTROS_\Index.cshtml" />
+    <Content Include="Views\PREGUNTAS_FRECUENTES_\Create.cshtml" />
+    <Content Include="Views\PREGUNTAS_FRECUENTES_\Delete.cshtml" />
+    <Content Include="Views\PREGUNTAS_FRECUENTES_\Details.cshtml" />
+    <Content Include="Views\PREGUNTAS_FRECUENTES_\Edit.cshtml" />
+    <Content Include="Views\PREGUNTAS_FRECUENTES_\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

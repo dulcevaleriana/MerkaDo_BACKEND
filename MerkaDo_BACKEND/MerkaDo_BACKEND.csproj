@@ -175,6 +175,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LOG_ACTION__Controller.cs" />
     <Compile Include="Controllers\MENSAJE__Controller.cs" />
+    <Compile Include="Controllers\PRODUCTO__Controller.cs" />
     <Compile Include="Controllers\ROL_USUARIOController.cs" />
     <Compile Include="Controllers\SALA_USUARIO__Controller.cs" />
     <Compile Include="Controllers\SALA__Controller.cs" />
@@ -464,6 +465,11 @@
     <Content Include="Views\COMPRA__\Details.cshtml" />
     <Content Include="Views\COMPRA__\Edit.cshtml" />
     <Content Include="Views\COMPRA__\Index.cshtml" />
+    <Content Include="Views\PRODUCTO__\Create.cshtml" />
+    <Content Include="Views\PRODUCTO__\Delete.cshtml" />
+    <Content Include="Views\PRODUCTO__\Details.cshtml" />
+    <Content Include="Views\PRODUCTO__\Edit.cshtml" />
+    <Content Include="Views\PRODUCTO__\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

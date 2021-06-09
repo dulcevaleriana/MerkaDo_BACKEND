@@ -176,6 +176,7 @@
     <Compile Include="Controllers\DIA_FERIADO_Controller.cs" />
     <Compile Include="Controllers\EMPRESAS__Controller.cs" />
     <Compile Include="Controllers\GENEROesController.cs" />
+    <Compile Include="Controllers\HISTORIAL_COMPRA_Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LISTADO_PAQUETE_COMPRA_Controller.cs" />
     <Compile Include="Controllers\LISTA_PRODUCTO_Controller.cs" />
@@ -536,6 +537,11 @@
     <Content Include="Views\STATUS_COMPRA_\Details.cshtml" />
     <Content Include="Views\STATUS_COMPRA_\Edit.cshtml" />
     <Content Include="Views\STATUS_COMPRA_\Index.cshtml" />
+    <Content Include="Views\HISTORIAL_COMPRA_\Create.cshtml" />
+    <Content Include="Views\HISTORIAL_COMPRA_\Delete.cshtml" />
+    <Content Include="Views\HISTORIAL_COMPRA_\Details.cshtml" />
+    <Content Include="Views\HISTORIAL_COMPRA_\Edit.cshtml" />
+    <Content Include="Views\HISTORIAL_COMPRA_\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -171,10 +171,12 @@
     <Compile Include="Controllers\CARRITO_COMPRAS_Controller.cs" />
     <Compile Include="Controllers\CLIENTES__Controller.cs" />
     <Compile Include="Controllers\COMPRA__Controller.cs" />
+    <Compile Include="Controllers\CORREO_EMAIL_MARKETING_Controller.cs" />
     <Compile Include="Controllers\CUPONES_Controller.cs" />
     <Compile Include="Controllers\DESCUENTOS_Controller.cs" />
     <Compile Include="Controllers\DIA_FERIADO_Controller.cs" />
     <Compile Include="Controllers\EMPRESAS__Controller.cs" />
+    <Compile Include="Controllers\ENTREGAS_Controller.cs" />
     <Compile Include="Controllers\GENEROesController.cs" />
     <Compile Include="Controllers\HISTORIAL_COMPRA_Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -542,6 +544,16 @@
     <Content Include="Views\HISTORIAL_COMPRA_\Details.cshtml" />
     <Content Include="Views\HISTORIAL_COMPRA_\Edit.cshtml" />
     <Content Include="Views\HISTORIAL_COMPRA_\Index.cshtml" />
+    <Content Include="Views\CORREO_EMAIL_MARKETING_\Create.cshtml" />
+    <Content Include="Views\CORREO_EMAIL_MARKETING_\Delete.cshtml" />
+    <Content Include="Views\CORREO_EMAIL_MARKETING_\Details.cshtml" />
+    <Content Include="Views\CORREO_EMAIL_MARKETING_\Edit.cshtml" />
+    <Content Include="Views\CORREO_EMAIL_MARKETING_\Index.cshtml" />
+    <Content Include="Views\ENTREGAS_\Create.cshtml" />
+    <Content Include="Views\ENTREGAS_\Delete.cshtml" />
+    <Content Include="Views\ENTREGAS_\Details.cshtml" />
+    <Content Include="Views\ENTREGAS_\Edit.cshtml" />
+    <Content Include="Views\ENTREGAS_\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

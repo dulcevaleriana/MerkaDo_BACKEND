@@ -1,0 +1,51 @@
+﻿@model MerkaDo_BACKEND.Models.CORREO_EMAIL_MARKETING_
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CORREO_EMAIL_MARKETING_</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.tituloMensaje)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tituloMensaje)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.imagenCorreoEmailMarketing)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.imagenCorreoEmailMarketing)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.contenidoCorreoEmailMarketing)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.contenidoCorreoEmailMarketing)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaCreacionCorreoEmailMarketing)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaCreacionCorreoEmailMarketing)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.correoEmailMarketingId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

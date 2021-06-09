@@ -1,0 +1,27 @@
+﻿@model MerkaDo_BACKEND.Models.TIPO_NOTIFICACION_
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TIPO_NOTIFICACION_</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombreTipoNotificacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreTipoNotificacion)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.tipoNotificacionId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

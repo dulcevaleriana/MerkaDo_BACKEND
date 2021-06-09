@@ -200,6 +200,7 @@
     <Compile Include="Controllers\TARJETA_REGALO_Controller.cs" />
     <Compile Include="Controllers\TIPO_ESTADISTICAS_Controller.cs" />
     <Compile Include="Controllers\TIPO_MENSAJE__Controller.cs" />
+    <Compile Include="Controllers\TIPO_NOTIFICACION_Controller.cs" />
     <Compile Include="Controllers\TIPO_SALA__Controller.cs" />
     <Compile Include="Controllers\USUARIO__Controller.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
@@ -572,6 +573,11 @@
     <Content Include="Views\TIPO_ESTADISTICAS_\Details.cshtml" />
     <Content Include="Views\TIPO_ESTADISTICAS_\Edit.cshtml" />
     <Content Include="Views\TIPO_ESTADISTICAS_\Index.cshtml" />
+    <Content Include="Views\TIPO_NOTIFICACION_\Create.cshtml" />
+    <Content Include="Views\TIPO_NOTIFICACION_\Delete.cshtml" />
+    <Content Include="Views\TIPO_NOTIFICACION_\Details.cshtml" />
+    <Content Include="Views\TIPO_NOTIFICACION_\Edit.cshtml" />
+    <Content Include="Views\TIPO_NOTIFICACION_\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

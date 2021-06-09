@@ -170,6 +170,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\CLIENTES__Controller.cs" />
     <Compile Include="Controllers\COMPRA__Controller.cs" />
+    <Compile Include="Controllers\CUPONES_Controller.cs" />
     <Compile Include="Controllers\DESCUENTOS_Controller.cs" />
     <Compile Include="Controllers\DIA_FERIADO_Controller.cs" />
     <Compile Include="Controllers\EMPRESAS__Controller.cs" />
@@ -494,6 +495,11 @@
     <Content Include="Views\DESCUENTOS_\Details.cshtml" />
     <Content Include="Views\DESCUENTOS_\Edit.cshtml" />
     <Content Include="Views\DESCUENTOS_\Index.cshtml" />
+    <Content Include="Views\CUPONES_\Create.cshtml" />
+    <Content Include="Views\CUPONES_\Delete.cshtml" />
+    <Content Include="Views\CUPONES_\Details.cshtml" />
+    <Content Include="Views\CUPONES_\Edit.cshtml" />
+    <Content Include="Views\CUPONES_\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

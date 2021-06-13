@@ -1,0 +1,70 @@
+﻿@model IEnumerable<MerkaDo_BACKEND.Models.HISTORIAL_COMPRA_>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nombreCliente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.razonSocialEmpresa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaEnvio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.estadoTipoHistorialCompra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.totalPago)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CARRITO_COMPRAS_.carritoComprasId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.USUARIO__.nombreUsuario)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombreCliente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.razonSocialEmpresa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaEnvio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.estadoTipoHistorialCompra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.totalPago)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CARRITO_COMPRAS_.carritoComprasId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.USUARIO__.nombreUsuario)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.historialCompraId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.historialCompraId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.historialCompraId })
+        </td>
+    </tr>
+}
+
+</table>

@@ -9,7 +9,7 @@
           <Key>
             <PropertyRef Name="carritoComprasId" />
           </Key>
-          <Property Name="carritoComprasId" Type="int" Nullable="false" />
+          <Property Name="carritoComprasId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="listaProductosId" Type="int" Nullable="false" />
           <Property Name="totalPago" Type="money" Nullable="false" />
         </EntityType>
@@ -17,14 +17,14 @@
           <Key>
             <PropertyRef Name="categoriaProductoId" />
           </Key>
-          <Property Name="categoriaProductoId" Type="int" Nullable="false" />
+          <Property Name="categoriaProductoId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nombrecategoriaProducto" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="CLIENTES__">
           <Key>
             <PropertyRef Name="UsuarioId" />
           </Key>
-          <Property Name="UsuarioId" Type="int" Nullable="false" />
+          <Property Name="UsuarioId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nombreCliente" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="apellidoCliente" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="imagenCliente" Type="varchar(max)" Nullable="false" />
@@ -43,7 +43,7 @@
           <Key>
             <PropertyRef Name="comentarioId" />
           </Key>
-          <Property Name="comentarioId" Type="int" Nullable="false" />
+          <Property Name="comentarioId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="usuarioId" Type="int" Nullable="false" />
           <Property Name="productoId" Type="int" Nullable="false" />
           <Property Name="estrellaComentario" Type="smallint" Nullable="false" />
@@ -53,7 +53,7 @@
           <Key>
             <PropertyRef Name="comprasId" />
           </Key>
-          <Property Name="comprasId" Type="int" Nullable="false" />
+          <Property Name="comprasId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="carritoComprasId" Type="int" Nullable="false" />
           <Property Name="precioInicialCompra" Type="money" Nullable="false" />
           <Property Name="subTotalCompraITBIS" Type="money" Nullable="false" />
@@ -69,7 +69,7 @@
           <Key>
             <PropertyRef Name="correoEmailMarketingId" />
           </Key>
-          <Property Name="correoEmailMarketingId" Type="int" Nullable="false" />
+          <Property Name="correoEmailMarketingId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="tituloMensaje" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="imagenCorreoEmailMarketing" Type="varchar(max)" Nullable="false" />
           <Property Name="contenidoCorreoEmailMarketing" Type="varchar" MaxLength="1000" />
@@ -79,7 +79,7 @@
           <Key>
             <PropertyRef Name="cuponesId" />
           </Key>
-          <Property Name="cuponesId" Type="int" Nullable="false" />
+          <Property Name="cuponesId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nombreCupones" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="descuentoCupones" Type="smallmoney" />
           <Property Name="precioDescontar" Type="smallmoney" />
@@ -90,7 +90,7 @@
           <Key>
             <PropertyRef Name="descuentoId" />
           </Key>
-          <Property Name="descuentoId" Type="int" Nullable="false" />
+          <Property Name="descuentoId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="productoId" Type="int" Nullable="false" />
           <Property Name="categoriaProductoId" Type="int" Nullable="false" />
           <Property Name="usuarioId" Type="int" Nullable="false" />
@@ -101,7 +101,7 @@
           <Key>
             <PropertyRef Name="diaFeriadoId" />
           </Key>
-          <Property Name="diaFeriadoId" Type="int" Nullable="false" />
+          <Property Name="diaFeriadoId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nombreDiaFeriado" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="fechaDiaFeriado" Type="date" Nullable="false" />
           <Property Name="seLabora" Type="bit" Nullable="false" />
@@ -112,9 +112,9 @@
           <Key>
             <PropertyRef Name="usuarioId" />
           </Key>
-          <Property Name="usuarioId" Type="int" Nullable="false" />
+          <Property Name="usuarioId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="razonSocialEmpresa" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="telefonoEmpresa" Type="int" Nullable="false" />
+          <Property Name="telefonoEmpresa" Type="varchar" MaxLength="14" Nullable="false" />
           <Property Name="imagenEmpresa" Type="varchar(max)" Nullable="false" />
           <Property Name="codigoPostalEmpresa" Type="int" Nullable="false" />
           <Property Name="RNC" Type="int" Nullable="false" />
@@ -127,7 +127,7 @@
           <Key>
             <PropertyRef Name="entregaId" />
           </Key>
-          <Property Name="entregaId" Type="int" Nullable="false" />
+          <Property Name="entregaId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="comprasId" Type="int" Nullable="false" />
           <Property Name="usuarioId" Type="int" Nullable="false" />
           <Property Name="mensajeroEncargadoId" Type="int" Nullable="false" />
@@ -141,7 +141,7 @@
           <Key>
             <PropertyRef Name="estadisticasId" />
           </Key>
-          <Property Name="estadisticasId" Type="int" Nullable="false" />
+          <Property Name="estadisticasId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="tipoEstadisticasId" Type="int" Nullable="false" />
           <Property Name="fechaCreacion" Type="date" Nullable="false" />
           <Property Name="documentoEstadisticas" Type="varchar(max)" Nullable="false" />
@@ -150,14 +150,14 @@
           <Key>
             <PropertyRef Name="generoId" />
           </Key>
-          <Property Name="generoId" Type="int" Nullable="false" />
+          <Property Name="generoId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nombreGenero" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="HISTORIAL_COMPRA_">
           <Key>
             <PropertyRef Name="historialCompraId" />
           </Key>
-          <Property Name="historialCompraId" Type="int" Nullable="false" />
+          <Property Name="historialCompraId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="usuarioId" Type="int" Nullable="false" />
           <Property Name="nombreCliente" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="razonSocialEmpresa" Type="varchar" MaxLength="50" Nullable="false" />
@@ -170,7 +170,7 @@
           <Key>
             <PropertyRef Name="listaProductosId" />
           </Key>
-          <Property Name="listaProductosId" Type="int" Nullable="false" />
+          <Property Name="listaProductosId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="productoId" Type="int" Nullable="false" />
           <Property Name="precioProducto" Type="money" Nullable="false" />
           <Property Name="totalPago" Type="money" Nullable="false" />
@@ -179,7 +179,7 @@
           <Key>
             <PropertyRef Name="listadoPaqueteCompraId" />
           </Key>
-          <Property Name="listadoPaqueteCompraId" Type="int" Nullable="false" />
+          <Property Name="listadoPaqueteCompraId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="usuarioId" Type="int" Nullable="false" />
           <Property Name="nombreCliente" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="razonSocialEmpresa" Type="varchar" MaxLength="50" Nullable="false" />
@@ -198,7 +198,7 @@
           <Key>
             <PropertyRef Name="LogId" />
           </Key>
-          <Property Name="LogId" Type="int" Nullable="false" />
+          <Property Name="LogId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="tipoNotificacionId" Type="int" Nullable="false" />
           <Property Name="tipoEstadisticasId" Type="int" Nullable="false" />
           <Property Name="usuarioId" Type="int" Nullable="false" />
@@ -209,7 +209,7 @@
           <Key>
             <PropertyRef Name="mensajeId" />
           </Key>
-          <Property Name="mensajeId" Type="int" Nullable="false" />
+          <Property Name="mensajeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="usuarioId" Type="int" Nullable="false" />
           <Property Name="salaId" Type="int" Nullable="false" />
           <Property Name="mensaje" Type="varchar(max)" Nullable="false" />
@@ -222,7 +222,7 @@
           <Key>
             <PropertyRef Name="metodoEnvioId" />
           </Key>
-          <Property Name="metodoEnvioId" Type="int" Nullable="false" />
+          <Property Name="metodoEnvioId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nombreMetodoEnvio" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="descripcionMetodoEnvio" Type="varchar" MaxLength="100" Nullable="false" />
         </EntityType>
@@ -230,7 +230,7 @@
           <Key>
             <PropertyRef Name="notificacionId" />
           </Key>
-          <Property Name="notificacionId" Type="int" Nullable="false" />
+          <Property Name="notificacionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="rolId" Type="int" Nullable="false" />
           <Property Name="tipoNotificacionId" Type="int" Nullable="false" />
           <Property Name="usuarioReceptorId" Type="int" Nullable="false" />
@@ -241,7 +241,7 @@
           <Key>
             <PropertyRef Name="preguntasFrecuentesId" />
           </Key>
-          <Property Name="preguntasFrecuentesId" Type="int" Nullable="false" />
+          <Property Name="preguntasFrecuentesId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="preguntaPreguntasFrecuentes" Type="varchar" MaxLength="100" Nullable="false" />
           <Property Name="respuestaPreguntasFrecuentes" Type="varchar" MaxLength="1000" Nullable="false" />
         </EntityType>
@@ -249,7 +249,7 @@
           <Key>
             <PropertyRef Name="productoId" />
           </Key>
-          <Property Name="productoId" Type="int" Nullable="false" />
+          <Property Name="productoId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nombreProducto" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="imagenProducto" Type="varchar(max)" Nullable="false" />
           <Property Name="cantidadProducto" Type="int" Nullable="false" />
@@ -264,14 +264,14 @@
           <Key>
             <PropertyRef Name="rolId" />
           </Key>
-          <Property Name="rolId" Type="int" Nullable="false" />
+          <Property Name="rolId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nombreRol" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="SALA__">
           <Key>
             <PropertyRef Name="salaId" />
           </Key>
-          <Property Name="salaId" Type="int" Nullable="false" />
+          <Property Name="salaId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="tipoSalaId" Type="int" Nullable="false" />
           <Property Name="fecha" Type="date" Nullable="false" />
         </EntityType>
@@ -279,7 +279,7 @@
           <Key>
             <PropertyRef Name="salaUsuarioId" />
           </Key>
-          <Property Name="salaUsuarioId" Type="int" Nullable="false" />
+          <Property Name="salaUsuarioId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="salaId" Type="int" Nullable="false" />
           <Property Name="usuarioId" Type="int" Nullable="false" />
         </EntityType>
@@ -287,7 +287,7 @@
           <Key>
             <PropertyRef Name="sobreNosotrosId" />
           </Key>
-          <Property Name="sobreNosotrosId" Type="int" Nullable="false" />
+          <Property Name="sobreNosotrosId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="quienesSomosSobreNosotros" Type="varchar" MaxLength="1000" Nullable="false" />
           <Property Name="misionSobreNosotros" Type="varchar" MaxLength="1000" Nullable="false" />
           <Property Name="visionSobreNosotros" Type="varchar" MaxLength="1000" Nullable="false" />
@@ -297,7 +297,7 @@
           <Key>
             <PropertyRef Name="statusCompraId" />
           </Key>
-          <Property Name="statusCompraId" Type="int" Nullable="false" />
+          <Property Name="statusCompraId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="usuarioId" Type="int" Nullable="false" />
           <Property Name="nombreCliente" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="razonSocialEmpresa" Type="varchar" MaxLength="50" Nullable="false" />
@@ -310,10 +310,9 @@
           <Key>
             <PropertyRef Name="sucursalId" />
           </Key>
-          <Property Name="sucursalId" Type="int" Nullable="false" />
+          <Property Name="sucursalId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nombreSucursal" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="direccionSucursal" Type="varchar" MaxLength="100" Nullable="false" />
-          <Property Name="encargadoSucursal" Type="int" Nullable="false" />
           <Property Name="supermercadoId" Type="int" Nullable="false" />
           <Property Name="horarioApertura" Type="datetime" Nullable="false" />
           <Property Name="horarioCierre" Type="datetime" Nullable="false" />
@@ -327,10 +326,9 @@
           <Key>
             <PropertyRef Name="supermercadoId" />
           </Key>
-          <Property Name="supermercadoId" Type="int" Nullable="false" />
+          <Property Name="supermercadoId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nombreSupermercado" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="direccionSupermercado" Type="varchar" MaxLength="100" Nullable="false" />
-          <Property Name="encargadoSupermercado" Type="int" Nullable="false" />
           <Property Name="horarioApertura" Type="datetime" Nullable="false" />
           <Property Name="horarioCierre" Type="datetime" Nullable="false" />
           <Property Name="diaFeriado" Type="bit" Nullable="false" />
@@ -343,10 +341,10 @@
           <Key>
             <PropertyRef Name="tarjetaCreditoId" />
           </Key>
-          <Property Name="tarjetaCreditoId" Type="int" Nullable="false" />
+          <Property Name="tarjetaCreditoId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="usuarioId" Type="int" Nullable="false" />
           <Property Name="NombreTarjeta" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="NumeroTarjeta" Type="int" Nullable="false" />
+          <Property Name="NumeroTarjeta" Type="varchar" MaxLength="19" Nullable="false" />
           <Property Name="FechaVencimientoTarjeta" Type="date" Nullable="false" />
           <Property Name="CVV" Type="smallint" Nullable="false" />
         </EntityType>
@@ -354,7 +352,7 @@
           <Key>
             <PropertyRef Name="tarjetaMembresiaId" />
           </Key>
-          <Property Name="tarjetaMembresiaId" Type="int" Nullable="false" />
+          <Property Name="tarjetaMembresiaId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="usuarioId" Type="int" Nullable="false" />
           <Property Name="nombreCliente" Type="varchar" MaxLength="50" />
           <Property Name="razonSocialEmpresa" Type="varchar" MaxLength="50" />
@@ -365,7 +363,7 @@
           <Key>
             <PropertyRef Name="tarjetaRegaloId" />
           </Key>
-          <Property Name="tarjetaRegaloId" Type="int" Nullable="false" />
+          <Property Name="tarjetaRegaloId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="usuarioId" Type="int" Nullable="false" />
           <Property Name="nombreCliente" Type="varchar" MaxLength="50" />
           <Property Name="razonSocialEmpresa" Type="varchar" MaxLength="50" />
@@ -376,60 +374,60 @@
           <Key>
             <PropertyRef Name="tipoDocumentoId" />
           </Key>
-          <Property Name="tipoDocumentoId" Type="int" Nullable="false" />
+          <Property Name="tipoDocumentoId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nombreTipoDocumento" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="TIPO_ESTADISTICAS_">
           <Key>
             <PropertyRef Name="tipoEstadisticasId" />
           </Key>
-          <Property Name="tipoEstadisticasId" Type="int" Nullable="false" />
+          <Property Name="tipoEstadisticasId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nombreTipoEstadisticas" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="TIPO_MENSAJE__">
           <Key>
             <PropertyRef Name="tipoMensajeId" />
           </Key>
-          <Property Name="tipoMensajeId" Type="int" Nullable="false" />
+          <Property Name="tipoMensajeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="NombreTipoMensaje" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="TIPO_NOTIFICACION_">
           <Key>
             <PropertyRef Name="tipoNotificacionId" />
           </Key>
-          <Property Name="tipoNotificacionId" Type="int" Nullable="false" />
+          <Property Name="tipoNotificacionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nombreTipoNotificacion" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="TIPO_SALA__">
           <Key>
             <PropertyRef Name="tipoSalaId" />
           </Key>
-          <Property Name="tipoSalaId" Type="int" Nullable="false" />
+          <Property Name="tipoSalaId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nombreSala" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="TIPO_STATUS_COMPRA">
           <Key>
             <PropertyRef Name="statusTipoCompraId" />
           </Key>
-          <Property Name="statusTipoCompraId" Type="int" Nullable="false" />
+          <Property Name="statusTipoCompraId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nombreStatusTipoCompra" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="USUARIO__">
           <Key>
             <PropertyRef Name="usuarioId" />
           </Key>
-          <Property Name="usuarioId" Type="int" Nullable="false" />
+          <Property Name="usuarioId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nombreUsuario" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="apellidoUsuario" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="imagenUsuario" Type="varchar(max)" Nullable="false" />
-          <Property Name="cedulaUsuario" Type="int" Nullable="false" />
+          <Property Name="cedulaUsuario" Type="varchar" MaxLength="13" Nullable="false" />
           <Property Name="generoId" Type="int" Nullable="false" />
           <Property Name="correoCorporativoUsuario" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="TtelefonoUsuario" Type="int" Nullable="false" />
+          <Property Name="telefonoUsuario" Type="varchar" MaxLength="14" Nullable="false" />
           <Property Name="sucursalId" Type="int" Nullable="false" />
           <Property Name="rolId" Type="int" Nullable="false" />
         </EntityType>
-        <Association Name="FK__CARRITO_C__lista__0B91BA14">
+        <Association Name="FK__CARRITO_C__lista__0A9D95DB">
           <End Role="LISTA_PRODUCTO_" Type="Self.LISTA_PRODUCTO_" Multiplicity="1" />
           <End Role="CARRITO_COMPRAS_" Type="Self.CARRITO_COMPRAS_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -441,7 +439,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__CLIENTES___gener__75A278F5">
+        <Association Name="FK__CLIENTES___gener__74AE54BC">
           <End Role="GENERO" Type="Self.GENERO" Multiplicity="1" />
           <End Role="CLIENTES__" Type="Self.CLIENTES__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -453,7 +451,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__CLIENTES___tipoD__76969D2E">
+        <Association Name="FK__CLIENTES___tipoD__75A278F5">
           <End Role="TIPO_DOCUMENTO" Type="Self.TIPO_DOCUMENTO" Multiplicity="1" />
           <End Role="CLIENTES__" Type="Self.CLIENTES__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -465,7 +463,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__COMENTARI__produ__1DB06A4F">
+        <Association Name="FK__COMENTARI__produ__1CBC4616">
           <End Role="PRODUCTO__" Type="Self.PRODUCTO__" Multiplicity="1" />
           <End Role="COMENTARIO" Type="Self.COMENTARIO" Multiplicity="*" />
           <ReferentialConstraint>
@@ -477,7 +475,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__COMENTARI__usuar__1CBC4616">
+        <Association Name="FK__COMENTARI__usuar__1BC821DD">
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
           <End Role="COMENTARIO" Type="Self.COMENTARIO" Multiplicity="*" />
           <ReferentialConstraint>
@@ -489,7 +487,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__COMPRA____carrit__7F2BE32F">
+        <Association Name="FK__COMPRA____carrit__7E37BEF6">
           <End Role="CARRITO_COMPRAS_" Type="Self.CARRITO_COMPRAS_" Multiplicity="1" />
           <End Role="COMPRA__" Type="Self.COMPRA__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -501,7 +499,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__COMPRA____cupone__01142BA1">
+        <Association Name="FK__COMPRA____cupone__00200768">
           <End Role="CUPONES_" Type="Self.CUPONES_" Multiplicity="0..1" />
           <End Role="COMPRA__" Type="Self.COMPRA__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -513,7 +511,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__COMPRA____descue__02084FDA">
+        <Association Name="FK__COMPRA____descue__01142BA1">
           <End Role="DESCUENTOS_" Type="Self.DESCUENTOS_" Multiplicity="0..1" />
           <End Role="COMPRA__" Type="Self.COMPRA__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -525,7 +523,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__COMPRA____metodo__02FC7413">
+        <Association Name="FK__COMPRA____metodo__02084FDA">
           <End Role="METODO_ENVIO" Type="Self.METODO_ENVIO" Multiplicity="1" />
           <End Role="COMPRA__" Type="Self.COMPRA__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -537,7 +535,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__COMPRA____tarjet__00200768">
+        <Association Name="FK__COMPRA____tarjet__7F2BE32F">
           <End Role="TARJETA_CREDITO_" Type="Self.TARJETA_CREDITO_" Multiplicity="1" />
           <End Role="COMPRA__" Type="Self.COMPRA__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -549,7 +547,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__DESCUENTO__categ__07C12930">
+        <Association Name="FK__DESCUENTO__categ__06CD04F7">
           <End Role="CATEGORIA_PRODUCTO" Type="Self.CATEGORIA_PRODUCTO" Multiplicity="1" />
           <End Role="DESCUENTOS_" Type="Self.DESCUENTOS_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -561,7 +559,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__DESCUENTO__produ__06CD04F7">
+        <Association Name="FK__DESCUENTO__produ__05D8E0BE">
           <End Role="PRODUCTO__" Type="Self.PRODUCTO__" Multiplicity="1" />
           <End Role="DESCUENTOS_" Type="Self.DESCUENTOS_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -573,7 +571,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__DESCUENTO__usuar__08B54D69">
+        <Association Name="FK__DESCUENTO__usuar__07C12930">
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
           <End Role="DESCUENTOS_" Type="Self.DESCUENTOS_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -585,7 +583,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__ENTREGAS___compr__151B244E">
+        <Association Name="FK__ENTREGAS___compr__14270015">
           <End Role="COMPRA__" Type="Self.COMPRA__" Multiplicity="1" />
           <End Role="ENTREGAS_" Type="Self.ENTREGAS_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -597,7 +595,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__ENTREGAS___statu__17F790F9">
+        <Association Name="FK__ENTREGAS___statu__17036CC0">
           <End Role="TIPO_STATUS_COMPRA" Type="Self.TIPO_STATUS_COMPRA" Multiplicity="1" />
           <End Role="ENTREGAS_" Type="Self.ENTREGAS_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -606,6 +604,18 @@
             </Principal>
             <Dependent Role="ENTREGAS_">
               <PropertyRef Name="statusTipoCompraId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ENTREGAS___usuar__151B244E">
+          <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
+          <End Role="ENTREGAS_" Type="Self.ENTREGAS_" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USUARIO__">
+              <PropertyRef Name="usuarioId" />
+            </Principal>
+            <Dependent Role="ENTREGAS_">
+              <PropertyRef Name="usuarioId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -621,19 +631,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__ENTREGAS___usuar__17036CC0">
-          <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
-          <End Role="ENTREGAS_" Type="Self.ENTREGAS_" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="USUARIO__">
-              <PropertyRef Name="usuarioId" />
-            </Principal>
-            <Dependent Role="ENTREGAS_">
-              <PropertyRef Name="usuarioId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__ESTADISTI__tipoE__1BC821DD">
+        <Association Name="FK__ESTADISTI__tipoE__1AD3FDA4">
           <End Role="TIPO_ESTADISTICAS_" Type="Self.TIPO_ESTADISTICAS_" Multiplicity="1" />
           <End Role="ESTADISTICAS_" Type="Self.ESTADISTICAS_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -645,7 +643,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__HISTORIAL__carri__14270015">
+        <Association Name="FK__HISTORIAL__carri__1332DBDC">
           <End Role="CARRITO_COMPRAS_" Type="Self.CARRITO_COMPRAS_" Multiplicity="1" />
           <End Role="HISTORIAL_COMPRA_" Type="Self.HISTORIAL_COMPRA_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -657,19 +655,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__HISTORIAL__histo__123EB7A3">
-          <End Role="HISTORIAL_COMPRA_" Type="Self.HISTORIAL_COMPRA_" Multiplicity="1" />
-          <End Role="HISTORIAL_COMPRA_1" Type="Self.HISTORIAL_COMPRA_" Multiplicity="0..1" />
-          <ReferentialConstraint>
-            <Principal Role="HISTORIAL_COMPRA_">
-              <PropertyRef Name="historialCompraId" />
-            </Principal>
-            <Dependent Role="HISTORIAL_COMPRA_1">
-              <PropertyRef Name="historialCompraId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__HISTORIAL__usuar__1332DBDC">
+        <Association Name="FK__HISTORIAL__usuar__123EB7A3">
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
           <End Role="HISTORIAL_COMPRA_" Type="Self.HISTORIAL_COMPRA_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -681,7 +667,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__LISTA_PRO__produ__0C85DE4D">
+        <Association Name="FK__LISTA_PRO__produ__0B91BA14">
           <End Role="PRODUCTO__" Type="Self.PRODUCTO__" Multiplicity="1" />
           <End Role="LISTA_PRODUCTO_" Type="Self.LISTA_PRODUCTO_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -693,7 +679,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__LISTADO_P__carri__0E6E26BF">
+        <Association Name="FK__LISTADO_P__carri__0D7A0286">
           <End Role="CARRITO_COMPRAS_" Type="Self.CARRITO_COMPRAS_" Multiplicity="1" />
           <End Role="LISTADO_PAQUETE_COMPRA_" Type="Self.LISTADO_PAQUETE_COMPRA_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -705,7 +691,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__LISTADO_P__usuar__0D7A0286">
+        <Association Name="FK__LISTADO_P__usuar__0C85DE4D">
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
           <End Role="LISTADO_PAQUETE_COMPRA_" Type="Self.LISTADO_PAQUETE_COMPRA_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -717,7 +703,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__LOG_ACTIO__rolId__74AE54BC">
+        <Association Name="FK__LOG_ACTIO__rolId__73BA3083">
           <End Role="ROL_USUARIO" Type="Self.ROL_USUARIO" Multiplicity="1" />
           <End Role="LOG_ACTION__" Type="Self.LOG_ACTION__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -729,7 +715,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__LOG_ACTIO__tipoE__72C60C4A">
+        <Association Name="FK__LOG_ACTIO__tipoE__71D1E811">
           <End Role="TIPO_ESTADISTICAS_" Type="Self.TIPO_ESTADISTICAS_" Multiplicity="1" />
           <End Role="LOG_ACTION__" Type="Self.LOG_ACTION__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -741,7 +727,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__LOG_ACTIO__tipoN__71D1E811">
+        <Association Name="FK__LOG_ACTIO__tipoN__70DDC3D8">
           <End Role="TIPO_NOTIFICACION_" Type="Self.TIPO_NOTIFICACION_" Multiplicity="1" />
           <End Role="LOG_ACTION__" Type="Self.LOG_ACTION__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -753,7 +739,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__LOG_ACTIO__usuar__73BA3083">
+        <Association Name="FK__LOG_ACTIO__usuar__72C60C4A">
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
           <End Role="LOG_ACTION__" Type="Self.LOG_ACTION__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -765,7 +751,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__MENSAJE____salaI__787EE5A0">
+        <Association Name="FK__MENSAJE____salaI__778AC167">
           <End Role="SALA__" Type="Self.SALA__" Multiplicity="1" />
           <End Role="MENSAJE__" Type="Self.MENSAJE__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -777,7 +763,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__MENSAJE____tipoM__797309D9">
+        <Association Name="FK__MENSAJE____tipoM__787EE5A0">
           <End Role="TIPO_MENSAJE__" Type="Self.TIPO_MENSAJE__" Multiplicity="1" />
           <End Role="MENSAJE__" Type="Self.MENSAJE__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -789,7 +775,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__MENSAJE____tipoS__7A672E12">
+        <Association Name="FK__MENSAJE____tipoS__797309D9">
           <End Role="TIPO_SALA__" Type="Self.TIPO_SALA__" Multiplicity="1" />
           <End Role="MENSAJE__" Type="Self.MENSAJE__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -801,7 +787,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__MENSAJE____usuar__778AC167">
+        <Association Name="FK__MENSAJE____usuar__76969D2E">
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
           <End Role="MENSAJE__" Type="Self.MENSAJE__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -813,7 +799,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__NOTIFICAC__rolId__18EBB532">
+        <Association Name="FK__NOTIFICAC__rolId__17F790F9">
           <End Role="ROL_USUARIO" Type="Self.ROL_USUARIO" Multiplicity="1" />
           <End Role="NOTIFICACION_" Type="Self.NOTIFICACION_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -825,7 +811,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__NOTIFICAC__tipoN__19DFD96B">
+        <Association Name="FK__NOTIFICAC__tipoN__18EBB532">
           <End Role="TIPO_NOTIFICACION_" Type="Self.TIPO_NOTIFICACION_" Multiplicity="1" />
           <End Role="NOTIFICACION_" Type="Self.NOTIFICACION_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -837,7 +823,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__NOTIFICAC__usuar__1AD3FDA4">
+        <Association Name="FK__NOTIFICAC__usuar__19DFD96B">
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
           <End Role="NOTIFICACION_" Type="Self.NOTIFICACION_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -849,7 +835,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__PRODUCTO___categ__05D8E0BE">
+        <Association Name="FK__PRODUCTO___categ__04E4BC85">
           <End Role="CATEGORIA_PRODUCTO" Type="Self.CATEGORIA_PRODUCTO" Multiplicity="1" />
           <End Role="PRODUCTO__" Type="Self.PRODUCTO__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -861,7 +847,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__PRODUCTO___sucur__03F0984C">
+        <Association Name="FK__PRODUCTO___sucur__02FC7413">
           <End Role="SUCURSAL_" Type="Self.SUCURSAL_" Multiplicity="1" />
           <End Role="PRODUCTO__" Type="Self.PRODUCTO__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -873,7 +859,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__PRODUCTO___super__04E4BC85">
+        <Association Name="FK__PRODUCTO___super__03F0984C">
           <End Role="SUPERMERCADO_" Type="Self.SUPERMERCADO_" Multiplicity="1" />
           <End Role="PRODUCTO__" Type="Self.PRODUCTO__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -885,7 +871,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__SALA____tipoSala__7B5B524B">
+        <Association Name="FK__SALA____tipoSala__7A672E12">
           <End Role="TIPO_SALA__" Type="Self.TIPO_SALA__" Multiplicity="1" />
           <End Role="SALA__" Type="Self.SALA__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -897,7 +883,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__SALA_USUA__salaI__7C4F7684">
+        <Association Name="FK__SALA_USUA__salaI__7B5B524B">
           <End Role="SALA__" Type="Self.SALA__" Multiplicity="1" />
           <End Role="SALA_USUARIO__" Type="Self.SALA_USUARIO__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -909,7 +895,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__SALA_USUA__usuar__7D439ABD">
+        <Association Name="FK__SALA_USUA__usuar__7C4F7684">
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
           <End Role="SALA_USUARIO__" Type="Self.SALA_USUARIO__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -921,7 +907,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__STATUS_CO__statu__10566F31">
+        <Association Name="FK__STATUS_CO__statu__0F624AF8">
           <End Role="TIPO_STATUS_COMPRA" Type="Self.TIPO_STATUS_COMPRA" Multiplicity="1" />
           <End Role="STATUS_COMPRA_" Type="Self.STATUS_COMPRA_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -933,7 +919,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__STATUS_CO__usuar__0F624AF8">
+        <Association Name="FK__STATUS_CO__usuar__0E6E26BF">
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
           <End Role="STATUS_COMPRA_" Type="Self.STATUS_COMPRA_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -945,7 +931,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__STATUS_CO__usuar__114A936A">
+        <Association Name="FK__STATUS_CO__usuar__10566F31">
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
           <End Role="STATUS_COMPRA_" Type="Self.STATUS_COMPRA_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -957,19 +943,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__SUCURSAL___encar__6D0D32F4">
-          <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
-          <End Role="SUCURSAL_" Type="Self.SUCURSAL_" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="USUARIO__">
-              <PropertyRef Name="usuarioId" />
-            </Principal>
-            <Dependent Role="SUCURSAL_">
-              <PropertyRef Name="encargadoSucursal" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__SUCURSAL___super__6E01572D">
+        <Association Name="FK__SUCURSAL___super__6D0D32F4">
           <End Role="SUPERMERCADO_" Type="Self.SUPERMERCADO_" Multiplicity="1" />
           <End Role="SUCURSAL_" Type="Self.SUCURSAL_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -981,7 +955,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__TARJETA_C__usuar__7E37BEF6">
+        <Association Name="FK__TARJETA_C__usuar__7D439ABD">
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
           <End Role="TARJETA_CREDITO_" Type="Self.TARJETA_CREDITO_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -993,7 +967,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__TARJETA_M__usuar__09A971A2">
+        <Association Name="FK__TARJETA_M__usuar__08B54D69">
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
           <End Role="TARJETA_MEMBRESIA_" Type="Self.TARJETA_MEMBRESIA_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1005,7 +979,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__TARJETA_R__usuar__0A9D95DB">
+        <Association Name="FK__TARJETA_R__usuar__09A971A2">
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
           <End Role="TARJETA_REGALO_" Type="Self.TARJETA_REGALO_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1017,7 +991,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__USUARIO____gener__6EF57B66">
+        <Association Name="FK__USUARIO____gener__6E01572D">
           <End Role="GENERO" Type="Self.GENERO" Multiplicity="1" />
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1029,7 +1003,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__USUARIO____rolId__70DDC3D8">
+        <Association Name="FK__USUARIO____rolId__6FE99F9F">
           <End Role="ROL_USUARIO" Type="Self.ROL_USUARIO" Multiplicity="1" />
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1041,7 +1015,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__USUARIO____sucur__6FE99F9F">
+        <Association Name="FK__USUARIO____sucur__6EF57B66">
           <End Role="SUCURSAL_" Type="Self.SUCURSAL_" Multiplicity="1" />
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1093,211 +1067,203 @@
           <EntitySet Name="TIPO_SALA__" EntityType="Self.TIPO_SALA__" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TIPO_STATUS_COMPRA" EntityType="Self.TIPO_STATUS_COMPRA" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="USUARIO__" EntityType="Self.USUARIO__" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK__CARRITO_C__lista__0B91BA14" Association="Self.FK__CARRITO_C__lista__0B91BA14">
+          <AssociationSet Name="FK__CARRITO_C__lista__0A9D95DB" Association="Self.FK__CARRITO_C__lista__0A9D95DB">
             <End Role="LISTA_PRODUCTO_" EntitySet="LISTA_PRODUCTO_" />
             <End Role="CARRITO_COMPRAS_" EntitySet="CARRITO_COMPRAS_" />
           </AssociationSet>
-          <AssociationSet Name="FK__CLIENTES___gener__75A278F5" Association="Self.FK__CLIENTES___gener__75A278F5">
+          <AssociationSet Name="FK__CLIENTES___gener__74AE54BC" Association="Self.FK__CLIENTES___gener__74AE54BC">
             <End Role="GENERO" EntitySet="GENERO" />
             <End Role="CLIENTES__" EntitySet="CLIENTES__" />
           </AssociationSet>
-          <AssociationSet Name="FK__CLIENTES___tipoD__76969D2E" Association="Self.FK__CLIENTES___tipoD__76969D2E">
+          <AssociationSet Name="FK__CLIENTES___tipoD__75A278F5" Association="Self.FK__CLIENTES___tipoD__75A278F5">
             <End Role="TIPO_DOCUMENTO" EntitySet="TIPO_DOCUMENTO" />
             <End Role="CLIENTES__" EntitySet="CLIENTES__" />
           </AssociationSet>
-          <AssociationSet Name="FK__COMENTARI__produ__1DB06A4F" Association="Self.FK__COMENTARI__produ__1DB06A4F">
+          <AssociationSet Name="FK__COMENTARI__produ__1CBC4616" Association="Self.FK__COMENTARI__produ__1CBC4616">
             <End Role="PRODUCTO__" EntitySet="PRODUCTO__" />
             <End Role="COMENTARIO" EntitySet="COMENTARIO" />
           </AssociationSet>
-          <AssociationSet Name="FK__COMENTARI__usuar__1CBC4616" Association="Self.FK__COMENTARI__usuar__1CBC4616">
+          <AssociationSet Name="FK__COMENTARI__usuar__1BC821DD" Association="Self.FK__COMENTARI__usuar__1BC821DD">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="COMENTARIO" EntitySet="COMENTARIO" />
           </AssociationSet>
-          <AssociationSet Name="FK__COMPRA____carrit__7F2BE32F" Association="Self.FK__COMPRA____carrit__7F2BE32F">
+          <AssociationSet Name="FK__COMPRA____carrit__7E37BEF6" Association="Self.FK__COMPRA____carrit__7E37BEF6">
             <End Role="CARRITO_COMPRAS_" EntitySet="CARRITO_COMPRAS_" />
             <End Role="COMPRA__" EntitySet="COMPRA__" />
           </AssociationSet>
-          <AssociationSet Name="FK__COMPRA____cupone__01142BA1" Association="Self.FK__COMPRA____cupone__01142BA1">
+          <AssociationSet Name="FK__COMPRA____cupone__00200768" Association="Self.FK__COMPRA____cupone__00200768">
             <End Role="CUPONES_" EntitySet="CUPONES_" />
             <End Role="COMPRA__" EntitySet="COMPRA__" />
           </AssociationSet>
-          <AssociationSet Name="FK__COMPRA____descue__02084FDA" Association="Self.FK__COMPRA____descue__02084FDA">
+          <AssociationSet Name="FK__COMPRA____descue__01142BA1" Association="Self.FK__COMPRA____descue__01142BA1">
             <End Role="DESCUENTOS_" EntitySet="DESCUENTOS_" />
             <End Role="COMPRA__" EntitySet="COMPRA__" />
           </AssociationSet>
-          <AssociationSet Name="FK__COMPRA____metodo__02FC7413" Association="Self.FK__COMPRA____metodo__02FC7413">
+          <AssociationSet Name="FK__COMPRA____metodo__02084FDA" Association="Self.FK__COMPRA____metodo__02084FDA">
             <End Role="METODO_ENVIO" EntitySet="METODO_ENVIO" />
             <End Role="COMPRA__" EntitySet="COMPRA__" />
           </AssociationSet>
-          <AssociationSet Name="FK__COMPRA____tarjet__00200768" Association="Self.FK__COMPRA____tarjet__00200768">
+          <AssociationSet Name="FK__COMPRA____tarjet__7F2BE32F" Association="Self.FK__COMPRA____tarjet__7F2BE32F">
             <End Role="TARJETA_CREDITO_" EntitySet="TARJETA_CREDITO_" />
             <End Role="COMPRA__" EntitySet="COMPRA__" />
           </AssociationSet>
-          <AssociationSet Name="FK__DESCUENTO__categ__07C12930" Association="Self.FK__DESCUENTO__categ__07C12930">
+          <AssociationSet Name="FK__DESCUENTO__categ__06CD04F7" Association="Self.FK__DESCUENTO__categ__06CD04F7">
             <End Role="CATEGORIA_PRODUCTO" EntitySet="CATEGORIA_PRODUCTO" />
             <End Role="DESCUENTOS_" EntitySet="DESCUENTOS_" />
           </AssociationSet>
-          <AssociationSet Name="FK__DESCUENTO__produ__06CD04F7" Association="Self.FK__DESCUENTO__produ__06CD04F7">
+          <AssociationSet Name="FK__DESCUENTO__produ__05D8E0BE" Association="Self.FK__DESCUENTO__produ__05D8E0BE">
             <End Role="PRODUCTO__" EntitySet="PRODUCTO__" />
             <End Role="DESCUENTOS_" EntitySet="DESCUENTOS_" />
           </AssociationSet>
-          <AssociationSet Name="FK__DESCUENTO__usuar__08B54D69" Association="Self.FK__DESCUENTO__usuar__08B54D69">
+          <AssociationSet Name="FK__DESCUENTO__usuar__07C12930" Association="Self.FK__DESCUENTO__usuar__07C12930">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="DESCUENTOS_" EntitySet="DESCUENTOS_" />
           </AssociationSet>
-          <AssociationSet Name="FK__ENTREGAS___compr__151B244E" Association="Self.FK__ENTREGAS___compr__151B244E">
+          <AssociationSet Name="FK__ENTREGAS___compr__14270015" Association="Self.FK__ENTREGAS___compr__14270015">
             <End Role="COMPRA__" EntitySet="COMPRA__" />
             <End Role="ENTREGAS_" EntitySet="ENTREGAS_" />
           </AssociationSet>
-          <AssociationSet Name="FK__ENTREGAS___statu__17F790F9" Association="Self.FK__ENTREGAS___statu__17F790F9">
+          <AssociationSet Name="FK__ENTREGAS___statu__17036CC0" Association="Self.FK__ENTREGAS___statu__17036CC0">
             <End Role="TIPO_STATUS_COMPRA" EntitySet="TIPO_STATUS_COMPRA" />
+            <End Role="ENTREGAS_" EntitySet="ENTREGAS_" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ENTREGAS___usuar__151B244E" Association="Self.FK__ENTREGAS___usuar__151B244E">
+            <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="ENTREGAS_" EntitySet="ENTREGAS_" />
           </AssociationSet>
           <AssociationSet Name="FK__ENTREGAS___usuar__160F4887" Association="Self.FK__ENTREGAS___usuar__160F4887">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="ENTREGAS_" EntitySet="ENTREGAS_" />
           </AssociationSet>
-          <AssociationSet Name="FK__ENTREGAS___usuar__17036CC0" Association="Self.FK__ENTREGAS___usuar__17036CC0">
-            <End Role="USUARIO__" EntitySet="USUARIO__" />
-            <End Role="ENTREGAS_" EntitySet="ENTREGAS_" />
-          </AssociationSet>
-          <AssociationSet Name="FK__ESTADISTI__tipoE__1BC821DD" Association="Self.FK__ESTADISTI__tipoE__1BC821DD">
+          <AssociationSet Name="FK__ESTADISTI__tipoE__1AD3FDA4" Association="Self.FK__ESTADISTI__tipoE__1AD3FDA4">
             <End Role="TIPO_ESTADISTICAS_" EntitySet="TIPO_ESTADISTICAS_" />
             <End Role="ESTADISTICAS_" EntitySet="ESTADISTICAS_" />
           </AssociationSet>
-          <AssociationSet Name="FK__HISTORIAL__carri__14270015" Association="Self.FK__HISTORIAL__carri__14270015">
+          <AssociationSet Name="FK__HISTORIAL__carri__1332DBDC" Association="Self.FK__HISTORIAL__carri__1332DBDC">
             <End Role="CARRITO_COMPRAS_" EntitySet="CARRITO_COMPRAS_" />
             <End Role="HISTORIAL_COMPRA_" EntitySet="HISTORIAL_COMPRA_" />
           </AssociationSet>
-          <AssociationSet Name="FK__HISTORIAL__histo__123EB7A3" Association="Self.FK__HISTORIAL__histo__123EB7A3">
-            <End Role="HISTORIAL_COMPRA_" EntitySet="HISTORIAL_COMPRA_" />
-            <End Role="HISTORIAL_COMPRA_1" EntitySet="HISTORIAL_COMPRA_" />
-          </AssociationSet>
-          <AssociationSet Name="FK__HISTORIAL__usuar__1332DBDC" Association="Self.FK__HISTORIAL__usuar__1332DBDC">
+          <AssociationSet Name="FK__HISTORIAL__usuar__123EB7A3" Association="Self.FK__HISTORIAL__usuar__123EB7A3">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="HISTORIAL_COMPRA_" EntitySet="HISTORIAL_COMPRA_" />
           </AssociationSet>
-          <AssociationSet Name="FK__LISTA_PRO__produ__0C85DE4D" Association="Self.FK__LISTA_PRO__produ__0C85DE4D">
+          <AssociationSet Name="FK__LISTA_PRO__produ__0B91BA14" Association="Self.FK__LISTA_PRO__produ__0B91BA14">
             <End Role="PRODUCTO__" EntitySet="PRODUCTO__" />
             <End Role="LISTA_PRODUCTO_" EntitySet="LISTA_PRODUCTO_" />
           </AssociationSet>
-          <AssociationSet Name="FK__LISTADO_P__carri__0E6E26BF" Association="Self.FK__LISTADO_P__carri__0E6E26BF">
+          <AssociationSet Name="FK__LISTADO_P__carri__0D7A0286" Association="Self.FK__LISTADO_P__carri__0D7A0286">
             <End Role="CARRITO_COMPRAS_" EntitySet="CARRITO_COMPRAS_" />
             <End Role="LISTADO_PAQUETE_COMPRA_" EntitySet="LISTADO_PAQUETE_COMPRA_" />
           </AssociationSet>
-          <AssociationSet Name="FK__LISTADO_P__usuar__0D7A0286" Association="Self.FK__LISTADO_P__usuar__0D7A0286">
+          <AssociationSet Name="FK__LISTADO_P__usuar__0C85DE4D" Association="Self.FK__LISTADO_P__usuar__0C85DE4D">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="LISTADO_PAQUETE_COMPRA_" EntitySet="LISTADO_PAQUETE_COMPRA_" />
           </AssociationSet>
-          <AssociationSet Name="FK__LOG_ACTIO__rolId__74AE54BC" Association="Self.FK__LOG_ACTIO__rolId__74AE54BC">
+          <AssociationSet Name="FK__LOG_ACTIO__rolId__73BA3083" Association="Self.FK__LOG_ACTIO__rolId__73BA3083">
             <End Role="ROL_USUARIO" EntitySet="ROL_USUARIO" />
             <End Role="LOG_ACTION__" EntitySet="LOG_ACTION__" />
           </AssociationSet>
-          <AssociationSet Name="FK__LOG_ACTIO__tipoE__72C60C4A" Association="Self.FK__LOG_ACTIO__tipoE__72C60C4A">
+          <AssociationSet Name="FK__LOG_ACTIO__tipoE__71D1E811" Association="Self.FK__LOG_ACTIO__tipoE__71D1E811">
             <End Role="TIPO_ESTADISTICAS_" EntitySet="TIPO_ESTADISTICAS_" />
             <End Role="LOG_ACTION__" EntitySet="LOG_ACTION__" />
           </AssociationSet>
-          <AssociationSet Name="FK__LOG_ACTIO__tipoN__71D1E811" Association="Self.FK__LOG_ACTIO__tipoN__71D1E811">
+          <AssociationSet Name="FK__LOG_ACTIO__tipoN__70DDC3D8" Association="Self.FK__LOG_ACTIO__tipoN__70DDC3D8">
             <End Role="TIPO_NOTIFICACION_" EntitySet="TIPO_NOTIFICACION_" />
             <End Role="LOG_ACTION__" EntitySet="LOG_ACTION__" />
           </AssociationSet>
-          <AssociationSet Name="FK__LOG_ACTIO__usuar__73BA3083" Association="Self.FK__LOG_ACTIO__usuar__73BA3083">
+          <AssociationSet Name="FK__LOG_ACTIO__usuar__72C60C4A" Association="Self.FK__LOG_ACTIO__usuar__72C60C4A">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="LOG_ACTION__" EntitySet="LOG_ACTION__" />
           </AssociationSet>
-          <AssociationSet Name="FK__MENSAJE____salaI__787EE5A0" Association="Self.FK__MENSAJE____salaI__787EE5A0">
+          <AssociationSet Name="FK__MENSAJE____salaI__778AC167" Association="Self.FK__MENSAJE____salaI__778AC167">
             <End Role="SALA__" EntitySet="SALA__" />
             <End Role="MENSAJE__" EntitySet="MENSAJE__" />
           </AssociationSet>
-          <AssociationSet Name="FK__MENSAJE____tipoM__797309D9" Association="Self.FK__MENSAJE____tipoM__797309D9">
+          <AssociationSet Name="FK__MENSAJE____tipoM__787EE5A0" Association="Self.FK__MENSAJE____tipoM__787EE5A0">
             <End Role="TIPO_MENSAJE__" EntitySet="TIPO_MENSAJE__" />
             <End Role="MENSAJE__" EntitySet="MENSAJE__" />
           </AssociationSet>
-          <AssociationSet Name="FK__MENSAJE____tipoS__7A672E12" Association="Self.FK__MENSAJE____tipoS__7A672E12">
+          <AssociationSet Name="FK__MENSAJE____tipoS__797309D9" Association="Self.FK__MENSAJE____tipoS__797309D9">
             <End Role="TIPO_SALA__" EntitySet="TIPO_SALA__" />
             <End Role="MENSAJE__" EntitySet="MENSAJE__" />
           </AssociationSet>
-          <AssociationSet Name="FK__MENSAJE____usuar__778AC167" Association="Self.FK__MENSAJE____usuar__778AC167">
+          <AssociationSet Name="FK__MENSAJE____usuar__76969D2E" Association="Self.FK__MENSAJE____usuar__76969D2E">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="MENSAJE__" EntitySet="MENSAJE__" />
           </AssociationSet>
-          <AssociationSet Name="FK__NOTIFICAC__rolId__18EBB532" Association="Self.FK__NOTIFICAC__rolId__18EBB532">
+          <AssociationSet Name="FK__NOTIFICAC__rolId__17F790F9" Association="Self.FK__NOTIFICAC__rolId__17F790F9">
             <End Role="ROL_USUARIO" EntitySet="ROL_USUARIO" />
             <End Role="NOTIFICACION_" EntitySet="NOTIFICACION_" />
           </AssociationSet>
-          <AssociationSet Name="FK__NOTIFICAC__tipoN__19DFD96B" Association="Self.FK__NOTIFICAC__tipoN__19DFD96B">
+          <AssociationSet Name="FK__NOTIFICAC__tipoN__18EBB532" Association="Self.FK__NOTIFICAC__tipoN__18EBB532">
             <End Role="TIPO_NOTIFICACION_" EntitySet="TIPO_NOTIFICACION_" />
             <End Role="NOTIFICACION_" EntitySet="NOTIFICACION_" />
           </AssociationSet>
-          <AssociationSet Name="FK__NOTIFICAC__usuar__1AD3FDA4" Association="Self.FK__NOTIFICAC__usuar__1AD3FDA4">
+          <AssociationSet Name="FK__NOTIFICAC__usuar__19DFD96B" Association="Self.FK__NOTIFICAC__usuar__19DFD96B">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="NOTIFICACION_" EntitySet="NOTIFICACION_" />
           </AssociationSet>
-          <AssociationSet Name="FK__PRODUCTO___categ__05D8E0BE" Association="Self.FK__PRODUCTO___categ__05D8E0BE">
+          <AssociationSet Name="FK__PRODUCTO___categ__04E4BC85" Association="Self.FK__PRODUCTO___categ__04E4BC85">
             <End Role="CATEGORIA_PRODUCTO" EntitySet="CATEGORIA_PRODUCTO" />
             <End Role="PRODUCTO__" EntitySet="PRODUCTO__" />
           </AssociationSet>
-          <AssociationSet Name="FK__PRODUCTO___sucur__03F0984C" Association="Self.FK__PRODUCTO___sucur__03F0984C">
+          <AssociationSet Name="FK__PRODUCTO___sucur__02FC7413" Association="Self.FK__PRODUCTO___sucur__02FC7413">
             <End Role="SUCURSAL_" EntitySet="SUCURSAL_" />
             <End Role="PRODUCTO__" EntitySet="PRODUCTO__" />
           </AssociationSet>
-          <AssociationSet Name="FK__PRODUCTO___super__04E4BC85" Association="Self.FK__PRODUCTO___super__04E4BC85">
+          <AssociationSet Name="FK__PRODUCTO___super__03F0984C" Association="Self.FK__PRODUCTO___super__03F0984C">
             <End Role="SUPERMERCADO_" EntitySet="SUPERMERCADO_" />
             <End Role="PRODUCTO__" EntitySet="PRODUCTO__" />
           </AssociationSet>
-          <AssociationSet Name="FK__SALA____tipoSala__7B5B524B" Association="Self.FK__SALA____tipoSala__7B5B524B">
+          <AssociationSet Name="FK__SALA____tipoSala__7A672E12" Association="Self.FK__SALA____tipoSala__7A672E12">
             <End Role="TIPO_SALA__" EntitySet="TIPO_SALA__" />
             <End Role="SALA__" EntitySet="SALA__" />
           </AssociationSet>
-          <AssociationSet Name="FK__SALA_USUA__salaI__7C4F7684" Association="Self.FK__SALA_USUA__salaI__7C4F7684">
+          <AssociationSet Name="FK__SALA_USUA__salaI__7B5B524B" Association="Self.FK__SALA_USUA__salaI__7B5B524B">
             <End Role="SALA__" EntitySet="SALA__" />
             <End Role="SALA_USUARIO__" EntitySet="SALA_USUARIO__" />
           </AssociationSet>
-          <AssociationSet Name="FK__SALA_USUA__usuar__7D439ABD" Association="Self.FK__SALA_USUA__usuar__7D439ABD">
+          <AssociationSet Name="FK__SALA_USUA__usuar__7C4F7684" Association="Self.FK__SALA_USUA__usuar__7C4F7684">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="SALA_USUARIO__" EntitySet="SALA_USUARIO__" />
           </AssociationSet>
-          <AssociationSet Name="FK__STATUS_CO__statu__10566F31" Association="Self.FK__STATUS_CO__statu__10566F31">
+          <AssociationSet Name="FK__STATUS_CO__statu__0F624AF8" Association="Self.FK__STATUS_CO__statu__0F624AF8">
             <End Role="TIPO_STATUS_COMPRA" EntitySet="TIPO_STATUS_COMPRA" />
             <End Role="STATUS_COMPRA_" EntitySet="STATUS_COMPRA_" />
           </AssociationSet>
-          <AssociationSet Name="FK__STATUS_CO__usuar__0F624AF8" Association="Self.FK__STATUS_CO__usuar__0F624AF8">
+          <AssociationSet Name="FK__STATUS_CO__usuar__0E6E26BF" Association="Self.FK__STATUS_CO__usuar__0E6E26BF">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="STATUS_COMPRA_" EntitySet="STATUS_COMPRA_" />
           </AssociationSet>
-          <AssociationSet Name="FK__STATUS_CO__usuar__114A936A" Association="Self.FK__STATUS_CO__usuar__114A936A">
+          <AssociationSet Name="FK__STATUS_CO__usuar__10566F31" Association="Self.FK__STATUS_CO__usuar__10566F31">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="STATUS_COMPRA_" EntitySet="STATUS_COMPRA_" />
           </AssociationSet>
-          <AssociationSet Name="FK__SUCURSAL___encar__6D0D32F4" Association="Self.FK__SUCURSAL___encar__6D0D32F4">
-            <End Role="USUARIO__" EntitySet="USUARIO__" />
-            <End Role="SUCURSAL_" EntitySet="SUCURSAL_" />
-          </AssociationSet>
-          <AssociationSet Name="FK__SUCURSAL___super__6E01572D" Association="Self.FK__SUCURSAL___super__6E01572D">
+          <AssociationSet Name="FK__SUCURSAL___super__6D0D32F4" Association="Self.FK__SUCURSAL___super__6D0D32F4">
             <End Role="SUPERMERCADO_" EntitySet="SUPERMERCADO_" />
             <End Role="SUCURSAL_" EntitySet="SUCURSAL_" />
           </AssociationSet>
-          <AssociationSet Name="FK__TARJETA_C__usuar__7E37BEF6" Association="Self.FK__TARJETA_C__usuar__7E37BEF6">
+          <AssociationSet Name="FK__TARJETA_C__usuar__7D439ABD" Association="Self.FK__TARJETA_C__usuar__7D439ABD">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="TARJETA_CREDITO_" EntitySet="TARJETA_CREDITO_" />
           </AssociationSet>
-          <AssociationSet Name="FK__TARJETA_M__usuar__09A971A2" Association="Self.FK__TARJETA_M__usuar__09A971A2">
+          <AssociationSet Name="FK__TARJETA_M__usuar__08B54D69" Association="Self.FK__TARJETA_M__usuar__08B54D69">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="TARJETA_MEMBRESIA_" EntitySet="TARJETA_MEMBRESIA_" />
           </AssociationSet>
-          <AssociationSet Name="FK__TARJETA_R__usuar__0A9D95DB" Association="Self.FK__TARJETA_R__usuar__0A9D95DB">
+          <AssociationSet Name="FK__TARJETA_R__usuar__09A971A2" Association="Self.FK__TARJETA_R__usuar__09A971A2">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="TARJETA_REGALO_" EntitySet="TARJETA_REGALO_" />
           </AssociationSet>
-          <AssociationSet Name="FK__USUARIO____gener__6EF57B66" Association="Self.FK__USUARIO____gener__6EF57B66">
+          <AssociationSet Name="FK__USUARIO____gener__6E01572D" Association="Self.FK__USUARIO____gener__6E01572D">
             <End Role="GENERO" EntitySet="GENERO" />
             <End Role="USUARIO__" EntitySet="USUARIO__" />
           </AssociationSet>
-          <AssociationSet Name="FK__USUARIO____rolId__70DDC3D8" Association="Self.FK__USUARIO____rolId__70DDC3D8">
+          <AssociationSet Name="FK__USUARIO____rolId__6FE99F9F" Association="Self.FK__USUARIO____rolId__6FE99F9F">
             <End Role="ROL_USUARIO" EntitySet="ROL_USUARIO" />
             <End Role="USUARIO__" EntitySet="USUARIO__" />
           </AssociationSet>
-          <AssociationSet Name="FK__USUARIO____sucur__6FE99F9F" Association="Self.FK__USUARIO____sucur__6FE99F9F">
+          <AssociationSet Name="FK__USUARIO____sucur__6EF57B66" Association="Self.FK__USUARIO____sucur__6EF57B66">
             <End Role="SUCURSAL_" EntitySet="SUCURSAL_" />
             <End Role="USUARIO__" EntitySet="USUARIO__" />
           </AssociationSet>
@@ -1311,28 +1277,28 @@
           <Key>
             <PropertyRef Name="carritoComprasId" />
           </Key>
-          <Property Name="carritoComprasId" Type="Int32" Nullable="false" />
+          <Property Name="carritoComprasId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="listaProductosId" Type="Int32" Nullable="false" />
           <Property Name="totalPago" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
-          <NavigationProperty Name="LISTA_PRODUCTO_" Relationship="Self.FK__CARRITO_C__lista__0B91BA14" FromRole="CARRITO_COMPRAS_" ToRole="LISTA_PRODUCTO_" />
-          <NavigationProperty Name="COMPRA__" Relationship="Self.FK__COMPRA____carrit__7F2BE32F" FromRole="CARRITO_COMPRAS_" ToRole="COMPRA__" />
-          <NavigationProperty Name="HISTORIAL_COMPRA_" Relationship="Self.FK__HISTORIAL__carri__14270015" FromRole="CARRITO_COMPRAS_" ToRole="HISTORIAL_COMPRA_" />
-          <NavigationProperty Name="LISTADO_PAQUETE_COMPRA_" Relationship="Self.FK__LISTADO_P__carri__0E6E26BF" FromRole="CARRITO_COMPRAS_" ToRole="LISTADO_PAQUETE_COMPRA_" />
+          <NavigationProperty Name="LISTA_PRODUCTO_" Relationship="Self.FK__CARRITO_C__lista__0A9D95DB" FromRole="CARRITO_COMPRAS_" ToRole="LISTA_PRODUCTO_" />
+          <NavigationProperty Name="COMPRA__" Relationship="Self.FK__COMPRA____carrit__7E37BEF6" FromRole="CARRITO_COMPRAS_" ToRole="COMPRA__" />
+          <NavigationProperty Name="HISTORIAL_COMPRA_" Relationship="Self.FK__HISTORIAL__carri__1332DBDC" FromRole="CARRITO_COMPRAS_" ToRole="HISTORIAL_COMPRA_" />
+          <NavigationProperty Name="LISTADO_PAQUETE_COMPRA_" Relationship="Self.FK__LISTADO_P__carri__0D7A0286" FromRole="CARRITO_COMPRAS_" ToRole="LISTADO_PAQUETE_COMPRA_" />
         </EntityType>
         <EntityType Name="CATEGORIA_PRODUCTO">
           <Key>
             <PropertyRef Name="categoriaProductoId" />
           </Key>
-          <Property Name="categoriaProductoId" Type="Int32" Nullable="false" />
+          <Property Name="categoriaProductoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nombrecategoriaProducto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="DESCUENTOS_" Relationship="Self.FK__DESCUENTO__categ__07C12930" FromRole="CATEGORIA_PRODUCTO" ToRole="DESCUENTOS_" />
-          <NavigationProperty Name="PRODUCTO__" Relationship="Self.FK__PRODUCTO___categ__05D8E0BE" FromRole="CATEGORIA_PRODUCTO" ToRole="PRODUCTO__" />
+          <NavigationProperty Name="DESCUENTOS_" Relationship="Self.FK__DESCUENTO__categ__06CD04F7" FromRole="CATEGORIA_PRODUCTO" ToRole="DESCUENTOS_" />
+          <NavigationProperty Name="PRODUCTO__" Relationship="Self.FK__PRODUCTO___categ__04E4BC85" FromRole="CATEGORIA_PRODUCTO" ToRole="PRODUCTO__" />
         </EntityType>
         <EntityType Name="CLIENTES__">
           <Key>
             <PropertyRef Name="UsuarioId" />
           </Key>
-          <Property Name="UsuarioId" Type="Int32" Nullable="false" />
+          <Property Name="UsuarioId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nombreCliente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="apellidoCliente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="imagenCliente" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
@@ -1346,26 +1312,26 @@
           <Property Name="contraseñaCliente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="estado" Type="Boolean" Nullable="false" />
           <Property Name="emailMarketing" Type="Boolean" Nullable="false" />
-          <NavigationProperty Name="GENERO" Relationship="Self.FK__CLIENTES___gener__75A278F5" FromRole="CLIENTES__" ToRole="GENERO" />
-          <NavigationProperty Name="TIPO_DOCUMENTO" Relationship="Self.FK__CLIENTES___tipoD__76969D2E" FromRole="CLIENTES__" ToRole="TIPO_DOCUMENTO" />
+          <NavigationProperty Name="GENERO" Relationship="Self.FK__CLIENTES___gener__74AE54BC" FromRole="CLIENTES__" ToRole="GENERO" />
+          <NavigationProperty Name="TIPO_DOCUMENTO" Relationship="Self.FK__CLIENTES___tipoD__75A278F5" FromRole="CLIENTES__" ToRole="TIPO_DOCUMENTO" />
         </EntityType>
         <EntityType Name="COMENTARIO">
           <Key>
             <PropertyRef Name="comentarioId" />
           </Key>
-          <Property Name="comentarioId" Type="Int32" Nullable="false" />
+          <Property Name="comentarioId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="usuarioId" Type="Int32" Nullable="false" />
           <Property Name="productoId" Type="Int32" Nullable="false" />
           <Property Name="estrellaComentario" Type="Int16" Nullable="false" />
           <Property Name="mensajeComentario" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="PRODUCTO__" Relationship="Self.FK__COMENTARI__produ__1DB06A4F" FromRole="COMENTARIO" ToRole="PRODUCTO__" />
-          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__COMENTARI__usuar__1CBC4616" FromRole="COMENTARIO" ToRole="USUARIO__" />
+          <NavigationProperty Name="PRODUCTO__" Relationship="Self.FK__COMENTARI__produ__1CBC4616" FromRole="COMENTARIO" ToRole="PRODUCTO__" />
+          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__COMENTARI__usuar__1BC821DD" FromRole="COMENTARIO" ToRole="USUARIO__" />
         </EntityType>
         <EntityType Name="COMPRA__">
           <Key>
             <PropertyRef Name="comprasId" />
           </Key>
-          <Property Name="comprasId" Type="Int32" Nullable="false" />
+          <Property Name="comprasId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="carritoComprasId" Type="Int32" Nullable="false" />
           <Property Name="precioInicialCompra" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
           <Property Name="subTotalCompraITBIS" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
@@ -1376,18 +1342,18 @@
           <Property Name="metodoEnvioId" Type="Int32" Nullable="false" />
           <Property Name="totalPago" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
           <Property Name="estado" Type="Boolean" Nullable="false" />
-          <NavigationProperty Name="CARRITO_COMPRAS_" Relationship="Self.FK__COMPRA____carrit__7F2BE32F" FromRole="COMPRA__" ToRole="CARRITO_COMPRAS_" />
-          <NavigationProperty Name="CUPONES_" Relationship="Self.FK__COMPRA____cupone__01142BA1" FromRole="COMPRA__" ToRole="CUPONES_" />
-          <NavigationProperty Name="DESCUENTOS_" Relationship="Self.FK__COMPRA____descue__02084FDA" FromRole="COMPRA__" ToRole="DESCUENTOS_" />
-          <NavigationProperty Name="METODO_ENVIO" Relationship="Self.FK__COMPRA____metodo__02FC7413" FromRole="COMPRA__" ToRole="METODO_ENVIO" />
-          <NavigationProperty Name="TARJETA_CREDITO_" Relationship="Self.FK__COMPRA____tarjet__00200768" FromRole="COMPRA__" ToRole="TARJETA_CREDITO_" />
-          <NavigationProperty Name="ENTREGAS_" Relationship="Self.FK__ENTREGAS___compr__151B244E" FromRole="COMPRA__" ToRole="ENTREGAS_" />
+          <NavigationProperty Name="CARRITO_COMPRAS_" Relationship="Self.FK__COMPRA____carrit__7E37BEF6" FromRole="COMPRA__" ToRole="CARRITO_COMPRAS_" />
+          <NavigationProperty Name="CUPONES_" Relationship="Self.FK__COMPRA____cupone__00200768" FromRole="COMPRA__" ToRole="CUPONES_" />
+          <NavigationProperty Name="DESCUENTOS_" Relationship="Self.FK__COMPRA____descue__01142BA1" FromRole="COMPRA__" ToRole="DESCUENTOS_" />
+          <NavigationProperty Name="METODO_ENVIO" Relationship="Self.FK__COMPRA____metodo__02084FDA" FromRole="COMPRA__" ToRole="METODO_ENVIO" />
+          <NavigationProperty Name="TARJETA_CREDITO_" Relationship="Self.FK__COMPRA____tarjet__7F2BE32F" FromRole="COMPRA__" ToRole="TARJETA_CREDITO_" />
+          <NavigationProperty Name="ENTREGAS_" Relationship="Self.FK__ENTREGAS___compr__14270015" FromRole="COMPRA__" ToRole="ENTREGAS_" />
         </EntityType>
         <EntityType Name="CORREO_EMAIL_MARKETING_">
           <Key>
             <PropertyRef Name="correoEmailMarketingId" />
           </Key>
-          <Property Name="correoEmailMarketingId" Type="Int32" Nullable="false" />
+          <Property Name="correoEmailMarketingId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="tituloMensaje" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="imagenCorreoEmailMarketing" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="contenidoCorreoEmailMarketing" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
@@ -1397,34 +1363,34 @@
           <Key>
             <PropertyRef Name="cuponesId" />
           </Key>
-          <Property Name="cuponesId" Type="Int32" Nullable="false" />
+          <Property Name="cuponesId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nombreCupones" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="descuentoCupones" Type="Decimal" Precision="10" Scale="4" />
           <Property Name="precioDescontar" Type="Decimal" Precision="10" Scale="4" />
           <Property Name="fechaVencimiento" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="codigoCupones" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="COMPRA__" Relationship="Self.FK__COMPRA____cupone__01142BA1" FromRole="CUPONES_" ToRole="COMPRA__" />
+          <NavigationProperty Name="COMPRA__" Relationship="Self.FK__COMPRA____cupone__00200768" FromRole="CUPONES_" ToRole="COMPRA__" />
         </EntityType>
         <EntityType Name="DESCUENTOS_">
           <Key>
             <PropertyRef Name="descuentoId" />
           </Key>
-          <Property Name="descuentoId" Type="Int32" Nullable="false" />
+          <Property Name="descuentoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="productoId" Type="Int32" Nullable="false" />
           <Property Name="categoriaProductoId" Type="Int32" Nullable="false" />
           <Property Name="usuarioId" Type="Int32" Nullable="false" />
           <Property Name="descuentoAplicar" Type="Decimal" Precision="10" Scale="4" Nullable="false" />
           <Property Name="fechaExpiracionDescuento" Type="DateTime" Nullable="false" Precision="0" />
-          <NavigationProperty Name="CATEGORIA_PRODUCTO" Relationship="Self.FK__DESCUENTO__categ__07C12930" FromRole="DESCUENTOS_" ToRole="CATEGORIA_PRODUCTO" />
-          <NavigationProperty Name="COMPRA__" Relationship="Self.FK__COMPRA____descue__02084FDA" FromRole="DESCUENTOS_" ToRole="COMPRA__" />
-          <NavigationProperty Name="PRODUCTO__" Relationship="Self.FK__DESCUENTO__produ__06CD04F7" FromRole="DESCUENTOS_" ToRole="PRODUCTO__" />
-          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__DESCUENTO__usuar__08B54D69" FromRole="DESCUENTOS_" ToRole="USUARIO__" />
+          <NavigationProperty Name="CATEGORIA_PRODUCTO" Relationship="Self.FK__DESCUENTO__categ__06CD04F7" FromRole="DESCUENTOS_" ToRole="CATEGORIA_PRODUCTO" />
+          <NavigationProperty Name="COMPRA__" Relationship="Self.FK__COMPRA____descue__01142BA1" FromRole="DESCUENTOS_" ToRole="COMPRA__" />
+          <NavigationProperty Name="PRODUCTO__" Relationship="Self.FK__DESCUENTO__produ__05D8E0BE" FromRole="DESCUENTOS_" ToRole="PRODUCTO__" />
+          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__DESCUENTO__usuar__07C12930" FromRole="DESCUENTOS_" ToRole="USUARIO__" />
         </EntityType>
         <EntityType Name="DIA_FERIADO_">
           <Key>
             <PropertyRef Name="diaFeriadoId" />
           </Key>
-          <Property Name="diaFeriadoId" Type="Int32" Nullable="false" />
+          <Property Name="diaFeriadoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nombreDiaFeriado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="fechaDiaFeriado" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="seLabora" Type="Boolean" Nullable="false" />
@@ -1435,9 +1401,9 @@
           <Key>
             <PropertyRef Name="usuarioId" />
           </Key>
-          <Property Name="usuarioId" Type="Int32" Nullable="false" />
+          <Property Name="usuarioId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="razonSocialEmpresa" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="telefonoEmpresa" Type="Int32" Nullable="false" />
+          <Property Name="telefonoEmpresa" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="imagenEmpresa" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="codigoPostalEmpresa" Type="Int32" Nullable="false" />
           <Property Name="RNC" Type="Int32" Nullable="false" />
@@ -1450,7 +1416,7 @@
           <Key>
             <PropertyRef Name="entregaId" />
           </Key>
-          <Property Name="entregaId" Type="Int32" Nullable="false" />
+          <Property Name="entregaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="comprasId" Type="Int32" Nullable="false" />
           <Property Name="usuarioId" Type="Int32" Nullable="false" />
           <Property Name="mensajeroEncargadoId" Type="Int32" Nullable="false" />
@@ -1459,35 +1425,35 @@
           <Property Name="statusTipoCompraId" Type="Int32" Nullable="false" />
           <Property Name="firmaClientePaqueteCompra" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="statusFirmaEntregaPaqueteCompra" Type="Boolean" Nullable="false" />
-          <NavigationProperty Name="COMPRA__" Relationship="Self.FK__ENTREGAS___compr__151B244E" FromRole="ENTREGAS_" ToRole="COMPRA__" />
-          <NavigationProperty Name="TIPO_STATUS_COMPRA" Relationship="Self.FK__ENTREGAS___statu__17F790F9" FromRole="ENTREGAS_" ToRole="TIPO_STATUS_COMPRA" />
-          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__ENTREGAS___usuar__160F4887" FromRole="ENTREGAS_" ToRole="USUARIO__" />
-          <NavigationProperty Name="USUARIO__1" Relationship="Self.FK__ENTREGAS___usuar__17036CC0" FromRole="ENTREGAS_" ToRole="USUARIO__" />
+          <NavigationProperty Name="COMPRA__" Relationship="Self.FK__ENTREGAS___compr__14270015" FromRole="ENTREGAS_" ToRole="COMPRA__" />
+          <NavigationProperty Name="TIPO_STATUS_COMPRA" Relationship="Self.FK__ENTREGAS___statu__17036CC0" FromRole="ENTREGAS_" ToRole="TIPO_STATUS_COMPRA" />
+          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__ENTREGAS___usuar__151B244E" FromRole="ENTREGAS_" ToRole="USUARIO__" />
+          <NavigationProperty Name="USUARIO__1" Relationship="Self.FK__ENTREGAS___usuar__160F4887" FromRole="ENTREGAS_" ToRole="USUARIO__" />
         </EntityType>
         <EntityType Name="ESTADISTICAS_">
           <Key>
             <PropertyRef Name="estadisticasId" />
           </Key>
-          <Property Name="estadisticasId" Type="Int32" Nullable="false" />
+          <Property Name="estadisticasId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="tipoEstadisticasId" Type="Int32" Nullable="false" />
           <Property Name="fechaCreacion" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="documentoEstadisticas" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="TIPO_ESTADISTICAS_" Relationship="Self.FK__ESTADISTI__tipoE__1BC821DD" FromRole="ESTADISTICAS_" ToRole="TIPO_ESTADISTICAS_" />
+          <NavigationProperty Name="TIPO_ESTADISTICAS_" Relationship="Self.FK__ESTADISTI__tipoE__1AD3FDA4" FromRole="ESTADISTICAS_" ToRole="TIPO_ESTADISTICAS_" />
         </EntityType>
         <EntityType Name="GENERO">
           <Key>
             <PropertyRef Name="generoId" />
           </Key>
-          <Property Name="generoId" Type="Int32" Nullable="false" />
+          <Property Name="generoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nombreGenero" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="CLIENTES__" Relationship="Self.FK__CLIENTES___gener__75A278F5" FromRole="GENERO" ToRole="CLIENTES__" />
-          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__USUARIO____gener__6EF57B66" FromRole="GENERO" ToRole="USUARIO__" />
+          <NavigationProperty Name="CLIENTES__" Relationship="Self.FK__CLIENTES___gener__74AE54BC" FromRole="GENERO" ToRole="CLIENTES__" />
+          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__USUARIO____gener__6E01572D" FromRole="GENERO" ToRole="USUARIO__" />
         </EntityType>
         <EntityType Name="HISTORIAL_COMPRA_">
           <Key>
             <PropertyRef Name="historialCompraId" />
           </Key>
-          <Property Name="historialCompraId" Type="Int32" Nullable="false" />
+          <Property Name="historialCompraId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="usuarioId" Type="Int32" Nullable="false" />
           <Property Name="nombreCliente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="razonSocialEmpresa" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
@@ -1495,27 +1461,25 @@
           <Property Name="fechaEnvio" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="estadoTipoHistorialCompra" Type="Boolean" Nullable="false" />
           <Property Name="totalPago" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
-          <NavigationProperty Name="CARRITO_COMPRAS_" Relationship="Self.FK__HISTORIAL__carri__14270015" FromRole="HISTORIAL_COMPRA_" ToRole="CARRITO_COMPRAS_" />
-          <NavigationProperty Name="HISTORIAL_COMPRA_1" Relationship="Self.FK__HISTORIAL__histo__123EB7A3" FromRole="HISTORIAL_COMPRA_" ToRole="HISTORIAL_COMPRA_1" />
-          <NavigationProperty Name="HISTORIAL_COMPRA_2" Relationship="Self.FK__HISTORIAL__histo__123EB7A3" FromRole="HISTORIAL_COMPRA_1" ToRole="HISTORIAL_COMPRA_" />
-          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__HISTORIAL__usuar__1332DBDC" FromRole="HISTORIAL_COMPRA_" ToRole="USUARIO__" />
+          <NavigationProperty Name="CARRITO_COMPRAS_" Relationship="Self.FK__HISTORIAL__carri__1332DBDC" FromRole="HISTORIAL_COMPRA_" ToRole="CARRITO_COMPRAS_" />
+          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__HISTORIAL__usuar__123EB7A3" FromRole="HISTORIAL_COMPRA_" ToRole="USUARIO__" />
         </EntityType>
         <EntityType Name="LISTA_PRODUCTO_">
           <Key>
             <PropertyRef Name="listaProductosId" />
           </Key>
-          <Property Name="listaProductosId" Type="Int32" Nullable="false" />
+          <Property Name="listaProductosId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="productoId" Type="Int32" Nullable="false" />
           <Property Name="precioProducto" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
           <Property Name="totalPago" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
-          <NavigationProperty Name="CARRITO_COMPRAS_" Relationship="Self.FK__CARRITO_C__lista__0B91BA14" FromRole="LISTA_PRODUCTO_" ToRole="CARRITO_COMPRAS_" />
-          <NavigationProperty Name="PRODUCTO__" Relationship="Self.FK__LISTA_PRO__produ__0C85DE4D" FromRole="LISTA_PRODUCTO_" ToRole="PRODUCTO__" />
+          <NavigationProperty Name="CARRITO_COMPRAS_" Relationship="Self.FK__CARRITO_C__lista__0A9D95DB" FromRole="LISTA_PRODUCTO_" ToRole="CARRITO_COMPRAS_" />
+          <NavigationProperty Name="PRODUCTO__" Relationship="Self.FK__LISTA_PRO__produ__0B91BA14" FromRole="LISTA_PRODUCTO_" ToRole="PRODUCTO__" />
         </EntityType>
         <EntityType Name="LISTADO_PAQUETE_COMPRA_">
           <Key>
             <PropertyRef Name="listadoPaqueteCompraId" />
           </Key>
-          <Property Name="listadoPaqueteCompraId" Type="Int32" Nullable="false" />
+          <Property Name="listadoPaqueteCompraId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="usuarioId" Type="Int32" Nullable="false" />
           <Property Name="nombreCliente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="razonSocialEmpresa" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
@@ -1529,29 +1493,29 @@
           <Property Name="firmaClientePaqueteCompra" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ubicacionActualPaqueteCompra" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ubicacionDestinoPaqueteCompra" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="CARRITO_COMPRAS_" Relationship="Self.FK__LISTADO_P__carri__0E6E26BF" FromRole="LISTADO_PAQUETE_COMPRA_" ToRole="CARRITO_COMPRAS_" />
-          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__LISTADO_P__usuar__0D7A0286" FromRole="LISTADO_PAQUETE_COMPRA_" ToRole="USUARIO__" />
+          <NavigationProperty Name="CARRITO_COMPRAS_" Relationship="Self.FK__LISTADO_P__carri__0D7A0286" FromRole="LISTADO_PAQUETE_COMPRA_" ToRole="CARRITO_COMPRAS_" />
+          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__LISTADO_P__usuar__0C85DE4D" FromRole="LISTADO_PAQUETE_COMPRA_" ToRole="USUARIO__" />
         </EntityType>
         <EntityType Name="LOG_ACTION__">
           <Key>
             <PropertyRef Name="LogId" />
           </Key>
-          <Property Name="LogId" Type="Int32" Nullable="false" />
+          <Property Name="LogId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="tipoNotificacionId" Type="Int32" Nullable="false" />
           <Property Name="tipoEstadisticasId" Type="Int32" Nullable="false" />
           <Property Name="usuarioId" Type="Int32" Nullable="false" />
           <Property Name="rolId" Type="Int32" Nullable="false" />
           <Property Name="fechaEjecución" Type="DateTime" Nullable="false" Precision="0" />
-          <NavigationProperty Name="ROL_USUARIO" Relationship="Self.FK__LOG_ACTIO__rolId__74AE54BC" FromRole="LOG_ACTION__" ToRole="ROL_USUARIO" />
-          <NavigationProperty Name="TIPO_ESTADISTICAS_" Relationship="Self.FK__LOG_ACTIO__tipoE__72C60C4A" FromRole="LOG_ACTION__" ToRole="TIPO_ESTADISTICAS_" />
-          <NavigationProperty Name="TIPO_NOTIFICACION_" Relationship="Self.FK__LOG_ACTIO__tipoN__71D1E811" FromRole="LOG_ACTION__" ToRole="TIPO_NOTIFICACION_" />
-          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__LOG_ACTIO__usuar__73BA3083" FromRole="LOG_ACTION__" ToRole="USUARIO__" />
+          <NavigationProperty Name="ROL_USUARIO" Relationship="Self.FK__LOG_ACTIO__rolId__73BA3083" FromRole="LOG_ACTION__" ToRole="ROL_USUARIO" />
+          <NavigationProperty Name="TIPO_ESTADISTICAS_" Relationship="Self.FK__LOG_ACTIO__tipoE__71D1E811" FromRole="LOG_ACTION__" ToRole="TIPO_ESTADISTICAS_" />
+          <NavigationProperty Name="TIPO_NOTIFICACION_" Relationship="Self.FK__LOG_ACTIO__tipoN__70DDC3D8" FromRole="LOG_ACTION__" ToRole="TIPO_NOTIFICACION_" />
+          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__LOG_ACTIO__usuar__72C60C4A" FromRole="LOG_ACTION__" ToRole="USUARIO__" />
         </EntityType>
         <EntityType Name="MENSAJE__">
           <Key>
             <PropertyRef Name="mensajeId" />
           </Key>
-          <Property Name="mensajeId" Type="Int32" Nullable="false" />
+          <Property Name="mensajeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="usuarioId" Type="Int32" Nullable="false" />
           <Property Name="salaId" Type="Int32" Nullable="false" />
           <Property Name="mensaje" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
@@ -1559,39 +1523,39 @@
           <Property Name="tipoMensajeId" Type="Int32" Nullable="false" />
           <Property Name="tipoSalaId" Type="Int32" Nullable="false" />
           <Property Name="url_link" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="SALA__" Relationship="Self.FK__MENSAJE____salaI__787EE5A0" FromRole="MENSAJE__" ToRole="SALA__" />
-          <NavigationProperty Name="TIPO_MENSAJE__" Relationship="Self.FK__MENSAJE____tipoM__797309D9" FromRole="MENSAJE__" ToRole="TIPO_MENSAJE__" />
-          <NavigationProperty Name="TIPO_SALA__" Relationship="Self.FK__MENSAJE____tipoS__7A672E12" FromRole="MENSAJE__" ToRole="TIPO_SALA__" />
-          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__MENSAJE____usuar__778AC167" FromRole="MENSAJE__" ToRole="USUARIO__" />
+          <NavigationProperty Name="SALA__" Relationship="Self.FK__MENSAJE____salaI__778AC167" FromRole="MENSAJE__" ToRole="SALA__" />
+          <NavigationProperty Name="TIPO_MENSAJE__" Relationship="Self.FK__MENSAJE____tipoM__787EE5A0" FromRole="MENSAJE__" ToRole="TIPO_MENSAJE__" />
+          <NavigationProperty Name="TIPO_SALA__" Relationship="Self.FK__MENSAJE____tipoS__797309D9" FromRole="MENSAJE__" ToRole="TIPO_SALA__" />
+          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__MENSAJE____usuar__76969D2E" FromRole="MENSAJE__" ToRole="USUARIO__" />
         </EntityType>
         <EntityType Name="METODO_ENVIO">
           <Key>
             <PropertyRef Name="metodoEnvioId" />
           </Key>
-          <Property Name="metodoEnvioId" Type="Int32" Nullable="false" />
+          <Property Name="metodoEnvioId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nombreMetodoEnvio" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="descripcionMetodoEnvio" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="COMPRA__" Relationship="Self.FK__COMPRA____metodo__02FC7413" FromRole="METODO_ENVIO" ToRole="COMPRA__" />
+          <NavigationProperty Name="COMPRA__" Relationship="Self.FK__COMPRA____metodo__02084FDA" FromRole="METODO_ENVIO" ToRole="COMPRA__" />
         </EntityType>
         <EntityType Name="NOTIFICACION_">
           <Key>
             <PropertyRef Name="notificacionId" />
           </Key>
-          <Property Name="notificacionId" Type="Int32" Nullable="false" />
+          <Property Name="notificacionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="rolId" Type="Int32" Nullable="false" />
           <Property Name="tipoNotificacionId" Type="Int32" Nullable="false" />
           <Property Name="usuarioReceptorId" Type="Int32" Nullable="false" />
           <Property Name="mensajeNotificacion" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="fechaNotificacion" Type="DateTime" Nullable="false" Precision="0" />
-          <NavigationProperty Name="ROL_USUARIO" Relationship="Self.FK__NOTIFICAC__rolId__18EBB532" FromRole="NOTIFICACION_" ToRole="ROL_USUARIO" />
-          <NavigationProperty Name="TIPO_NOTIFICACION_" Relationship="Self.FK__NOTIFICAC__tipoN__19DFD96B" FromRole="NOTIFICACION_" ToRole="TIPO_NOTIFICACION_" />
-          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__NOTIFICAC__usuar__1AD3FDA4" FromRole="NOTIFICACION_" ToRole="USUARIO__" />
+          <NavigationProperty Name="ROL_USUARIO" Relationship="Self.FK__NOTIFICAC__rolId__17F790F9" FromRole="NOTIFICACION_" ToRole="ROL_USUARIO" />
+          <NavigationProperty Name="TIPO_NOTIFICACION_" Relationship="Self.FK__NOTIFICAC__tipoN__18EBB532" FromRole="NOTIFICACION_" ToRole="TIPO_NOTIFICACION_" />
+          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__NOTIFICAC__usuar__19DFD96B" FromRole="NOTIFICACION_" ToRole="USUARIO__" />
         </EntityType>
         <EntityType Name="PREGUNTAS_FRECUENTES_">
           <Key>
             <PropertyRef Name="preguntasFrecuentesId" />
           </Key>
-          <Property Name="preguntasFrecuentesId" Type="Int32" Nullable="false" />
+          <Property Name="preguntasFrecuentesId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="preguntaPreguntasFrecuentes" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="respuestaPreguntasFrecuentes" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
         </EntityType>
@@ -1599,7 +1563,7 @@
           <Key>
             <PropertyRef Name="productoId" />
           </Key>
-          <Property Name="productoId" Type="Int32" Nullable="false" />
+          <Property Name="productoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nombreProducto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="imagenProducto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="cantidadProducto" Type="Int32" Nullable="false" />
@@ -1609,49 +1573,49 @@
           <Property Name="categoriaProductoId" Type="Int32" Nullable="false" />
           <Property Name="descripcionProducto" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="tablaNutricionalProductoIMG" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="CATEGORIA_PRODUCTO" Relationship="Self.FK__PRODUCTO___categ__05D8E0BE" FromRole="PRODUCTO__" ToRole="CATEGORIA_PRODUCTO" />
-          <NavigationProperty Name="COMENTARIOs" Relationship="Self.FK__COMENTARI__produ__1DB06A4F" FromRole="PRODUCTO__" ToRole="COMENTARIO" />
-          <NavigationProperty Name="DESCUENTOS_" Relationship="Self.FK__DESCUENTO__produ__06CD04F7" FromRole="PRODUCTO__" ToRole="DESCUENTOS_" />
-          <NavigationProperty Name="LISTA_PRODUCTO_" Relationship="Self.FK__LISTA_PRO__produ__0C85DE4D" FromRole="PRODUCTO__" ToRole="LISTA_PRODUCTO_" />
-          <NavigationProperty Name="SUCURSAL_" Relationship="Self.FK__PRODUCTO___sucur__03F0984C" FromRole="PRODUCTO__" ToRole="SUCURSAL_" />
-          <NavigationProperty Name="SUPERMERCADO_" Relationship="Self.FK__PRODUCTO___super__04E4BC85" FromRole="PRODUCTO__" ToRole="SUPERMERCADO_" />
+          <NavigationProperty Name="CATEGORIA_PRODUCTO" Relationship="Self.FK__PRODUCTO___categ__04E4BC85" FromRole="PRODUCTO__" ToRole="CATEGORIA_PRODUCTO" />
+          <NavigationProperty Name="COMENTARIOs" Relationship="Self.FK__COMENTARI__produ__1CBC4616" FromRole="PRODUCTO__" ToRole="COMENTARIO" />
+          <NavigationProperty Name="DESCUENTOS_" Relationship="Self.FK__DESCUENTO__produ__05D8E0BE" FromRole="PRODUCTO__" ToRole="DESCUENTOS_" />
+          <NavigationProperty Name="LISTA_PRODUCTO_" Relationship="Self.FK__LISTA_PRO__produ__0B91BA14" FromRole="PRODUCTO__" ToRole="LISTA_PRODUCTO_" />
+          <NavigationProperty Name="SUCURSAL_" Relationship="Self.FK__PRODUCTO___sucur__02FC7413" FromRole="PRODUCTO__" ToRole="SUCURSAL_" />
+          <NavigationProperty Name="SUPERMERCADO_" Relationship="Self.FK__PRODUCTO___super__03F0984C" FromRole="PRODUCTO__" ToRole="SUPERMERCADO_" />
         </EntityType>
         <EntityType Name="ROL_USUARIO">
           <Key>
             <PropertyRef Name="rolId" />
           </Key>
-          <Property Name="rolId" Type="Int32" Nullable="false" />
+          <Property Name="rolId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nombreRol" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="LOG_ACTION__" Relationship="Self.FK__LOG_ACTIO__rolId__74AE54BC" FromRole="ROL_USUARIO" ToRole="LOG_ACTION__" />
-          <NavigationProperty Name="NOTIFICACION_" Relationship="Self.FK__NOTIFICAC__rolId__18EBB532" FromRole="ROL_USUARIO" ToRole="NOTIFICACION_" />
-          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__USUARIO____rolId__70DDC3D8" FromRole="ROL_USUARIO" ToRole="USUARIO__" />
+          <NavigationProperty Name="LOG_ACTION__" Relationship="Self.FK__LOG_ACTIO__rolId__73BA3083" FromRole="ROL_USUARIO" ToRole="LOG_ACTION__" />
+          <NavigationProperty Name="NOTIFICACION_" Relationship="Self.FK__NOTIFICAC__rolId__17F790F9" FromRole="ROL_USUARIO" ToRole="NOTIFICACION_" />
+          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__USUARIO____rolId__6FE99F9F" FromRole="ROL_USUARIO" ToRole="USUARIO__" />
         </EntityType>
         <EntityType Name="SALA__">
           <Key>
             <PropertyRef Name="salaId" />
           </Key>
-          <Property Name="salaId" Type="Int32" Nullable="false" />
+          <Property Name="salaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="tipoSalaId" Type="Int32" Nullable="false" />
           <Property Name="fecha" Type="DateTime" Nullable="false" Precision="0" />
-          <NavigationProperty Name="MENSAJE__" Relationship="Self.FK__MENSAJE____salaI__787EE5A0" FromRole="SALA__" ToRole="MENSAJE__" />
-          <NavigationProperty Name="TIPO_SALA__" Relationship="Self.FK__SALA____tipoSala__7B5B524B" FromRole="SALA__" ToRole="TIPO_SALA__" />
-          <NavigationProperty Name="SALA_USUARIO__" Relationship="Self.FK__SALA_USUA__salaI__7C4F7684" FromRole="SALA__" ToRole="SALA_USUARIO__" />
+          <NavigationProperty Name="MENSAJE__" Relationship="Self.FK__MENSAJE____salaI__778AC167" FromRole="SALA__" ToRole="MENSAJE__" />
+          <NavigationProperty Name="TIPO_SALA__" Relationship="Self.FK__SALA____tipoSala__7A672E12" FromRole="SALA__" ToRole="TIPO_SALA__" />
+          <NavigationProperty Name="SALA_USUARIO__" Relationship="Self.FK__SALA_USUA__salaI__7B5B524B" FromRole="SALA__" ToRole="SALA_USUARIO__" />
         </EntityType>
         <EntityType Name="SALA_USUARIO__">
           <Key>
             <PropertyRef Name="salaUsuarioId" />
           </Key>
-          <Property Name="salaUsuarioId" Type="Int32" Nullable="false" />
+          <Property Name="salaUsuarioId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="salaId" Type="Int32" Nullable="false" />
           <Property Name="usuarioId" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="SALA__" Relationship="Self.FK__SALA_USUA__salaI__7C4F7684" FromRole="SALA_USUARIO__" ToRole="SALA__" />
-          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__SALA_USUA__usuar__7D439ABD" FromRole="SALA_USUARIO__" ToRole="USUARIO__" />
+          <NavigationProperty Name="SALA__" Relationship="Self.FK__SALA_USUA__salaI__7B5B524B" FromRole="SALA_USUARIO__" ToRole="SALA__" />
+          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__SALA_USUA__usuar__7C4F7684" FromRole="SALA_USUARIO__" ToRole="USUARIO__" />
         </EntityType>
         <EntityType Name="SOBRE_NOSOTROS_">
           <Key>
             <PropertyRef Name="sobreNosotrosId" />
           </Key>
-          <Property Name="sobreNosotrosId" Type="Int32" Nullable="false" />
+          <Property Name="sobreNosotrosId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="quienesSomosSobreNosotros" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="misionSobreNosotros" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="visionSobreNosotros" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
@@ -1661,7 +1625,7 @@
           <Key>
             <PropertyRef Name="statusCompraId" />
           </Key>
-          <Property Name="statusCompraId" Type="Int32" Nullable="false" />
+          <Property Name="statusCompraId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="usuarioId" Type="Int32" Nullable="false" />
           <Property Name="nombreCliente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="razonSocialEmpresa" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
@@ -1669,18 +1633,17 @@
           <Property Name="totalPago" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
           <Property Name="statusTipoCompraId" Type="Int32" Nullable="false" />
           <Property Name="mensajeroStatusCompra" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="TIPO_STATUS_COMPRA" Relationship="Self.FK__STATUS_CO__statu__10566F31" FromRole="STATUS_COMPRA_" ToRole="TIPO_STATUS_COMPRA" />
-          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__STATUS_CO__usuar__0F624AF8" FromRole="STATUS_COMPRA_" ToRole="USUARIO__" />
-          <NavigationProperty Name="USUARIO__1" Relationship="Self.FK__STATUS_CO__usuar__114A936A" FromRole="STATUS_COMPRA_" ToRole="USUARIO__" />
+          <NavigationProperty Name="TIPO_STATUS_COMPRA" Relationship="Self.FK__STATUS_CO__statu__0F624AF8" FromRole="STATUS_COMPRA_" ToRole="TIPO_STATUS_COMPRA" />
+          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__STATUS_CO__usuar__0E6E26BF" FromRole="STATUS_COMPRA_" ToRole="USUARIO__" />
+          <NavigationProperty Name="USUARIO__1" Relationship="Self.FK__STATUS_CO__usuar__10566F31" FromRole="STATUS_COMPRA_" ToRole="USUARIO__" />
         </EntityType>
         <EntityType Name="SUCURSAL_">
           <Key>
             <PropertyRef Name="sucursalId" />
           </Key>
-          <Property Name="sucursalId" Type="Int32" Nullable="false" />
+          <Property Name="sucursalId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nombreSucursal" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="direccionSucursal" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="encargadoSucursal" Type="Int32" Nullable="false" />
           <Property Name="supermercadoId" Type="Int32" Nullable="false" />
           <Property Name="horarioApertura" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="horarioCierre" Type="DateTime" Nullable="false" Precision="3" />
@@ -1689,19 +1652,17 @@
           <Property Name="horarioCierreSabado" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="horarioAperturaDomingo" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="horarioCierreDomingo" Type="DateTime" Nullable="false" Precision="3" />
-          <NavigationProperty Name="PRODUCTO__" Relationship="Self.FK__PRODUCTO___sucur__03F0984C" FromRole="SUCURSAL_" ToRole="PRODUCTO__" />
-          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__SUCURSAL___encar__6D0D32F4" FromRole="SUCURSAL_" ToRole="USUARIO__" />
-          <NavigationProperty Name="SUPERMERCADO_" Relationship="Self.FK__SUCURSAL___super__6E01572D" FromRole="SUCURSAL_" ToRole="SUPERMERCADO_" />
-          <NavigationProperty Name="USUARIO__1" Relationship="Self.FK__USUARIO____sucur__6FE99F9F" FromRole="SUCURSAL_" ToRole="USUARIO__" />
+          <NavigationProperty Name="PRODUCTO__" Relationship="Self.FK__PRODUCTO___sucur__02FC7413" FromRole="SUCURSAL_" ToRole="PRODUCTO__" />
+          <NavigationProperty Name="SUPERMERCADO_" Relationship="Self.FK__SUCURSAL___super__6D0D32F4" FromRole="SUCURSAL_" ToRole="SUPERMERCADO_" />
+          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__USUARIO____sucur__6EF57B66" FromRole="SUCURSAL_" ToRole="USUARIO__" />
         </EntityType>
         <EntityType Name="SUPERMERCADO_">
           <Key>
             <PropertyRef Name="supermercadoId" />
           </Key>
-          <Property Name="supermercadoId" Type="Int32" Nullable="false" />
+          <Property Name="supermercadoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nombreSupermercado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="direccionSupermercado" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="encargadoSupermercado" Type="Int32" Nullable="false" />
           <Property Name="horarioApertura" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="horarioCierre" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="diaFeriado" Type="Boolean" Nullable="false" />
@@ -1709,133 +1670,132 @@
           <Property Name="horarioCierreSabado" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="horarioAperturaDomingo" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="horarioCierreDomingo" Type="DateTime" Nullable="false" Precision="3" />
-          <NavigationProperty Name="PRODUCTO__" Relationship="Self.FK__PRODUCTO___super__04E4BC85" FromRole="SUPERMERCADO_" ToRole="PRODUCTO__" />
-          <NavigationProperty Name="SUCURSAL_" Relationship="Self.FK__SUCURSAL___super__6E01572D" FromRole="SUPERMERCADO_" ToRole="SUCURSAL_" />
+          <NavigationProperty Name="PRODUCTO__" Relationship="Self.FK__PRODUCTO___super__03F0984C" FromRole="SUPERMERCADO_" ToRole="PRODUCTO__" />
+          <NavigationProperty Name="SUCURSAL_" Relationship="Self.FK__SUCURSAL___super__6D0D32F4" FromRole="SUPERMERCADO_" ToRole="SUCURSAL_" />
         </EntityType>
         <EntityType Name="TARJETA_CREDITO_">
           <Key>
             <PropertyRef Name="tarjetaCreditoId" />
           </Key>
-          <Property Name="tarjetaCreditoId" Type="Int32" Nullable="false" />
+          <Property Name="tarjetaCreditoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="usuarioId" Type="Int32" Nullable="false" />
           <Property Name="NombreTarjeta" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="NumeroTarjeta" Type="Int32" Nullable="false" />
+          <Property Name="NumeroTarjeta" Type="String" MaxLength="19" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="FechaVencimientoTarjeta" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="CVV" Type="Int16" Nullable="false" />
-          <NavigationProperty Name="COMPRA__" Relationship="Self.FK__COMPRA____tarjet__00200768" FromRole="TARJETA_CREDITO_" ToRole="COMPRA__" />
-          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__TARJETA_C__usuar__7E37BEF6" FromRole="TARJETA_CREDITO_" ToRole="USUARIO__" />
+          <NavigationProperty Name="COMPRA__" Relationship="Self.FK__COMPRA____tarjet__7F2BE32F" FromRole="TARJETA_CREDITO_" ToRole="COMPRA__" />
+          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__TARJETA_C__usuar__7D439ABD" FromRole="TARJETA_CREDITO_" ToRole="USUARIO__" />
         </EntityType>
         <EntityType Name="TARJETA_MEMBRESIA_">
           <Key>
             <PropertyRef Name="tarjetaMembresiaId" />
           </Key>
-          <Property Name="tarjetaMembresiaId" Type="Int32" Nullable="false" />
+          <Property Name="tarjetaMembresiaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="usuarioId" Type="Int32" Nullable="false" />
           <Property Name="nombreCliente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="razonSocialEmpresa" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="puntosAcumuladosTarjetaMembresia" Type="Int32" Nullable="false" />
           <Property Name="fechaVencimientoTarjetaMembresia" Type="DateTime" Nullable="false" Precision="0" />
-          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__TARJETA_M__usuar__09A971A2" FromRole="TARJETA_MEMBRESIA_" ToRole="USUARIO__" />
+          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__TARJETA_M__usuar__08B54D69" FromRole="TARJETA_MEMBRESIA_" ToRole="USUARIO__" />
         </EntityType>
         <EntityType Name="TARJETA_REGALO_">
           <Key>
             <PropertyRef Name="tarjetaRegaloId" />
           </Key>
-          <Property Name="tarjetaRegaloId" Type="Int32" Nullable="false" />
+          <Property Name="tarjetaRegaloId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="usuarioId" Type="Int32" Nullable="false" />
           <Property Name="nombreCliente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="razonSocialEmpresa" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="valorAcreditarTarjetaRegalo" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
           <Property Name="fechaVencimiento" Type="DateTime" Nullable="false" Precision="0" />
-          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__TARJETA_R__usuar__0A9D95DB" FromRole="TARJETA_REGALO_" ToRole="USUARIO__" />
+          <NavigationProperty Name="USUARIO__" Relationship="Self.FK__TARJETA_R__usuar__09A971A2" FromRole="TARJETA_REGALO_" ToRole="USUARIO__" />
         </EntityType>
         <EntityType Name="TIPO_DOCUMENTO">
           <Key>
             <PropertyRef Name="tipoDocumentoId" />
           </Key>
-          <Property Name="tipoDocumentoId" Type="Int32" Nullable="false" />
+          <Property Name="tipoDocumentoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nombreTipoDocumento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="CLIENTES__" Relationship="Self.FK__CLIENTES___tipoD__76969D2E" FromRole="TIPO_DOCUMENTO" ToRole="CLIENTES__" />
+          <NavigationProperty Name="CLIENTES__" Relationship="Self.FK__CLIENTES___tipoD__75A278F5" FromRole="TIPO_DOCUMENTO" ToRole="CLIENTES__" />
         </EntityType>
         <EntityType Name="TIPO_ESTADISTICAS_">
           <Key>
             <PropertyRef Name="tipoEstadisticasId" />
           </Key>
-          <Property Name="tipoEstadisticasId" Type="Int32" Nullable="false" />
+          <Property Name="tipoEstadisticasId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nombreTipoEstadisticas" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="ESTADISTICAS_" Relationship="Self.FK__ESTADISTI__tipoE__1BC821DD" FromRole="TIPO_ESTADISTICAS_" ToRole="ESTADISTICAS_" />
-          <NavigationProperty Name="LOG_ACTION__" Relationship="Self.FK__LOG_ACTIO__tipoE__72C60C4A" FromRole="TIPO_ESTADISTICAS_" ToRole="LOG_ACTION__" />
+          <NavigationProperty Name="ESTADISTICAS_" Relationship="Self.FK__ESTADISTI__tipoE__1AD3FDA4" FromRole="TIPO_ESTADISTICAS_" ToRole="ESTADISTICAS_" />
+          <NavigationProperty Name="LOG_ACTION__" Relationship="Self.FK__LOG_ACTIO__tipoE__71D1E811" FromRole="TIPO_ESTADISTICAS_" ToRole="LOG_ACTION__" />
         </EntityType>
         <EntityType Name="TIPO_MENSAJE__">
           <Key>
             <PropertyRef Name="tipoMensajeId" />
           </Key>
-          <Property Name="tipoMensajeId" Type="Int32" Nullable="false" />
+          <Property Name="tipoMensajeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="NombreTipoMensaje" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="MENSAJE__" Relationship="Self.FK__MENSAJE____tipoM__797309D9" FromRole="TIPO_MENSAJE__" ToRole="MENSAJE__" />
+          <NavigationProperty Name="MENSAJE__" Relationship="Self.FK__MENSAJE____tipoM__787EE5A0" FromRole="TIPO_MENSAJE__" ToRole="MENSAJE__" />
         </EntityType>
         <EntityType Name="TIPO_NOTIFICACION_">
           <Key>
             <PropertyRef Name="tipoNotificacionId" />
           </Key>
-          <Property Name="tipoNotificacionId" Type="Int32" Nullable="false" />
+          <Property Name="tipoNotificacionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nombreTipoNotificacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="LOG_ACTION__" Relationship="Self.FK__LOG_ACTIO__tipoN__71D1E811" FromRole="TIPO_NOTIFICACION_" ToRole="LOG_ACTION__" />
-          <NavigationProperty Name="NOTIFICACION_" Relationship="Self.FK__NOTIFICAC__tipoN__19DFD96B" FromRole="TIPO_NOTIFICACION_" ToRole="NOTIFICACION_" />
+          <NavigationProperty Name="LOG_ACTION__" Relationship="Self.FK__LOG_ACTIO__tipoN__70DDC3D8" FromRole="TIPO_NOTIFICACION_" ToRole="LOG_ACTION__" />
+          <NavigationProperty Name="NOTIFICACION_" Relationship="Self.FK__NOTIFICAC__tipoN__18EBB532" FromRole="TIPO_NOTIFICACION_" ToRole="NOTIFICACION_" />
         </EntityType>
         <EntityType Name="TIPO_SALA__">
           <Key>
             <PropertyRef Name="tipoSalaId" />
           </Key>
-          <Property Name="tipoSalaId" Type="Int32" Nullable="false" />
+          <Property Name="tipoSalaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nombreSala" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="MENSAJE__" Relationship="Self.FK__MENSAJE____tipoS__7A672E12" FromRole="TIPO_SALA__" ToRole="MENSAJE__" />
-          <NavigationProperty Name="SALA__" Relationship="Self.FK__SALA____tipoSala__7B5B524B" FromRole="TIPO_SALA__" ToRole="SALA__" />
+          <NavigationProperty Name="MENSAJE__" Relationship="Self.FK__MENSAJE____tipoS__797309D9" FromRole="TIPO_SALA__" ToRole="MENSAJE__" />
+          <NavigationProperty Name="SALA__" Relationship="Self.FK__SALA____tipoSala__7A672E12" FromRole="TIPO_SALA__" ToRole="SALA__" />
         </EntityType>
         <EntityType Name="TIPO_STATUS_COMPRA">
           <Key>
             <PropertyRef Name="statusTipoCompraId" />
           </Key>
-          <Property Name="statusTipoCompraId" Type="Int32" Nullable="false" />
+          <Property Name="statusTipoCompraId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nombreStatusTipoCompra" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="ENTREGAS_" Relationship="Self.FK__ENTREGAS___statu__17F790F9" FromRole="TIPO_STATUS_COMPRA" ToRole="ENTREGAS_" />
-          <NavigationProperty Name="STATUS_COMPRA_" Relationship="Self.FK__STATUS_CO__statu__10566F31" FromRole="TIPO_STATUS_COMPRA" ToRole="STATUS_COMPRA_" />
+          <NavigationProperty Name="ENTREGAS_" Relationship="Self.FK__ENTREGAS___statu__17036CC0" FromRole="TIPO_STATUS_COMPRA" ToRole="ENTREGAS_" />
+          <NavigationProperty Name="STATUS_COMPRA_" Relationship="Self.FK__STATUS_CO__statu__0F624AF8" FromRole="TIPO_STATUS_COMPRA" ToRole="STATUS_COMPRA_" />
         </EntityType>
         <EntityType Name="USUARIO__">
           <Key>
             <PropertyRef Name="usuarioId" />
           </Key>
-          <Property Name="usuarioId" Type="Int32" Nullable="false" />
+          <Property Name="usuarioId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nombreUsuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="apellidoUsuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="imagenUsuario" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="cedulaUsuario" Type="Int32" Nullable="false" />
+          <Property Name="cedulaUsuario" Type="String" MaxLength="13" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="generoId" Type="Int32" Nullable="false" />
           <Property Name="correoCorporativoUsuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="TtelefonoUsuario" Type="Int32" Nullable="false" />
+          <Property Name="telefonoUsuario" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="sucursalId" Type="Int32" Nullable="false" />
           <Property Name="rolId" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="COMENTARIOs" Relationship="Self.FK__COMENTARI__usuar__1CBC4616" FromRole="USUARIO__" ToRole="COMENTARIO" />
-          <NavigationProperty Name="DESCUENTOS_" Relationship="Self.FK__DESCUENTO__usuar__08B54D69" FromRole="USUARIO__" ToRole="DESCUENTOS_" />
-          <NavigationProperty Name="ENTREGAS_" Relationship="Self.FK__ENTREGAS___usuar__160F4887" FromRole="USUARIO__" ToRole="ENTREGAS_" />
-          <NavigationProperty Name="ENTREGAS_1" Relationship="Self.FK__ENTREGAS___usuar__17036CC0" FromRole="USUARIO__" ToRole="ENTREGAS_" />
-          <NavigationProperty Name="GENERO" Relationship="Self.FK__USUARIO____gener__6EF57B66" FromRole="USUARIO__" ToRole="GENERO" />
-          <NavigationProperty Name="HISTORIAL_COMPRA_" Relationship="Self.FK__HISTORIAL__usuar__1332DBDC" FromRole="USUARIO__" ToRole="HISTORIAL_COMPRA_" />
-          <NavigationProperty Name="LISTADO_PAQUETE_COMPRA_" Relationship="Self.FK__LISTADO_P__usuar__0D7A0286" FromRole="USUARIO__" ToRole="LISTADO_PAQUETE_COMPRA_" />
-          <NavigationProperty Name="LOG_ACTION__" Relationship="Self.FK__LOG_ACTIO__usuar__73BA3083" FromRole="USUARIO__" ToRole="LOG_ACTION__" />
-          <NavigationProperty Name="MENSAJE__" Relationship="Self.FK__MENSAJE____usuar__778AC167" FromRole="USUARIO__" ToRole="MENSAJE__" />
-          <NavigationProperty Name="NOTIFICACION_" Relationship="Self.FK__NOTIFICAC__usuar__1AD3FDA4" FromRole="USUARIO__" ToRole="NOTIFICACION_" />
-          <NavigationProperty Name="ROL_USUARIO" Relationship="Self.FK__USUARIO____rolId__70DDC3D8" FromRole="USUARIO__" ToRole="ROL_USUARIO" />
-          <NavigationProperty Name="SALA_USUARIO__" Relationship="Self.FK__SALA_USUA__usuar__7D439ABD" FromRole="USUARIO__" ToRole="SALA_USUARIO__" />
-          <NavigationProperty Name="STATUS_COMPRA_" Relationship="Self.FK__STATUS_CO__usuar__0F624AF8" FromRole="USUARIO__" ToRole="STATUS_COMPRA_" />
-          <NavigationProperty Name="STATUS_COMPRA_1" Relationship="Self.FK__STATUS_CO__usuar__114A936A" FromRole="USUARIO__" ToRole="STATUS_COMPRA_" />
-          <NavigationProperty Name="SUCURSAL_" Relationship="Self.FK__SUCURSAL___encar__6D0D32F4" FromRole="USUARIO__" ToRole="SUCURSAL_" />
-          <NavigationProperty Name="SUCURSAL_1" Relationship="Self.FK__USUARIO____sucur__6FE99F9F" FromRole="USUARIO__" ToRole="SUCURSAL_" />
-          <NavigationProperty Name="TARJETA_CREDITO_" Relationship="Self.FK__TARJETA_C__usuar__7E37BEF6" FromRole="USUARIO__" ToRole="TARJETA_CREDITO_" />
-          <NavigationProperty Name="TARJETA_MEMBRESIA_" Relationship="Self.FK__TARJETA_M__usuar__09A971A2" FromRole="USUARIO__" ToRole="TARJETA_MEMBRESIA_" />
-          <NavigationProperty Name="TARJETA_REGALO_" Relationship="Self.FK__TARJETA_R__usuar__0A9D95DB" FromRole="USUARIO__" ToRole="TARJETA_REGALO_" />
+          <NavigationProperty Name="COMENTARIOs" Relationship="Self.FK__COMENTARI__usuar__1BC821DD" FromRole="USUARIO__" ToRole="COMENTARIO" />
+          <NavigationProperty Name="DESCUENTOS_" Relationship="Self.FK__DESCUENTO__usuar__07C12930" FromRole="USUARIO__" ToRole="DESCUENTOS_" />
+          <NavigationProperty Name="ENTREGAS_" Relationship="Self.FK__ENTREGAS___usuar__151B244E" FromRole="USUARIO__" ToRole="ENTREGAS_" />
+          <NavigationProperty Name="ENTREGAS_1" Relationship="Self.FK__ENTREGAS___usuar__160F4887" FromRole="USUARIO__" ToRole="ENTREGAS_" />
+          <NavigationProperty Name="GENERO" Relationship="Self.FK__USUARIO____gener__6E01572D" FromRole="USUARIO__" ToRole="GENERO" />
+          <NavigationProperty Name="HISTORIAL_COMPRA_" Relationship="Self.FK__HISTORIAL__usuar__123EB7A3" FromRole="USUARIO__" ToRole="HISTORIAL_COMPRA_" />
+          <NavigationProperty Name="LISTADO_PAQUETE_COMPRA_" Relationship="Self.FK__LISTADO_P__usuar__0C85DE4D" FromRole="USUARIO__" ToRole="LISTADO_PAQUETE_COMPRA_" />
+          <NavigationProperty Name="LOG_ACTION__" Relationship="Self.FK__LOG_ACTIO__usuar__72C60C4A" FromRole="USUARIO__" ToRole="LOG_ACTION__" />
+          <NavigationProperty Name="MENSAJE__" Relationship="Self.FK__MENSAJE____usuar__76969D2E" FromRole="USUARIO__" ToRole="MENSAJE__" />
+          <NavigationProperty Name="NOTIFICACION_" Relationship="Self.FK__NOTIFICAC__usuar__19DFD96B" FromRole="USUARIO__" ToRole="NOTIFICACION_" />
+          <NavigationProperty Name="ROL_USUARIO" Relationship="Self.FK__USUARIO____rolId__6FE99F9F" FromRole="USUARIO__" ToRole="ROL_USUARIO" />
+          <NavigationProperty Name="SALA_USUARIO__" Relationship="Self.FK__SALA_USUA__usuar__7C4F7684" FromRole="USUARIO__" ToRole="SALA_USUARIO__" />
+          <NavigationProperty Name="STATUS_COMPRA_" Relationship="Self.FK__STATUS_CO__usuar__0E6E26BF" FromRole="USUARIO__" ToRole="STATUS_COMPRA_" />
+          <NavigationProperty Name="STATUS_COMPRA_1" Relationship="Self.FK__STATUS_CO__usuar__10566F31" FromRole="USUARIO__" ToRole="STATUS_COMPRA_" />
+          <NavigationProperty Name="SUCURSAL_" Relationship="Self.FK__USUARIO____sucur__6EF57B66" FromRole="USUARIO__" ToRole="SUCURSAL_" />
+          <NavigationProperty Name="TARJETA_CREDITO_" Relationship="Self.FK__TARJETA_C__usuar__7D439ABD" FromRole="USUARIO__" ToRole="TARJETA_CREDITO_" />
+          <NavigationProperty Name="TARJETA_MEMBRESIA_" Relationship="Self.FK__TARJETA_M__usuar__08B54D69" FromRole="USUARIO__" ToRole="TARJETA_MEMBRESIA_" />
+          <NavigationProperty Name="TARJETA_REGALO_" Relationship="Self.FK__TARJETA_R__usuar__09A971A2" FromRole="USUARIO__" ToRole="TARJETA_REGALO_" />
         </EntityType>
-        <Association Name="FK__CARRITO_C__lista__0B91BA14">
+        <Association Name="FK__CARRITO_C__lista__0A9D95DB">
           <End Role="LISTA_PRODUCTO_" Type="Self.LISTA_PRODUCTO_" Multiplicity="1" />
           <End Role="CARRITO_COMPRAS_" Type="Self.CARRITO_COMPRAS_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1847,7 +1807,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__COMPRA____carrit__7F2BE32F">
+        <Association Name="FK__COMPRA____carrit__7E37BEF6">
           <End Role="CARRITO_COMPRAS_" Type="Self.CARRITO_COMPRAS_" Multiplicity="1" />
           <End Role="COMPRA__" Type="Self.COMPRA__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1859,7 +1819,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__HISTORIAL__carri__14270015">
+        <Association Name="FK__HISTORIAL__carri__1332DBDC">
           <End Role="CARRITO_COMPRAS_" Type="Self.CARRITO_COMPRAS_" Multiplicity="1" />
           <End Role="HISTORIAL_COMPRA_" Type="Self.HISTORIAL_COMPRA_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1871,7 +1831,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__LISTADO_P__carri__0E6E26BF">
+        <Association Name="FK__LISTADO_P__carri__0D7A0286">
           <End Role="CARRITO_COMPRAS_" Type="Self.CARRITO_COMPRAS_" Multiplicity="1" />
           <End Role="LISTADO_PAQUETE_COMPRA_" Type="Self.LISTADO_PAQUETE_COMPRA_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1883,7 +1843,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__DESCUENTO__categ__07C12930">
+        <Association Name="FK__DESCUENTO__categ__06CD04F7">
           <End Role="CATEGORIA_PRODUCTO" Type="Self.CATEGORIA_PRODUCTO" Multiplicity="1" />
           <End Role="DESCUENTOS_" Type="Self.DESCUENTOS_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1895,7 +1855,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__PRODUCTO___categ__05D8E0BE">
+        <Association Name="FK__PRODUCTO___categ__04E4BC85">
           <End Role="CATEGORIA_PRODUCTO" Type="Self.CATEGORIA_PRODUCTO" Multiplicity="1" />
           <End Role="PRODUCTO__" Type="Self.PRODUCTO__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1907,7 +1867,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__CLIENTES___gener__75A278F5">
+        <Association Name="FK__CLIENTES___gener__74AE54BC">
           <End Role="GENERO" Type="Self.GENERO" Multiplicity="1" />
           <End Role="CLIENTES__" Type="Self.CLIENTES__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1919,7 +1879,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__CLIENTES___tipoD__76969D2E">
+        <Association Name="FK__CLIENTES___tipoD__75A278F5">
           <End Role="TIPO_DOCUMENTO" Type="Self.TIPO_DOCUMENTO" Multiplicity="1" />
           <End Role="CLIENTES__" Type="Self.CLIENTES__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1931,7 +1891,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__COMENTARI__produ__1DB06A4F">
+        <Association Name="FK__COMENTARI__produ__1CBC4616">
           <End Role="PRODUCTO__" Type="Self.PRODUCTO__" Multiplicity="1" />
           <End Role="COMENTARIO" Type="Self.COMENTARIO" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1943,7 +1903,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__COMENTARI__usuar__1CBC4616">
+        <Association Name="FK__COMENTARI__usuar__1BC821DD">
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
           <End Role="COMENTARIO" Type="Self.COMENTARIO" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1955,7 +1915,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__COMPRA____cupone__01142BA1">
+        <Association Name="FK__COMPRA____cupone__00200768">
           <End Role="CUPONES_" Type="Self.CUPONES_" Multiplicity="0..1" />
           <End Role="COMPRA__" Type="Self.COMPRA__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1967,7 +1927,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__COMPRA____descue__02084FDA">
+        <Association Name="FK__COMPRA____descue__01142BA1">
           <End Role="DESCUENTOS_" Type="Self.DESCUENTOS_" Multiplicity="0..1" />
           <End Role="COMPRA__" Type="Self.COMPRA__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1979,7 +1939,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__COMPRA____metodo__02FC7413">
+        <Association Name="FK__COMPRA____metodo__02084FDA">
           <End Role="METODO_ENVIO" Type="Self.METODO_ENVIO" Multiplicity="1" />
           <End Role="COMPRA__" Type="Self.COMPRA__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1991,7 +1951,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__COMPRA____tarjet__00200768">
+        <Association Name="FK__COMPRA____tarjet__7F2BE32F">
           <End Role="TARJETA_CREDITO_" Type="Self.TARJETA_CREDITO_" Multiplicity="1" />
           <End Role="COMPRA__" Type="Self.COMPRA__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2003,7 +1963,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__ENTREGAS___compr__151B244E">
+        <Association Name="FK__ENTREGAS___compr__14270015">
           <End Role="COMPRA__" Type="Self.COMPRA__" Multiplicity="1" />
           <End Role="ENTREGAS_" Type="Self.ENTREGAS_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2015,7 +1975,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__DESCUENTO__produ__06CD04F7">
+        <Association Name="FK__DESCUENTO__produ__05D8E0BE">
           <End Role="PRODUCTO__" Type="Self.PRODUCTO__" Multiplicity="1" />
           <End Role="DESCUENTOS_" Type="Self.DESCUENTOS_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2027,7 +1987,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__DESCUENTO__usuar__08B54D69">
+        <Association Name="FK__DESCUENTO__usuar__07C12930">
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
           <End Role="DESCUENTOS_" Type="Self.DESCUENTOS_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2039,7 +1999,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__ENTREGAS___statu__17F790F9">
+        <Association Name="FK__ENTREGAS___statu__17036CC0">
           <End Role="TIPO_STATUS_COMPRA" Type="Self.TIPO_STATUS_COMPRA" Multiplicity="1" />
           <End Role="ENTREGAS_" Type="Self.ENTREGAS_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2048,6 +2008,18 @@
             </Principal>
             <Dependent Role="ENTREGAS_">
               <PropertyRef Name="statusTipoCompraId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ENTREGAS___usuar__151B244E">
+          <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
+          <End Role="ENTREGAS_" Type="Self.ENTREGAS_" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USUARIO__">
+              <PropertyRef Name="usuarioId" />
+            </Principal>
+            <Dependent Role="ENTREGAS_">
+              <PropertyRef Name="usuarioId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -2063,19 +2035,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__ENTREGAS___usuar__17036CC0">
-          <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
-          <End Role="ENTREGAS_" Type="Self.ENTREGAS_" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="USUARIO__">
-              <PropertyRef Name="usuarioId" />
-            </Principal>
-            <Dependent Role="ENTREGAS_">
-              <PropertyRef Name="usuarioId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__ESTADISTI__tipoE__1BC821DD">
+        <Association Name="FK__ESTADISTI__tipoE__1AD3FDA4">
           <End Role="TIPO_ESTADISTICAS_" Type="Self.TIPO_ESTADISTICAS_" Multiplicity="1" />
           <End Role="ESTADISTICAS_" Type="Self.ESTADISTICAS_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2087,7 +2047,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__USUARIO____gener__6EF57B66">
+        <Association Name="FK__USUARIO____gener__6E01572D">
           <End Role="GENERO" Type="Self.GENERO" Multiplicity="1" />
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2099,19 +2059,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__HISTORIAL__histo__123EB7A3">
-          <End Role="HISTORIAL_COMPRA_" Type="Self.HISTORIAL_COMPRA_" Multiplicity="1" />
-          <End Role="HISTORIAL_COMPRA_1" Type="Self.HISTORIAL_COMPRA_" Multiplicity="0..1" />
-          <ReferentialConstraint>
-            <Principal Role="HISTORIAL_COMPRA_">
-              <PropertyRef Name="historialCompraId" />
-            </Principal>
-            <Dependent Role="HISTORIAL_COMPRA_1">
-              <PropertyRef Name="historialCompraId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__HISTORIAL__usuar__1332DBDC">
+        <Association Name="FK__HISTORIAL__usuar__123EB7A3">
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
           <End Role="HISTORIAL_COMPRA_" Type="Self.HISTORIAL_COMPRA_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2123,7 +2071,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__LISTA_PRO__produ__0C85DE4D">
+        <Association Name="FK__LISTA_PRO__produ__0B91BA14">
           <End Role="PRODUCTO__" Type="Self.PRODUCTO__" Multiplicity="1" />
           <End Role="LISTA_PRODUCTO_" Type="Self.LISTA_PRODUCTO_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2135,7 +2083,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__LISTADO_P__usuar__0D7A0286">
+        <Association Name="FK__LISTADO_P__usuar__0C85DE4D">
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
           <End Role="LISTADO_PAQUETE_COMPRA_" Type="Self.LISTADO_PAQUETE_COMPRA_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2147,7 +2095,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__LOG_ACTIO__rolId__74AE54BC">
+        <Association Name="FK__LOG_ACTIO__rolId__73BA3083">
           <End Role="ROL_USUARIO" Type="Self.ROL_USUARIO" Multiplicity="1" />
           <End Role="LOG_ACTION__" Type="Self.LOG_ACTION__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2159,7 +2107,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__LOG_ACTIO__tipoE__72C60C4A">
+        <Association Name="FK__LOG_ACTIO__tipoE__71D1E811">
           <End Role="TIPO_ESTADISTICAS_" Type="Self.TIPO_ESTADISTICAS_" Multiplicity="1" />
           <End Role="LOG_ACTION__" Type="Self.LOG_ACTION__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2171,7 +2119,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__LOG_ACTIO__tipoN__71D1E811">
+        <Association Name="FK__LOG_ACTIO__tipoN__70DDC3D8">
           <End Role="TIPO_NOTIFICACION_" Type="Self.TIPO_NOTIFICACION_" Multiplicity="1" />
           <End Role="LOG_ACTION__" Type="Self.LOG_ACTION__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2183,7 +2131,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__LOG_ACTIO__usuar__73BA3083">
+        <Association Name="FK__LOG_ACTIO__usuar__72C60C4A">
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
           <End Role="LOG_ACTION__" Type="Self.LOG_ACTION__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2195,7 +2143,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__MENSAJE____salaI__787EE5A0">
+        <Association Name="FK__MENSAJE____salaI__778AC167">
           <End Role="SALA__" Type="Self.SALA__" Multiplicity="1" />
           <End Role="MENSAJE__" Type="Self.MENSAJE__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2207,7 +2155,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__MENSAJE____tipoM__797309D9">
+        <Association Name="FK__MENSAJE____tipoM__787EE5A0">
           <End Role="TIPO_MENSAJE__" Type="Self.TIPO_MENSAJE__" Multiplicity="1" />
           <End Role="MENSAJE__" Type="Self.MENSAJE__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2219,7 +2167,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__MENSAJE____tipoS__7A672E12">
+        <Association Name="FK__MENSAJE____tipoS__797309D9">
           <End Role="TIPO_SALA__" Type="Self.TIPO_SALA__" Multiplicity="1" />
           <End Role="MENSAJE__" Type="Self.MENSAJE__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2231,7 +2179,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__MENSAJE____usuar__778AC167">
+        <Association Name="FK__MENSAJE____usuar__76969D2E">
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
           <End Role="MENSAJE__" Type="Self.MENSAJE__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2243,7 +2191,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__NOTIFICAC__rolId__18EBB532">
+        <Association Name="FK__NOTIFICAC__rolId__17F790F9">
           <End Role="ROL_USUARIO" Type="Self.ROL_USUARIO" Multiplicity="1" />
           <End Role="NOTIFICACION_" Type="Self.NOTIFICACION_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2255,7 +2203,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__NOTIFICAC__tipoN__19DFD96B">
+        <Association Name="FK__NOTIFICAC__tipoN__18EBB532">
           <End Role="TIPO_NOTIFICACION_" Type="Self.TIPO_NOTIFICACION_" Multiplicity="1" />
           <End Role="NOTIFICACION_" Type="Self.NOTIFICACION_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2267,7 +2215,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__NOTIFICAC__usuar__1AD3FDA4">
+        <Association Name="FK__NOTIFICAC__usuar__19DFD96B">
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
           <End Role="NOTIFICACION_" Type="Self.NOTIFICACION_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2279,7 +2227,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__PRODUCTO___sucur__03F0984C">
+        <Association Name="FK__PRODUCTO___sucur__02FC7413">
           <End Role="SUCURSAL_" Type="Self.SUCURSAL_" Multiplicity="1" />
           <End Role="PRODUCTO__" Type="Self.PRODUCTO__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2291,7 +2239,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__PRODUCTO___super__04E4BC85">
+        <Association Name="FK__PRODUCTO___super__03F0984C">
           <End Role="SUPERMERCADO_" Type="Self.SUPERMERCADO_" Multiplicity="1" />
           <End Role="PRODUCTO__" Type="Self.PRODUCTO__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2303,7 +2251,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__USUARIO____rolId__70DDC3D8">
+        <Association Name="FK__USUARIO____rolId__6FE99F9F">
           <End Role="ROL_USUARIO" Type="Self.ROL_USUARIO" Multiplicity="1" />
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2315,7 +2263,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__SALA____tipoSala__7B5B524B">
+        <Association Name="FK__SALA____tipoSala__7A672E12">
           <End Role="TIPO_SALA__" Type="Self.TIPO_SALA__" Multiplicity="1" />
           <End Role="SALA__" Type="Self.SALA__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2327,7 +2275,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__SALA_USUA__salaI__7C4F7684">
+        <Association Name="FK__SALA_USUA__salaI__7B5B524B">
           <End Role="SALA__" Type="Self.SALA__" Multiplicity="1" />
           <End Role="SALA_USUARIO__" Type="Self.SALA_USUARIO__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2339,7 +2287,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__SALA_USUA__usuar__7D439ABD">
+        <Association Name="FK__SALA_USUA__usuar__7C4F7684">
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
           <End Role="SALA_USUARIO__" Type="Self.SALA_USUARIO__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2351,7 +2299,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__STATUS_CO__statu__10566F31">
+        <Association Name="FK__STATUS_CO__statu__0F624AF8">
           <End Role="TIPO_STATUS_COMPRA" Type="Self.TIPO_STATUS_COMPRA" Multiplicity="1" />
           <End Role="STATUS_COMPRA_" Type="Self.STATUS_COMPRA_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2363,7 +2311,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__STATUS_CO__usuar__0F624AF8">
+        <Association Name="FK__STATUS_CO__usuar__0E6E26BF">
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
           <End Role="STATUS_COMPRA_" Type="Self.STATUS_COMPRA_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2375,7 +2323,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__STATUS_CO__usuar__114A936A">
+        <Association Name="FK__STATUS_CO__usuar__10566F31">
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
           <End Role="STATUS_COMPRA_" Type="Self.STATUS_COMPRA_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2387,19 +2335,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__SUCURSAL___encar__6D0D32F4">
-          <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
-          <End Role="SUCURSAL_" Type="Self.SUCURSAL_" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="USUARIO__">
-              <PropertyRef Name="usuarioId" />
-            </Principal>
-            <Dependent Role="SUCURSAL_">
-              <PropertyRef Name="encargadoSucursal" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__SUCURSAL___super__6E01572D">
+        <Association Name="FK__SUCURSAL___super__6D0D32F4">
           <End Role="SUPERMERCADO_" Type="Self.SUPERMERCADO_" Multiplicity="1" />
           <End Role="SUCURSAL_" Type="Self.SUCURSAL_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2411,7 +2347,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__USUARIO____sucur__6FE99F9F">
+        <Association Name="FK__USUARIO____sucur__6EF57B66">
           <End Role="SUCURSAL_" Type="Self.SUCURSAL_" Multiplicity="1" />
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2423,7 +2359,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__TARJETA_C__usuar__7E37BEF6">
+        <Association Name="FK__TARJETA_C__usuar__7D439ABD">
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
           <End Role="TARJETA_CREDITO_" Type="Self.TARJETA_CREDITO_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2435,7 +2371,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__TARJETA_M__usuar__09A971A2">
+        <Association Name="FK__TARJETA_M__usuar__08B54D69">
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
           <End Role="TARJETA_MEMBRESIA_" Type="Self.TARJETA_MEMBRESIA_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2447,7 +2383,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__TARJETA_R__usuar__0A9D95DB">
+        <Association Name="FK__TARJETA_R__usuar__09A971A2">
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
           <End Role="TARJETA_REGALO_" Type="Self.TARJETA_REGALO_" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2499,211 +2435,203 @@
           <EntitySet Name="TIPO_SALA__" EntityType="Self.TIPO_SALA__" />
           <EntitySet Name="TIPO_STATUS_COMPRA" EntityType="Self.TIPO_STATUS_COMPRA" />
           <EntitySet Name="USUARIO__" EntityType="Self.USUARIO__" />
-          <AssociationSet Name="FK__CARRITO_C__lista__0B91BA14" Association="Self.FK__CARRITO_C__lista__0B91BA14">
+          <AssociationSet Name="FK__CARRITO_C__lista__0A9D95DB" Association="Self.FK__CARRITO_C__lista__0A9D95DB">
             <End Role="LISTA_PRODUCTO_" EntitySet="LISTA_PRODUCTO_" />
             <End Role="CARRITO_COMPRAS_" EntitySet="CARRITO_COMPRAS_" />
           </AssociationSet>
-          <AssociationSet Name="FK__COMPRA____carrit__7F2BE32F" Association="Self.FK__COMPRA____carrit__7F2BE32F">
+          <AssociationSet Name="FK__COMPRA____carrit__7E37BEF6" Association="Self.FK__COMPRA____carrit__7E37BEF6">
             <End Role="CARRITO_COMPRAS_" EntitySet="CARRITO_COMPRAS_" />
             <End Role="COMPRA__" EntitySet="COMPRA__" />
           </AssociationSet>
-          <AssociationSet Name="FK__HISTORIAL__carri__14270015" Association="Self.FK__HISTORIAL__carri__14270015">
+          <AssociationSet Name="FK__HISTORIAL__carri__1332DBDC" Association="Self.FK__HISTORIAL__carri__1332DBDC">
             <End Role="CARRITO_COMPRAS_" EntitySet="CARRITO_COMPRAS_" />
             <End Role="HISTORIAL_COMPRA_" EntitySet="HISTORIAL_COMPRA_" />
           </AssociationSet>
-          <AssociationSet Name="FK__LISTADO_P__carri__0E6E26BF" Association="Self.FK__LISTADO_P__carri__0E6E26BF">
+          <AssociationSet Name="FK__LISTADO_P__carri__0D7A0286" Association="Self.FK__LISTADO_P__carri__0D7A0286">
             <End Role="CARRITO_COMPRAS_" EntitySet="CARRITO_COMPRAS_" />
             <End Role="LISTADO_PAQUETE_COMPRA_" EntitySet="LISTADO_PAQUETE_COMPRA_" />
           </AssociationSet>
-          <AssociationSet Name="FK__DESCUENTO__categ__07C12930" Association="Self.FK__DESCUENTO__categ__07C12930">
+          <AssociationSet Name="FK__DESCUENTO__categ__06CD04F7" Association="Self.FK__DESCUENTO__categ__06CD04F7">
             <End Role="CATEGORIA_PRODUCTO" EntitySet="CATEGORIA_PRODUCTO" />
             <End Role="DESCUENTOS_" EntitySet="DESCUENTOS_" />
           </AssociationSet>
-          <AssociationSet Name="FK__PRODUCTO___categ__05D8E0BE" Association="Self.FK__PRODUCTO___categ__05D8E0BE">
+          <AssociationSet Name="FK__PRODUCTO___categ__04E4BC85" Association="Self.FK__PRODUCTO___categ__04E4BC85">
             <End Role="CATEGORIA_PRODUCTO" EntitySet="CATEGORIA_PRODUCTO" />
             <End Role="PRODUCTO__" EntitySet="PRODUCTO__" />
           </AssociationSet>
-          <AssociationSet Name="FK__CLIENTES___gener__75A278F5" Association="Self.FK__CLIENTES___gener__75A278F5">
+          <AssociationSet Name="FK__CLIENTES___gener__74AE54BC" Association="Self.FK__CLIENTES___gener__74AE54BC">
             <End Role="GENERO" EntitySet="GENEROes" />
             <End Role="CLIENTES__" EntitySet="CLIENTES__" />
           </AssociationSet>
-          <AssociationSet Name="FK__CLIENTES___tipoD__76969D2E" Association="Self.FK__CLIENTES___tipoD__76969D2E">
+          <AssociationSet Name="FK__CLIENTES___tipoD__75A278F5" Association="Self.FK__CLIENTES___tipoD__75A278F5">
             <End Role="TIPO_DOCUMENTO" EntitySet="TIPO_DOCUMENTO" />
             <End Role="CLIENTES__" EntitySet="CLIENTES__" />
           </AssociationSet>
-          <AssociationSet Name="FK__COMENTARI__produ__1DB06A4F" Association="Self.FK__COMENTARI__produ__1DB06A4F">
+          <AssociationSet Name="FK__COMENTARI__produ__1CBC4616" Association="Self.FK__COMENTARI__produ__1CBC4616">
             <End Role="PRODUCTO__" EntitySet="PRODUCTO__" />
             <End Role="COMENTARIO" EntitySet="COMENTARIOs" />
           </AssociationSet>
-          <AssociationSet Name="FK__COMENTARI__usuar__1CBC4616" Association="Self.FK__COMENTARI__usuar__1CBC4616">
+          <AssociationSet Name="FK__COMENTARI__usuar__1BC821DD" Association="Self.FK__COMENTARI__usuar__1BC821DD">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="COMENTARIO" EntitySet="COMENTARIOs" />
           </AssociationSet>
-          <AssociationSet Name="FK__COMPRA____cupone__01142BA1" Association="Self.FK__COMPRA____cupone__01142BA1">
+          <AssociationSet Name="FK__COMPRA____cupone__00200768" Association="Self.FK__COMPRA____cupone__00200768">
             <End Role="CUPONES_" EntitySet="CUPONES_" />
             <End Role="COMPRA__" EntitySet="COMPRA__" />
           </AssociationSet>
-          <AssociationSet Name="FK__COMPRA____descue__02084FDA" Association="Self.FK__COMPRA____descue__02084FDA">
+          <AssociationSet Name="FK__COMPRA____descue__01142BA1" Association="Self.FK__COMPRA____descue__01142BA1">
             <End Role="DESCUENTOS_" EntitySet="DESCUENTOS_" />
             <End Role="COMPRA__" EntitySet="COMPRA__" />
           </AssociationSet>
-          <AssociationSet Name="FK__COMPRA____metodo__02FC7413" Association="Self.FK__COMPRA____metodo__02FC7413">
+          <AssociationSet Name="FK__COMPRA____metodo__02084FDA" Association="Self.FK__COMPRA____metodo__02084FDA">
             <End Role="METODO_ENVIO" EntitySet="METODO_ENVIO" />
             <End Role="COMPRA__" EntitySet="COMPRA__" />
           </AssociationSet>
-          <AssociationSet Name="FK__COMPRA____tarjet__00200768" Association="Self.FK__COMPRA____tarjet__00200768">
+          <AssociationSet Name="FK__COMPRA____tarjet__7F2BE32F" Association="Self.FK__COMPRA____tarjet__7F2BE32F">
             <End Role="TARJETA_CREDITO_" EntitySet="TARJETA_CREDITO_" />
             <End Role="COMPRA__" EntitySet="COMPRA__" />
           </AssociationSet>
-          <AssociationSet Name="FK__ENTREGAS___compr__151B244E" Association="Self.FK__ENTREGAS___compr__151B244E">
+          <AssociationSet Name="FK__ENTREGAS___compr__14270015" Association="Self.FK__ENTREGAS___compr__14270015">
             <End Role="COMPRA__" EntitySet="COMPRA__" />
             <End Role="ENTREGAS_" EntitySet="ENTREGAS_" />
           </AssociationSet>
-          <AssociationSet Name="FK__DESCUENTO__produ__06CD04F7" Association="Self.FK__DESCUENTO__produ__06CD04F7">
+          <AssociationSet Name="FK__DESCUENTO__produ__05D8E0BE" Association="Self.FK__DESCUENTO__produ__05D8E0BE">
             <End Role="PRODUCTO__" EntitySet="PRODUCTO__" />
             <End Role="DESCUENTOS_" EntitySet="DESCUENTOS_" />
           </AssociationSet>
-          <AssociationSet Name="FK__DESCUENTO__usuar__08B54D69" Association="Self.FK__DESCUENTO__usuar__08B54D69">
+          <AssociationSet Name="FK__DESCUENTO__usuar__07C12930" Association="Self.FK__DESCUENTO__usuar__07C12930">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="DESCUENTOS_" EntitySet="DESCUENTOS_" />
           </AssociationSet>
-          <AssociationSet Name="FK__ENTREGAS___statu__17F790F9" Association="Self.FK__ENTREGAS___statu__17F790F9">
+          <AssociationSet Name="FK__ENTREGAS___statu__17036CC0" Association="Self.FK__ENTREGAS___statu__17036CC0">
             <End Role="TIPO_STATUS_COMPRA" EntitySet="TIPO_STATUS_COMPRA" />
+            <End Role="ENTREGAS_" EntitySet="ENTREGAS_" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ENTREGAS___usuar__151B244E" Association="Self.FK__ENTREGAS___usuar__151B244E">
+            <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="ENTREGAS_" EntitySet="ENTREGAS_" />
           </AssociationSet>
           <AssociationSet Name="FK__ENTREGAS___usuar__160F4887" Association="Self.FK__ENTREGAS___usuar__160F4887">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="ENTREGAS_" EntitySet="ENTREGAS_" />
           </AssociationSet>
-          <AssociationSet Name="FK__ENTREGAS___usuar__17036CC0" Association="Self.FK__ENTREGAS___usuar__17036CC0">
-            <End Role="USUARIO__" EntitySet="USUARIO__" />
-            <End Role="ENTREGAS_" EntitySet="ENTREGAS_" />
-          </AssociationSet>
-          <AssociationSet Name="FK__ESTADISTI__tipoE__1BC821DD" Association="Self.FK__ESTADISTI__tipoE__1BC821DD">
+          <AssociationSet Name="FK__ESTADISTI__tipoE__1AD3FDA4" Association="Self.FK__ESTADISTI__tipoE__1AD3FDA4">
             <End Role="TIPO_ESTADISTICAS_" EntitySet="TIPO_ESTADISTICAS_" />
             <End Role="ESTADISTICAS_" EntitySet="ESTADISTICAS_" />
           </AssociationSet>
-          <AssociationSet Name="FK__USUARIO____gener__6EF57B66" Association="Self.FK__USUARIO____gener__6EF57B66">
+          <AssociationSet Name="FK__USUARIO____gener__6E01572D" Association="Self.FK__USUARIO____gener__6E01572D">
             <End Role="GENERO" EntitySet="GENEROes" />
             <End Role="USUARIO__" EntitySet="USUARIO__" />
           </AssociationSet>
-          <AssociationSet Name="FK__HISTORIAL__histo__123EB7A3" Association="Self.FK__HISTORIAL__histo__123EB7A3">
-            <End Role="HISTORIAL_COMPRA_" EntitySet="HISTORIAL_COMPRA_" />
-            <End Role="HISTORIAL_COMPRA_1" EntitySet="HISTORIAL_COMPRA_" />
-          </AssociationSet>
-          <AssociationSet Name="FK__HISTORIAL__usuar__1332DBDC" Association="Self.FK__HISTORIAL__usuar__1332DBDC">
+          <AssociationSet Name="FK__HISTORIAL__usuar__123EB7A3" Association="Self.FK__HISTORIAL__usuar__123EB7A3">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="HISTORIAL_COMPRA_" EntitySet="HISTORIAL_COMPRA_" />
           </AssociationSet>
-          <AssociationSet Name="FK__LISTA_PRO__produ__0C85DE4D" Association="Self.FK__LISTA_PRO__produ__0C85DE4D">
+          <AssociationSet Name="FK__LISTA_PRO__produ__0B91BA14" Association="Self.FK__LISTA_PRO__produ__0B91BA14">
             <End Role="PRODUCTO__" EntitySet="PRODUCTO__" />
             <End Role="LISTA_PRODUCTO_" EntitySet="LISTA_PRODUCTO_" />
           </AssociationSet>
-          <AssociationSet Name="FK__LISTADO_P__usuar__0D7A0286" Association="Self.FK__LISTADO_P__usuar__0D7A0286">
+          <AssociationSet Name="FK__LISTADO_P__usuar__0C85DE4D" Association="Self.FK__LISTADO_P__usuar__0C85DE4D">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="LISTADO_PAQUETE_COMPRA_" EntitySet="LISTADO_PAQUETE_COMPRA_" />
           </AssociationSet>
-          <AssociationSet Name="FK__LOG_ACTIO__rolId__74AE54BC" Association="Self.FK__LOG_ACTIO__rolId__74AE54BC">
+          <AssociationSet Name="FK__LOG_ACTIO__rolId__73BA3083" Association="Self.FK__LOG_ACTIO__rolId__73BA3083">
             <End Role="ROL_USUARIO" EntitySet="ROL_USUARIO" />
             <End Role="LOG_ACTION__" EntitySet="LOG_ACTION__" />
           </AssociationSet>
-          <AssociationSet Name="FK__LOG_ACTIO__tipoE__72C60C4A" Association="Self.FK__LOG_ACTIO__tipoE__72C60C4A">
+          <AssociationSet Name="FK__LOG_ACTIO__tipoE__71D1E811" Association="Self.FK__LOG_ACTIO__tipoE__71D1E811">
             <End Role="TIPO_ESTADISTICAS_" EntitySet="TIPO_ESTADISTICAS_" />
             <End Role="LOG_ACTION__" EntitySet="LOG_ACTION__" />
           </AssociationSet>
-          <AssociationSet Name="FK__LOG_ACTIO__tipoN__71D1E811" Association="Self.FK__LOG_ACTIO__tipoN__71D1E811">
+          <AssociationSet Name="FK__LOG_ACTIO__tipoN__70DDC3D8" Association="Self.FK__LOG_ACTIO__tipoN__70DDC3D8">
             <End Role="TIPO_NOTIFICACION_" EntitySet="TIPO_NOTIFICACION_" />
             <End Role="LOG_ACTION__" EntitySet="LOG_ACTION__" />
           </AssociationSet>
-          <AssociationSet Name="FK__LOG_ACTIO__usuar__73BA3083" Association="Self.FK__LOG_ACTIO__usuar__73BA3083">
+          <AssociationSet Name="FK__LOG_ACTIO__usuar__72C60C4A" Association="Self.FK__LOG_ACTIO__usuar__72C60C4A">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="LOG_ACTION__" EntitySet="LOG_ACTION__" />
           </AssociationSet>
-          <AssociationSet Name="FK__MENSAJE____salaI__787EE5A0" Association="Self.FK__MENSAJE____salaI__787EE5A0">
+          <AssociationSet Name="FK__MENSAJE____salaI__778AC167" Association="Self.FK__MENSAJE____salaI__778AC167">
             <End Role="SALA__" EntitySet="SALA__" />
             <End Role="MENSAJE__" EntitySet="MENSAJE__" />
           </AssociationSet>
-          <AssociationSet Name="FK__MENSAJE____tipoM__797309D9" Association="Self.FK__MENSAJE____tipoM__797309D9">
+          <AssociationSet Name="FK__MENSAJE____tipoM__787EE5A0" Association="Self.FK__MENSAJE____tipoM__787EE5A0">
             <End Role="TIPO_MENSAJE__" EntitySet="TIPO_MENSAJE__" />
             <End Role="MENSAJE__" EntitySet="MENSAJE__" />
           </AssociationSet>
-          <AssociationSet Name="FK__MENSAJE____tipoS__7A672E12" Association="Self.FK__MENSAJE____tipoS__7A672E12">
+          <AssociationSet Name="FK__MENSAJE____tipoS__797309D9" Association="Self.FK__MENSAJE____tipoS__797309D9">
             <End Role="TIPO_SALA__" EntitySet="TIPO_SALA__" />
             <End Role="MENSAJE__" EntitySet="MENSAJE__" />
           </AssociationSet>
-          <AssociationSet Name="FK__MENSAJE____usuar__778AC167" Association="Self.FK__MENSAJE____usuar__778AC167">
+          <AssociationSet Name="FK__MENSAJE____usuar__76969D2E" Association="Self.FK__MENSAJE____usuar__76969D2E">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="MENSAJE__" EntitySet="MENSAJE__" />
           </AssociationSet>
-          <AssociationSet Name="FK__NOTIFICAC__rolId__18EBB532" Association="Self.FK__NOTIFICAC__rolId__18EBB532">
+          <AssociationSet Name="FK__NOTIFICAC__rolId__17F790F9" Association="Self.FK__NOTIFICAC__rolId__17F790F9">
             <End Role="ROL_USUARIO" EntitySet="ROL_USUARIO" />
             <End Role="NOTIFICACION_" EntitySet="NOTIFICACION_" />
           </AssociationSet>
-          <AssociationSet Name="FK__NOTIFICAC__tipoN__19DFD96B" Association="Self.FK__NOTIFICAC__tipoN__19DFD96B">
+          <AssociationSet Name="FK__NOTIFICAC__tipoN__18EBB532" Association="Self.FK__NOTIFICAC__tipoN__18EBB532">
             <End Role="TIPO_NOTIFICACION_" EntitySet="TIPO_NOTIFICACION_" />
             <End Role="NOTIFICACION_" EntitySet="NOTIFICACION_" />
           </AssociationSet>
-          <AssociationSet Name="FK__NOTIFICAC__usuar__1AD3FDA4" Association="Self.FK__NOTIFICAC__usuar__1AD3FDA4">
+          <AssociationSet Name="FK__NOTIFICAC__usuar__19DFD96B" Association="Self.FK__NOTIFICAC__usuar__19DFD96B">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="NOTIFICACION_" EntitySet="NOTIFICACION_" />
           </AssociationSet>
-          <AssociationSet Name="FK__PRODUCTO___sucur__03F0984C" Association="Self.FK__PRODUCTO___sucur__03F0984C">
+          <AssociationSet Name="FK__PRODUCTO___sucur__02FC7413" Association="Self.FK__PRODUCTO___sucur__02FC7413">
             <End Role="SUCURSAL_" EntitySet="SUCURSAL_" />
             <End Role="PRODUCTO__" EntitySet="PRODUCTO__" />
           </AssociationSet>
-          <AssociationSet Name="FK__PRODUCTO___super__04E4BC85" Association="Self.FK__PRODUCTO___super__04E4BC85">
+          <AssociationSet Name="FK__PRODUCTO___super__03F0984C" Association="Self.FK__PRODUCTO___super__03F0984C">
             <End Role="SUPERMERCADO_" EntitySet="SUPERMERCADO_" />
             <End Role="PRODUCTO__" EntitySet="PRODUCTO__" />
           </AssociationSet>
-          <AssociationSet Name="FK__USUARIO____rolId__70DDC3D8" Association="Self.FK__USUARIO____rolId__70DDC3D8">
+          <AssociationSet Name="FK__USUARIO____rolId__6FE99F9F" Association="Self.FK__USUARIO____rolId__6FE99F9F">
             <End Role="ROL_USUARIO" EntitySet="ROL_USUARIO" />
             <End Role="USUARIO__" EntitySet="USUARIO__" />
           </AssociationSet>
-          <AssociationSet Name="FK__SALA____tipoSala__7B5B524B" Association="Self.FK__SALA____tipoSala__7B5B524B">
+          <AssociationSet Name="FK__SALA____tipoSala__7A672E12" Association="Self.FK__SALA____tipoSala__7A672E12">
             <End Role="TIPO_SALA__" EntitySet="TIPO_SALA__" />
             <End Role="SALA__" EntitySet="SALA__" />
           </AssociationSet>
-          <AssociationSet Name="FK__SALA_USUA__salaI__7C4F7684" Association="Self.FK__SALA_USUA__salaI__7C4F7684">
+          <AssociationSet Name="FK__SALA_USUA__salaI__7B5B524B" Association="Self.FK__SALA_USUA__salaI__7B5B524B">
             <End Role="SALA__" EntitySet="SALA__" />
             <End Role="SALA_USUARIO__" EntitySet="SALA_USUARIO__" />
           </AssociationSet>
-          <AssociationSet Name="FK__SALA_USUA__usuar__7D439ABD" Association="Self.FK__SALA_USUA__usuar__7D439ABD">
+          <AssociationSet Name="FK__SALA_USUA__usuar__7C4F7684" Association="Self.FK__SALA_USUA__usuar__7C4F7684">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="SALA_USUARIO__" EntitySet="SALA_USUARIO__" />
           </AssociationSet>
-          <AssociationSet Name="FK__STATUS_CO__statu__10566F31" Association="Self.FK__STATUS_CO__statu__10566F31">
+          <AssociationSet Name="FK__STATUS_CO__statu__0F624AF8" Association="Self.FK__STATUS_CO__statu__0F624AF8">
             <End Role="TIPO_STATUS_COMPRA" EntitySet="TIPO_STATUS_COMPRA" />
             <End Role="STATUS_COMPRA_" EntitySet="STATUS_COMPRA_" />
           </AssociationSet>
-          <AssociationSet Name="FK__STATUS_CO__usuar__0F624AF8" Association="Self.FK__STATUS_CO__usuar__0F624AF8">
+          <AssociationSet Name="FK__STATUS_CO__usuar__0E6E26BF" Association="Self.FK__STATUS_CO__usuar__0E6E26BF">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="STATUS_COMPRA_" EntitySet="STATUS_COMPRA_" />
           </AssociationSet>
-          <AssociationSet Name="FK__STATUS_CO__usuar__114A936A" Association="Self.FK__STATUS_CO__usuar__114A936A">
+          <AssociationSet Name="FK__STATUS_CO__usuar__10566F31" Association="Self.FK__STATUS_CO__usuar__10566F31">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="STATUS_COMPRA_" EntitySet="STATUS_COMPRA_" />
           </AssociationSet>
-          <AssociationSet Name="FK__SUCURSAL___encar__6D0D32F4" Association="Self.FK__SUCURSAL___encar__6D0D32F4">
-            <End Role="USUARIO__" EntitySet="USUARIO__" />
-            <End Role="SUCURSAL_" EntitySet="SUCURSAL_" />
-          </AssociationSet>
-          <AssociationSet Name="FK__SUCURSAL___super__6E01572D" Association="Self.FK__SUCURSAL___super__6E01572D">
+          <AssociationSet Name="FK__SUCURSAL___super__6D0D32F4" Association="Self.FK__SUCURSAL___super__6D0D32F4">
             <End Role="SUPERMERCADO_" EntitySet="SUPERMERCADO_" />
             <End Role="SUCURSAL_" EntitySet="SUCURSAL_" />
           </AssociationSet>
-          <AssociationSet Name="FK__USUARIO____sucur__6FE99F9F" Association="Self.FK__USUARIO____sucur__6FE99F9F">
+          <AssociationSet Name="FK__USUARIO____sucur__6EF57B66" Association="Self.FK__USUARIO____sucur__6EF57B66">
             <End Role="SUCURSAL_" EntitySet="SUCURSAL_" />
             <End Role="USUARIO__" EntitySet="USUARIO__" />
           </AssociationSet>
-          <AssociationSet Name="FK__TARJETA_C__usuar__7E37BEF6" Association="Self.FK__TARJETA_C__usuar__7E37BEF6">
+          <AssociationSet Name="FK__TARJETA_C__usuar__7D439ABD" Association="Self.FK__TARJETA_C__usuar__7D439ABD">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="TARJETA_CREDITO_" EntitySet="TARJETA_CREDITO_" />
           </AssociationSet>
-          <AssociationSet Name="FK__TARJETA_M__usuar__09A971A2" Association="Self.FK__TARJETA_M__usuar__09A971A2">
+          <AssociationSet Name="FK__TARJETA_M__usuar__08B54D69" Association="Self.FK__TARJETA_M__usuar__08B54D69">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="TARJETA_MEMBRESIA_" EntitySet="TARJETA_MEMBRESIA_" />
           </AssociationSet>
-          <AssociationSet Name="FK__TARJETA_R__usuar__0A9D95DB" Association="Self.FK__TARJETA_R__usuar__0A9D95DB">
+          <AssociationSet Name="FK__TARJETA_R__usuar__09A971A2" Association="Self.FK__TARJETA_R__usuar__09A971A2">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="TARJETA_REGALO_" EntitySet="TARJETA_REGALO_" />
           </AssociationSet>
@@ -3048,7 +2976,6 @@
                 <ScalarProperty Name="sucursalId" ColumnName="sucursalId" />
                 <ScalarProperty Name="nombreSucursal" ColumnName="nombreSucursal" />
                 <ScalarProperty Name="direccionSucursal" ColumnName="direccionSucursal" />
-                <ScalarProperty Name="encargadoSucursal" ColumnName="encargadoSucursal" />
                 <ScalarProperty Name="supermercadoId" ColumnName="supermercadoId" />
                 <ScalarProperty Name="horarioApertura" ColumnName="horarioApertura" />
                 <ScalarProperty Name="horarioCierre" ColumnName="horarioCierre" />
@@ -3066,7 +2993,6 @@
                 <ScalarProperty Name="supermercadoId" ColumnName="supermercadoId" />
                 <ScalarProperty Name="nombreSupermercado" ColumnName="nombreSupermercado" />
                 <ScalarProperty Name="direccionSupermercado" ColumnName="direccionSupermercado" />
-                <ScalarProperty Name="encargadoSupermercado" ColumnName="encargadoSupermercado" />
                 <ScalarProperty Name="horarioApertura" ColumnName="horarioApertura" />
                 <ScalarProperty Name="horarioCierre" ColumnName="horarioCierre" />
                 <ScalarProperty Name="diaFeriado" ColumnName="diaFeriado" />
@@ -3171,7 +3097,7 @@
                 <ScalarProperty Name="cedulaUsuario" ColumnName="cedulaUsuario" />
                 <ScalarProperty Name="generoId" ColumnName="generoId" />
                 <ScalarProperty Name="correoCorporativoUsuario" ColumnName="correoCorporativoUsuario" />
-                <ScalarProperty Name="TtelefonoUsuario" ColumnName="TtelefonoUsuario" />
+                <ScalarProperty Name="telefonoUsuario" ColumnName="telefonoUsuario" />
                 <ScalarProperty Name="sucursalId" ColumnName="sucursalId" />
                 <ScalarProperty Name="rolId" ColumnName="rolId" />
               </MappingFragment>

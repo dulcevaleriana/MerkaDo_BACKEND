@@ -1,0 +1,27 @@
+﻿@model MerkaDo_BACKEND.Models.TIPO_ESTADISTICAS_
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TIPO_ESTADISTICAS_</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombreTipoEstadisticas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreTipoEstadisticas)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.tipoEstadisticasId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

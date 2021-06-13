@@ -1,0 +1,70 @@
+﻿@model IEnumerable<MerkaDo_BACKEND.Models.MENSAJE__>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.mensaje)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.url_link)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SALA__.salaId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TIPO_MENSAJE__.NombreTipoMensaje)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TIPO_SALA__.nombreSala)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.USUARIO__.nombreUsuario)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.mensaje)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fecha)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.url_link)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SALA__.salaId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TIPO_MENSAJE__.NombreTipoMensaje)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TIPO_SALA__.nombreSala)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.USUARIO__.nombreUsuario)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.mensajeId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.mensajeId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.mensajeId })
+        </td>
+    </tr>
+}
+
+</table>

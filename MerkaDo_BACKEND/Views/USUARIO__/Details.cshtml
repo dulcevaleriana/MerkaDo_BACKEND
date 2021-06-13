@@ -1,0 +1,91 @@
+﻿@model MerkaDo_BACKEND.Models.USUARIO__
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>USUARIO__</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombreUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.apellidoUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.apellidoUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.imagenUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.imagenUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cedulaUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cedulaUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.correoCorporativoUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.correoCorporativoUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.telefonoUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.telefonoUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GENERO.nombreGenero)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GENERO.nombreGenero)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ROL_USUARIO.nombreRol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ROL_USUARIO.nombreRol)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SUCURSAL_.nombreSucursal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SUCURSAL_.nombreSucursal)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.usuarioId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

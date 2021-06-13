@@ -1,0 +1,57 @@
+﻿@model MerkaDo_BACKEND.Models.CORREO_EMAIL_MARKETING_
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>CORREO_EMAIL_MARKETING_</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.tituloMensaje)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tituloMensaje)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.imagenCorreoEmailMarketing)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.imagenCorreoEmailMarketing)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.contenidoCorreoEmailMarketing)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.contenidoCorreoEmailMarketing)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaCreacionCorreoEmailMarketing)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaCreacionCorreoEmailMarketing)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

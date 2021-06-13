@@ -1,0 +1,59 @@
+﻿@model MerkaDo_BACKEND.Models.NOTIFICACION_
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>NOTIFICACION_</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.mensajeNotificacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mensajeNotificacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaNotificacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaNotificacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ROL_USUARIO.nombreRol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ROL_USUARIO.nombreRol)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TIPO_NOTIFICACION_.nombreTipoNotificacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TIPO_NOTIFICACION_.nombreTipoNotificacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.USUARIO__.nombreUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.USUARIO__.nombreUsuario)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.notificacionId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

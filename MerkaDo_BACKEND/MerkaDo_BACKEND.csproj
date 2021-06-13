@@ -548,11 +548,6 @@
     <Content Include="Views\STATUS_COMPRA_\Details.cshtml" />
     <Content Include="Views\STATUS_COMPRA_\Edit.cshtml" />
     <Content Include="Views\STATUS_COMPRA_\Index.cshtml" />
-    <Content Include="Views\HISTORIAL_COMPRA_\Create.cshtml" />
-    <Content Include="Views\HISTORIAL_COMPRA_\Delete.cshtml" />
-    <Content Include="Views\HISTORIAL_COMPRA_\Details.cshtml" />
-    <Content Include="Views\HISTORIAL_COMPRA_\Edit.cshtml" />
-    <Content Include="Views\HISTORIAL_COMPRA_\Index.cshtml" />
     <Content Include="Views\CORREO_EMAIL_MARKETING_\Create.cshtml" />
     <Content Include="Views\CORREO_EMAIL_MARKETING_\Delete.cshtml" />
     <Content Include="Views\CORREO_EMAIL_MARKETING_\Details.cshtml" />
@@ -608,6 +603,11 @@
     <Content Include="Views\METODO_ENVIO\Details.cshtml" />
     <Content Include="Views\METODO_ENVIO\Edit.cshtml" />
     <Content Include="Views\METODO_ENVIO\Index.cshtml" />
+    <Content Include="Views\HISTORIAL_COMPRA_\Create.cshtml" />
+    <Content Include="Views\HISTORIAL_COMPRA_\Delete.cshtml" />
+    <Content Include="Views\HISTORIAL_COMPRA_\Details.cshtml" />
+    <Content Include="Views\HISTORIAL_COMPRA_\Edit.cshtml" />
+    <Content Include="Views\HISTORIAL_COMPRA_\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

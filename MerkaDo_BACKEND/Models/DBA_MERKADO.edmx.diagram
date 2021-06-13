@@ -18,7 +18,7 @@
         <EntityTypeShape EntityType="DBA_MERKAModel.ENTREGAS_" Width="1.5" PointX="12.75" PointY="22.375" IsExpanded="true" />
         <EntityTypeShape EntityType="DBA_MERKAModel.ESTADISTICAS_" Width="1.5" PointX="3" PointY="27.625" IsExpanded="true" />
         <EntityTypeShape EntityType="DBA_MERKAModel.GENERO" Width="1.5" PointX="0.75" PointY="15.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBA_MERKAModel.HISTORIAL_COMPRA_" Width="1.5" PointX="5.25" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBA_MERKAModel.HISTORIAL_COMPRA_" Width="2" PointX="5.25" PointY="13.25" IsExpanded="true" />
         <EntityTypeShape EntityType="DBA_MERKAModel.LISTA_PRODUCTO_" Width="1.5" PointX="3.75" PointY="6.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DBA_MERKAModel.LISTADO_PAQUETE_COMPRA_" Width="1.5" PointX="8.25" PointY="11.875" IsExpanded="true" />
         <EntityTypeShape EntityType="DBA_MERKAModel.LOG_ACTION__" Width="1.5" PointX="3" PointY="23.375" IsExpanded="true" />

@@ -11,7 +11,6 @@ using MerkaDo_BACKEND.Models;
 
 namespace MerkaDo_BACKEND.Controllers
 {
-    [RoutePrefix("Api/HistorialCompra")]
     public class HISTORIAL_COMPRA_Controller : Controller
     {
         private DBA_MERKAEntities db = new DBA_MERKAEntities();
@@ -19,7 +18,7 @@ namespace MerkaDo_BACKEND.Controllers
         // GET: HISTORIAL_COMPRA_
         public async Task<ActionResult> Index()
         {
-            var hISTORIAL_COMPRA_ = db.HISTORIAL_COMPRA_.Include(h => h.CARRITO_COMPRAS_).Include(h => h.HISTORIAL_COMPRA_1).Include(h => h.HISTORIAL_COMPRA_2).Include(h => h.USUARIO__);
+            var hISTORIAL_COMPRA_ = db.HISTORIAL_COMPRA_.Include(h => h.CARRITO_COMPRAS_).Include(h => h.USUARIO__);
             return View(await hISTORIAL_COMPRA_.ToListAsync());
         }
 

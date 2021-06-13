@@ -24,8 +24,8 @@ namespace MerkaDo_BACKEND.Models
         public decimal totalPago { get; set; }
     
         public virtual CARRITO_COMPRAS_ CARRITO_COMPRAS_ { get; set; }
-        public virtual HISTORIAL_COMPRA_ HISTORIAL_COMPRA_1 { get; set; }
-        public virtual HISTORIAL_COMPRA_ HISTORIAL_COMPRA_2 { get; set; }
+        //public virtual HISTORIAL_COMPRA_ HISTORIAL_COMPRA_1 { get; set; }
+        //public virtual HISTORIAL_COMPRA_ HISTORIAL_COMPRA_2 { get; set; }
         public virtual USUARIO__ USUARIO__ { get; set; }
     }
 }

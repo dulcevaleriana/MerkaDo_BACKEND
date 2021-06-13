@@ -655,18 +655,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__HISTORIAL__histo__114A936A">
-          <End Role="HISTORIAL_COMPRA_" Type="Self.HISTORIAL_COMPRA_" Multiplicity="1" />
-          <End Role="HISTORIAL_COMPRA_1" Type="Self.HISTORIAL_COMPRA_" Multiplicity="0..1" />
-          <ReferentialConstraint>
-            <Principal Role="HISTORIAL_COMPRA_">
-              <PropertyRef Name="historialCompraId" />
-            </Principal>
-            <Dependent Role="HISTORIAL_COMPRA_1">
-              <PropertyRef Name="historialCompraId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK__HISTORIAL__usuar__123EB7A3">
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
           <End Role="HISTORIAL_COMPRA_" Type="Self.HISTORIAL_COMPRA_" Multiplicity="*" />
@@ -1155,10 +1143,6 @@
             <End Role="CARRITO_COMPRAS_" EntitySet="CARRITO_COMPRAS_" />
             <End Role="HISTORIAL_COMPRA_" EntitySet="HISTORIAL_COMPRA_" />
           </AssociationSet>
-          <AssociationSet Name="FK__HISTORIAL__histo__114A936A" Association="Self.FK__HISTORIAL__histo__114A936A">
-            <End Role="HISTORIAL_COMPRA_" EntitySet="HISTORIAL_COMPRA_" />
-            <End Role="HISTORIAL_COMPRA_1" EntitySet="HISTORIAL_COMPRA_" />
-          </AssociationSet>
           <AssociationSet Name="FK__HISTORIAL__usuar__123EB7A3" Association="Self.FK__HISTORIAL__usuar__123EB7A3">
             <End Role="USUARIO__" EntitySet="USUARIO__" />
             <End Role="HISTORIAL_COMPRA_" EntitySet="HISTORIAL_COMPRA_" />
@@ -1478,8 +1462,6 @@
           <Property Name="estadoTipoHistorialCompra" Type="Boolean" Nullable="false" />
           <Property Name="totalPago" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
           <NavigationProperty Name="CARRITO_COMPRAS_" Relationship="Self.FK__HISTORIAL__carri__1332DBDC" FromRole="HISTORIAL_COMPRA_" ToRole="CARRITO_COMPRAS_" />
-          <NavigationProperty Name="HISTORIAL_COMPRA_1" Relationship="Self.FK__HISTORIAL__histo__114A936A" FromRole="HISTORIAL_COMPRA_" ToRole="HISTORIAL_COMPRA_1" />
-          <NavigationProperty Name="HISTORIAL_COMPRA_2" Relationship="Self.FK__HISTORIAL__histo__114A936A" FromRole="HISTORIAL_COMPRA_1" ToRole="HISTORIAL_COMPRA_" />
           <NavigationProperty Name="USUARIO__" Relationship="Self.FK__HISTORIAL__usuar__123EB7A3" FromRole="HISTORIAL_COMPRA_" ToRole="USUARIO__" />
         </EntityType>
         <EntityType Name="LISTA_PRODUCTO_">
@@ -2077,18 +2059,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__HISTORIAL__histo__114A936A">
-          <End Role="HISTORIAL_COMPRA_" Type="Self.HISTORIAL_COMPRA_" Multiplicity="1" />
-          <End Role="HISTORIAL_COMPRA_1" Type="Self.HISTORIAL_COMPRA_" Multiplicity="0..1" />
-          <ReferentialConstraint>
-            <Principal Role="HISTORIAL_COMPRA_">
-              <PropertyRef Name="historialCompraId" />
-            </Principal>
-            <Dependent Role="HISTORIAL_COMPRA_1">
-              <PropertyRef Name="historialCompraId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK__HISTORIAL__usuar__123EB7A3">
           <End Role="USUARIO__" Type="Self.USUARIO__" Multiplicity="1" />
           <End Role="HISTORIAL_COMPRA_" Type="Self.HISTORIAL_COMPRA_" Multiplicity="*" />
@@ -2552,10 +2522,6 @@
           <AssociationSet Name="FK__USUARIO____gener__6E01572D" Association="Self.FK__USUARIO____gener__6E01572D">
             <End Role="GENERO" EntitySet="GENEROes" />
             <End Role="USUARIO__" EntitySet="USUARIO__" />
-          </AssociationSet>
-          <AssociationSet Name="FK__HISTORIAL__histo__114A936A" Association="Self.FK__HISTORIAL__histo__114A936A">
-            <End Role="HISTORIAL_COMPRA_" EntitySet="HISTORIAL_COMPRA_" />
-            <End Role="HISTORIAL_COMPRA_1" EntitySet="HISTORIAL_COMPRA_" />
           </AssociationSet>
           <AssociationSet Name="FK__HISTORIAL__usuar__123EB7A3" Association="Self.FK__HISTORIAL__usuar__123EB7A3">
             <End Role="USUARIO__" EntitySet="USUARIO__" />

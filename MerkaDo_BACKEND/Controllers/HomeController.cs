@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace MerkaDo_BACKEND.Controllers
 {
+    [RoutePrefix("API/home")]
     public class HomeController : Controller
     {
         public ActionResult Index()

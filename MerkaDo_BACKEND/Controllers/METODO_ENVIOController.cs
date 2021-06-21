@@ -11,6 +11,7 @@ using MerkaDo_BACKEND.Models;
 
 namespace MerkaDo_BACKEND.Controllers
 {
+    [RoutePrefix("API/metodoEnvio")]
     public class METODO_ENVIOController : Controller
     {
         private DBA_MERKAEntities db = new DBA_MERKAEntities();

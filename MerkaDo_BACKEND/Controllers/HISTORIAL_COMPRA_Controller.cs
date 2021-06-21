@@ -11,6 +11,7 @@ using MerkaDo_BACKEND.Models;
 
 namespace MerkaDo_BACKEND.Controllers
 {
+    [RoutePrefix("API/historialCompra")]
     public class HISTORIAL_COMPRA_Controller : Controller
     {
         private DBA_MERKAEntities db = new DBA_MERKAEntities();

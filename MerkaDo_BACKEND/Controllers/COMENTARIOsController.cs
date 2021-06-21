@@ -11,6 +11,7 @@ using MerkaDo_BACKEND.Models;
 
 namespace MerkaDo_BACKEND.Controllers
 {
+    [RoutePrefix("API/comentario")]
     public class COMENTARIOsController : Controller
     {
         private DBA_MERKAEntities db = new DBA_MERKAEntities();

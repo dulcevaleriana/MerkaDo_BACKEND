@@ -11,6 +11,7 @@ using MerkaDo_BACKEND.Models;
 
 namespace MerkaDo_BACKEND.Controllers
 {
+    [RoutePrefix("API/salaUsuario")]
     public class SALA_USUARIO__Controller : Controller
     {
         private DBA_MERKAEntities db = new DBA_MERKAEntities();

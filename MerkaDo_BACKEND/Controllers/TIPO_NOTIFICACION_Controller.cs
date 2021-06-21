@@ -11,6 +11,7 @@ using MerkaDo_BACKEND.Models;
 
 namespace MerkaDo_BACKEND.Controllers
 {
+    [RoutePrefix("API/tipoNotificacion")]
     public class TIPO_NOTIFICACION_Controller : Controller
     {
         private DBA_MERKAEntities db = new DBA_MERKAEntities();

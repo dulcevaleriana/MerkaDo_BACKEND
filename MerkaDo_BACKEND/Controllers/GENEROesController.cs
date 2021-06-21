@@ -10,7 +10,8 @@ using System.Web.Mvc;
 using MerkaDo_BACKEND.Models;
 
 namespace MerkaDo_BACKEND.Controllers
-{   [RoutePrefix("API/...")]
+{   
+    [RoutePrefix("API/genero")]
     public class GENEROesController : Controller
     {
         private DBA_MERKAEntities db = new DBA_MERKAEntities();

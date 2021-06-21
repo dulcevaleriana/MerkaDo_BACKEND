@@ -11,6 +11,7 @@ using MerkaDo_BACKEND.Models;
 
 namespace MerkaDo_BACKEND.Controllers
 {
+    [RoutePrefix("API/logActionUsuario")]
     public class LOG_ACTION_USUARIOController : Controller
     {
         private DBA_MERKAEntities db = new DBA_MERKAEntities();

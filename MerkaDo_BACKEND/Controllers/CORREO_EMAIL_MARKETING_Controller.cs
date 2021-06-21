@@ -11,6 +11,7 @@ using MerkaDo_BACKEND.Models;
 
 namespace MerkaDo_BACKEND.Controllers
 {
+    [RoutePrefix("API/correoEmailMarketing")]
     public class CORREO_EMAIL_MARKETING_Controller : Controller
     {
         private DBA_MERKAEntities db = new DBA_MERKAEntities();

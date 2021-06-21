@@ -11,6 +11,7 @@ using MerkaDo_BACKEND.Models;
 
 namespace MerkaDo_BACKEND.Controllers
 {
+    [RoutePrefix("API/listadoPaqueteCompra")]
     public class LISTADO_PAQUETE_COMPRA_Controller : Controller
     {
         private DBA_MERKAEntities db = new DBA_MERKAEntities();

@@ -36,12 +36,12 @@ namespace MerkaDo_BACKEND.Models
         public string nombreCliente { get; set; }
         public string apellidoCliente { get; set; }
         public string imagenCliente { get; set; }
-        public int teléfonoCliente { get; set; }
+        public string teléfonoCliente { get; set; }
         public int códigoPostalCliente { get; set; }
         public System.DateTime fechaNacimientoCliente { get; set; }
         public int generoId { get; set; }
         public int tipoDocumentoId { get; set; }
-        public int numeroDocumentoCliente { get; set; }
+        public string numeroDocumentoCliente { get; set; }
         public string correoCliente { get; set; }
         public string contraseñaCliente { get; set; }
         public bool estado { get; set; }

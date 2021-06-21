@@ -452,11 +452,6 @@
     <Content Include="Views\LOG_ACTION_CLIENTE\Details.cshtml" />
     <Content Include="Views\LOG_ACTION_CLIENTE\Edit.cshtml" />
     <Content Include="Views\LOG_ACTION_CLIENTE\Index.cshtml" />
-    <Content Include="Views\CLIENTES__\Create.cshtml" />
-    <Content Include="Views\CLIENTES__\Delete.cshtml" />
-    <Content Include="Views\CLIENTES__\Details.cshtml" />
-    <Content Include="Views\CLIENTES__\Edit.cshtml" />
-    <Content Include="Views\CLIENTES__\Index.cshtml" />
     <Content Include="Views\MENSAJE__\Create.cshtml" />
     <Content Include="Views\MENSAJE__\Delete.cshtml" />
     <Content Include="Views\MENSAJE__\Details.cshtml" />
@@ -617,6 +612,11 @@
     <Content Include="Views\COMPROBANTE_FISCAL\Details.cshtml" />
     <Content Include="Views\COMPROBANTE_FISCAL\Edit.cshtml" />
     <Content Include="Views\COMPROBANTE_FISCAL\Index.cshtml" />
+    <Content Include="Views\CLIENTES__\Create.cshtml" />
+    <Content Include="Views\CLIENTES__\Delete.cshtml" />
+    <Content Include="Views\CLIENTES__\Details.cshtml" />
+    <Content Include="Views\CLIENTES__\Edit.cshtml" />
+    <Content Include="Views\CLIENTES__\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

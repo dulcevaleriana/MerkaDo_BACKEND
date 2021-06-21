@@ -28,12 +28,12 @@
           <Property Name="nombreCliente" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="apellidoCliente" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="imagenCliente" Type="varchar(max)" Nullable="false" />
-          <Property Name="teléfonoCliente" Type="int" Nullable="false" />
+          <Property Name="teléfonoCliente" Type="varchar" MaxLength="14" Nullable="false" />
           <Property Name="códigoPostalCliente" Type="int" Nullable="false" />
           <Property Name="fechaNacimientoCliente" Type="date" Nullable="false" />
           <Property Name="generoId" Type="int" Nullable="false" />
           <Property Name="tipoDocumentoId" Type="int" Nullable="false" />
-          <Property Name="numeroDocumentoCliente" Type="int" Nullable="false" />
+          <Property Name="numeroDocumentoCliente" Type="varchar" MaxLength="13" Nullable="false" />
           <Property Name="correoCliente" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="contraseñaCliente" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="estado" Type="bit" Nullable="false" />
@@ -1442,12 +1442,12 @@
           <Property Name="nombreCliente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="apellidoCliente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="imagenCliente" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="teléfonoCliente" Type="Int32" Nullable="false" />
+          <Property Name="teléfonoCliente" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="códigoPostalCliente" Type="Int32" Nullable="false" />
           <Property Name="fechaNacimientoCliente" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="generoId" Type="Int32" Nullable="false" />
           <Property Name="tipoDocumentoId" Type="Int32" Nullable="false" />
-          <Property Name="numeroDocumentoCliente" Type="Int32" Nullable="false" />
+          <Property Name="numeroDocumentoCliente" Type="String" MaxLength="13" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="correoCliente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="contraseñaCliente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="estado" Type="Boolean" Nullable="false" />

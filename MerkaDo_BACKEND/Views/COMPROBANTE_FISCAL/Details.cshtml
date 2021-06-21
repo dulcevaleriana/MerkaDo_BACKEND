@@ -1,0 +1,35 @@
+﻿@model MerkaDo_BACKEND.Models.COMPROBANTE_FISCAL
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>COMPROBANTE_FISCAL</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.rnc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.rnc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CLIENTES__.nombreCliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CLIENTES__.nombreCliente)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.comprobanteFiscalId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

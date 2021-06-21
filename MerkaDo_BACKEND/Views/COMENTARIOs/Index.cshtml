@@ -1,0 +1,52 @@
+﻿@model IEnumerable<MerkaDo_BACKEND.Models.COMENTARIO>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.estrellaComentario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.mensajeComentario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CLIENTES__.nombreCliente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PRODUCTO__.nombreProducto)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.estrellaComentario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.mensajeComentario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CLIENTES__.nombreCliente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PRODUCTO__.nombreProducto)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.comentarioId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.comentarioId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.comentarioId })
+        </td>
+    </tr>
+}
+
+</table>

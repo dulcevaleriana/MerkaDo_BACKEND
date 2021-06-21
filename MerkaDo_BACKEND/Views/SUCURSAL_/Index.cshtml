@@ -1,0 +1,88 @@
+﻿@model IEnumerable<MerkaDo_BACKEND.Models.SUCURSAL_>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nombreSucursal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.direccionSucursal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.horarioApertura)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.horarioCierre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.diaFeriado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.horarioAperturaSabado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.horarioCierreSabado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.horarioAperturaDomingo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.horarioCierreDomingo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SUPERMERCADO_.nombreSupermercado)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombreSucursal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.direccionSucursal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.horarioApertura)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.horarioCierre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.diaFeriado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.horarioAperturaSabado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.horarioCierreSabado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.horarioAperturaDomingo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.horarioCierreDomingo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SUPERMERCADO_.nombreSupermercado)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.sucursalId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.sucursalId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.sucursalId })
+        </td>
+    </tr>
+}
+
+</table>

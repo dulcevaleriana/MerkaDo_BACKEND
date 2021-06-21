@@ -1,0 +1,94 @@
+﻿@model IEnumerable<MerkaDo_BACKEND.Models.PRODUCTO__>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nombreProducto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.imagenProducto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cantidadProducto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.precioProducto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.precioAnterior)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.descripcionProducto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tablaNutricionalProductoIMG)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CATEGORIA_PRODUCTO.nombrecategoriaProducto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DESCUENTOS_1.descuentoId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SUCURSAL_.nombreSucursal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SUPERMERCADO_.nombreSupermercado)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombreProducto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.imagenProducto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cantidadProducto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.precioProducto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.precioAnterior)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.descripcionProducto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tablaNutricionalProductoIMG)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CATEGORIA_PRODUCTO.nombrecategoriaProducto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DESCUENTOS_1.descuentoId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SUCURSAL_.nombreSucursal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SUPERMERCADO_.nombreSupermercado)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.productoId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.productoId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.productoId })
+        </td>
+    </tr>
+}
+
+</table>

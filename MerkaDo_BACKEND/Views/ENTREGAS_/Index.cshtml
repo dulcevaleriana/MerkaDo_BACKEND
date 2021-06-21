@@ -1,0 +1,76 @@
+﻿@model IEnumerable<MerkaDo_BACKEND.Models.ENTREGAS_>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ubicacionActualEntrega)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ubicacionDestinoEntrega)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.firmaClientePaqueteCompra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.statusFirmaEntregaPaqueteCompra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CLIENTES__.nombreCliente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.COMPRA__.direccion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.USUARIO__.nombreUsuario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TIPO_STATUS_COMPRA.nombreStatusTipoCompra)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ubicacionActualEntrega)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ubicacionDestinoEntrega)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.firmaClientePaqueteCompra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.statusFirmaEntregaPaqueteCompra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CLIENTES__.nombreCliente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.COMPRA__.direccion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.USUARIO__.nombreUsuario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TIPO_STATUS_COMPRA.nombreStatusTipoCompra)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.entregaId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.entregaId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.entregaId })
+        </td>
+    </tr>
+}
+
+</table>

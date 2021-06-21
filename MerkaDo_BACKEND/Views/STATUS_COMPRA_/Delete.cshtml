@@ -1,0 +1,81 @@
+﻿@model MerkaDo_BACKEND.Models.STATUS_COMPRA_
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>STATUS_COMPRA_</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombreCliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreCliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.razonSocialEmpresa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.razonSocialEmpresa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.carritoComprasId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.carritoComprasId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.totalPago)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.totalPago)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mensajeroStatusCompra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mensajeroStatusCompra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CLIENTES__.nombreCliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CLIENTES__.nombreCliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TIPO_STATUS_COMPRA.nombreStatusTipoCompra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TIPO_STATUS_COMPRA.nombreStatusTipoCompra)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,52 @@
+﻿@model IEnumerable<MerkaDo_BACKEND.Models.LOG_ACTION_CLIENTE>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaEjecución)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CLIENTES__.nombreCliente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TIPO_ESTADISTICAS_.nombreTipoEstadisticas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TIPO_NOTIFICACION_.nombreTipoNotificacion)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaEjecución)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CLIENTES__.nombreCliente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TIPO_ESTADISTICAS_.nombreTipoEstadisticas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TIPO_NOTIFICACION_.nombreTipoNotificacion)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.LogId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.LogId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.LogId })
+        </td>
+    </tr>
+}
+
+</table>

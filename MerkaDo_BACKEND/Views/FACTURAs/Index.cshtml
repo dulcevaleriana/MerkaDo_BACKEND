@@ -1,0 +1,76 @@
+﻿@model IEnumerable<MerkaDo_BACKEND.Models.FACTURA>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.statusTarjetaCredito)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.comprobanteFiscal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.comprobanteFiscalId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CARRITO_COMPRAS_.carritoComprasId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CLIENTES__.nombreCliente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.COMPRA__.direccion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SUPERMERCADO_.nombreSupermercado)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.fecha)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.statusTarjetaCredito)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.comprobanteFiscal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.comprobanteFiscalId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CARRITO_COMPRAS_.carritoComprasId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CLIENTES__.nombreCliente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.COMPRA__.direccion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SUPERMERCADO_.nombreSupermercado)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.factura1 }) |
+            @Html.ActionLink("Details", "Details", new { id=item.factura1 }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.factura1 })
+        </td>
+    </tr>
+}
+
+</table>

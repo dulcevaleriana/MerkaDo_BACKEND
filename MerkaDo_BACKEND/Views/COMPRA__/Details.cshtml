@@ -1,0 +1,91 @@
+﻿@model MerkaDo_BACKEND.Models.COMPRA__
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>COMPRA__</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.precioInicialCompra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.precioInicialCompra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.subTotalCompraITBIS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.subTotalCompraITBIS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.direccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.direccion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.totalPago)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.totalPago)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CARRITO_COMPRAS_.carritoComprasId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CARRITO_COMPRAS_.carritoComprasId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CUPONES_.nombreCupones)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CUPONES_.nombreCupones)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DESCUENTOS_.descuentoId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DESCUENTOS_.descuentoId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.METODO_ENVIO.nombreMetodoEnvio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.METODO_ENVIO.nombreMetodoEnvio)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.comprasId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

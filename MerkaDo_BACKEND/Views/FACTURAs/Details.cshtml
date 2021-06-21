@@ -1,0 +1,83 @@
+﻿@model MerkaDo_BACKEND.Models.FACTURA
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>FACTURA</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fecha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.statusTarjetaCredito)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.statusTarjetaCredito)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.comprobanteFiscal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.comprobanteFiscal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.comprobanteFiscalId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.comprobanteFiscalId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CARRITO_COMPRAS_.carritoComprasId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CARRITO_COMPRAS_.carritoComprasId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CLIENTES__.nombreCliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CLIENTES__.nombreCliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COMPRA__.direccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COMPRA__.direccion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SUPERMERCADO_.nombreSupermercado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SUPERMERCADO_.nombreSupermercado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.factura1 }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

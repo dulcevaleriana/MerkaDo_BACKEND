@@ -1,0 +1,34 @@
+﻿@model IEnumerable<MerkaDo_BACKEND.Models.TIPO_STATUS_COMPRA>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nombreStatusTipoCompra)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombreStatusTipoCompra)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.statusTipoCompraId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.statusTipoCompraId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.statusTipoCompraId })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,107 @@
+﻿@model MerkaDo_BACKEND.Models.PRODUCTO__
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PRODUCTO__</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombreProducto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreProducto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.imagenProducto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.imagenProducto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cantidadProducto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cantidadProducto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.precioProducto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.precioProducto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.precioAnterior)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.precioAnterior)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descripcionProducto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descripcionProducto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tablaNutricionalProductoIMG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tablaNutricionalProductoIMG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CATEGORIA_PRODUCTO.nombrecategoriaProducto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CATEGORIA_PRODUCTO.nombrecategoriaProducto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DESCUENTOS_1.descuentoId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DESCUENTOS_1.descuentoId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SUCURSAL_.nombreSucursal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SUCURSAL_.nombreSucursal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SUPERMERCADO_.nombreSupermercado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SUPERMERCADO_.nombreSupermercado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.productoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

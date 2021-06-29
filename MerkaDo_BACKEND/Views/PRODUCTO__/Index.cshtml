@@ -49,51 +49,51 @@
     </tr>
 
 @foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.nombreProducto)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.imagenProducto)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.cantidadProducto)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.precioProducto)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.precioAnterior)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.descripcionProducto)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.tablaNutricionalProductoIMG)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CATEGORIA_PRODUCTO.nombrecategoriaProducto)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DESCUENTOS_1.descuentoId)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.SUCURSAL_.nombreSucursal)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.SUPERMERCADO_.nombreSupermercado)
-        </td>
-        <td>
-            <a id="btn_add" href="@Url.Action("Add", "AddToCart", item.productoId)" class="btn btn-info btn-lg" style="margin-left:60px">
-                <span class="glyphicon glyphicon-shopping-cart"></span> Add To Cart
-            </a>
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.productoId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.productoId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.productoId })
-        </td>
-    </tr>
+<tr>
+    <td>
+        <a id="btn_add" href="@Url.Action("Add", "AddToCart", new { item.productoId } )" class="btn btn-info btn-lg" style="margin-left:60px">
+            <span class="glyphicon glyphicon-shopping-cart"></span> Add To Cart
+        </a>
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.nombreProducto)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.imagenProducto)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.cantidadProducto)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.precioProducto)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.precioAnterior)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.descripcionProducto)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.tablaNutricionalProductoIMG)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.CATEGORIA_PRODUCTO.nombrecategoriaProducto)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.DESCUENTOS_1.descuentoId)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.SUCURSAL_.nombreSucursal)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.SUPERMERCADO_.nombreSupermercado)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.productoId }) |
+        @Html.ActionLink("Details", "Details", new { id = item.productoId }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.productoId })
+    </td>
+</tr>
 }
 
 </table>

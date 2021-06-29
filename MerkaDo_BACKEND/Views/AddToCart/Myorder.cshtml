@@ -14,12 +14,53 @@
     <table class="table table-hover"
            width="100%">
         <thead>
-            <tr> <th> SlNO </th>   < th > Mobile Name </th>   <th> Image </th>   <th> Price </th>   <th> Remove </th>   </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.nombreProducto)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.imagenProducto)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.cantidadProducto)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.precioProducto)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.precioAnterior)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.descripcionProducto)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.tablaNutricionalProductoIMG)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CATEGORIA_PRODUCTO.nombrecategoriaProducto)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DESCUENTOS_1.descuentoId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SUCURSAL_.nombreSucursal)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SUPERMERCADO_.nombreSupermercado)
+                </th>
+                <th></th>
+            </tr>
         </thead>
         <tbody>
             @foreach (var item in Model)
             {
             <tr>
+                <td>
+                    <button id="btn_delete" class="label label-primary"
+                            onclick="location.href='@Url.Action("Remove","AddToCart",new { item.productoId })'">
+                        X
+                    </button>
+                </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.nombreProducto)
                 </td>

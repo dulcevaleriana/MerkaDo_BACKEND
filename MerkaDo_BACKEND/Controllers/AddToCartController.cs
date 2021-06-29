@@ -16,19 +16,21 @@ namespace MerkaDo_BACKEND.Controllers
         private DBA_MERKAEntities db = new DBA_MERKAEntities();
 
         // GET: AddToCart
-        public ActionResult Add( PRODUCTO__ GetIDProduct)
+        public async Task<ActionResult> Add( int productoId)
         {
+            PRODUCTO__ PRODUCTO__ = await db.PRODUCTO__.FindAsync(productoId);
+
             if (Session["cart"]==null)
             {
                 List<PRODUCTO__> li = new List<PRODUCTO__>();
-                li.Add(GetIDProduct);
+                li.Add(PRODUCTO__);
                 Session["cart"] = li;
                 Session["count"] = 1;
             } 
             else
             {
                 List<PRODUCTO__> li = (List<PRODUCTO__>)Session["cart"];
-                li.Add(GetIDProduct);
+                li.Add(PRODUCTO__);
                 Session["cart"] = li;
                 Session["count"] = Convert.ToInt32(Session["count"]) + 1;
             }
@@ -55,7 +57,7 @@ namespace MerkaDo_BACKEND.Controllers
             li.RemoveAll(x => x.productoId == GetIDProduct.productoId);
             Session["cart"] = li;
             Session["count"] = Convert.ToInt32(Session["count"]) - 1;
-            return View();
+            return RedirectToAction("Myorder", "AddToCart");
         }
     }
 }

@@ -168,6 +168,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\AddToCartController.cs" />
     <Compile Include="Controllers\CARRITO_COMPRAS_Controller.cs" />
     <Compile Include="Controllers\CATEGORIA_PRODUCTOController.cs" />
     <Compile Include="Controllers\CLIENTES__Controller.cs" />
@@ -617,6 +618,7 @@
     <Content Include="Views\CLIENTES__\Details.cshtml" />
     <Content Include="Views\CLIENTES__\Edit.cshtml" />
     <Content Include="Views\CLIENTES__\Index.cshtml" />
+    <Content Include="Views\AddToCart\Myorder.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

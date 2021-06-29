@@ -1,0 +1,73 @@
+﻿@model IEnumerable < MerkaDo_BACKEND.Models.PRODUCTO__ > 
+@{ 
+    ViewBag.Title = "Myorder";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    int sum = 0;
+} 
+
+<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" > </script>
+<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" > </script>
+<div id="dvContents">
+    <table class="table table-hover"
+           width="100%">
+        <thead>
+            <tr> <th> SlNO </th>   < th > Mobile Name </th>   <th> Image </th>   <th> Price </th>   <th> Remove </th>   </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nombreProducto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.imagenProducto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.cantidadProducto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.precioProducto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.precioAnterior)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.descripcionProducto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tablaNutricionalProductoIMG)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CATEGORIA_PRODUCTO.nombrecategoriaProducto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DESCUENTOS_1.descuentoId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SUCURSAL_.nombreSucursal)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SUPERMERCADO_.nombreSupermercado)
+                </td>
+            </tr>
+        }
+            </tbody>
+            @foreach (var item in Model)
+            {
+                sum = Convert.ToInt32(item.precioProducto) + sum;
+            }
+            <tfoot>
+                <tr>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <b> Total </b>
+                    </td>
+                    <td> @sum </td>   </tr>   
+            </tfoot>   
+        </table> 
+</div>

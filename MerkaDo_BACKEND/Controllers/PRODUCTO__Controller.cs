@@ -74,11 +74,11 @@ namespace MerkaDo_BACKEND.Controllers
             //GET: CONDITIONAL TABLA NUTRICIONAL
             if (pRODUCTO__.categoriaProductoId == 1 || pRODUCTO__.categoriaProductoId == 2 || pRODUCTO__.categoriaProductoId == 3 || pRODUCTO__.categoriaProductoId == 1002 || pRODUCTO__.categoriaProductoId == 1003)
             {
-                Console.Write("ENTRO");
+                Response.Write("<script>alert('ENTRO')</script>");
             }
             else
             {
-                Console.Write("ERROR");
+                Response.Write("<script>alert('ERROR')</script>");
             }
             if (ModelState.IsValid)
             {

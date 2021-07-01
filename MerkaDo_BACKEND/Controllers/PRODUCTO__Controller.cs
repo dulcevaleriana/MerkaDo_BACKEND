@@ -71,6 +71,15 @@ namespace MerkaDo_BACKEND.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Create([Bind(Include = "productoId,nombreProducto,imagenProducto,cantidadProducto,sucursalId,supermercadoId,precioProducto,descuentoId,precioAnterior,categoriaProductoId,descripcionProducto,tablaNutricionalProductoIMG")] PRODUCTO__ pRODUCTO__)
         {
+            //GET: CONDITIONAL TABLA NUTRICIONAL
+            if (pRODUCTO__.categoriaProductoId == 1 || pRODUCTO__.categoriaProductoId == 2 || pRODUCTO__.categoriaProductoId == 3 || pRODUCTO__.categoriaProductoId == 1002 || pRODUCTO__.categoriaProductoId == 1003)
+            {
+                Console.Write("ENTRO");
+            }
+            else
+            {
+                Console.Write("ERROR");
+            }
             if (ModelState.IsValid)
             {
                 db.PRODUCTO__.Add(pRODUCTO__);

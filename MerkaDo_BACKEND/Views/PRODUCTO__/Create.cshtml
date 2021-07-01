@@ -83,7 +83,8 @@
 
         <div class="form-group">
             @Html.LabelFor(model => model.categoriaProductoId, "categoriaProductoId", htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10" onclick="location.href='@Url.Action("ActiveNutricionalTable","PRODUCTO__", new { model => model.categoriaProductoId } )'">
+            @*onclick="location.href='@Url.Action("ActiveNutricionalTable", "PRODUCTO__", new { model => model.categoriaProductoId })'"*@
+            <div class="col-md-10">
                 @Html.DropDownList("categoriaProductoId", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.categoriaProductoId, "", new { @class = "text-danger" })
             </div>

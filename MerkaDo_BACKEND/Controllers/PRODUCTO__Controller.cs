@@ -48,6 +48,22 @@ namespace MerkaDo_BACKEND.Controllers
             return View();
         }
 
+        //GET: CONDITIONAL TABLA NUTRICIONAL
+
+        public async Task<ActionResult> ActiveNutricionalTable(CATEGORIA_PRODUCTO GetIdCategoriaProducto)
+        {
+            List<CATEGORIA_PRODUCTO> li = (List<CATEGORIA_PRODUCTO>)Session["CategoriaProducto"];
+            if (GetIdCategoriaProducto.categoriaProductoId == 1 || GetIdCategoriaProducto.categoriaProductoId == 1002 || GetIdCategoriaProducto.categoriaProductoId == 1003 || GetIdCategoriaProducto.categoriaProductoId == 2 || GetIdCategoriaProducto.categoriaProductoId == 3)
+            {
+                Console.Write("ENTRO");
+            }
+            else
+            {
+                Console.Write("ERROR");
+            }
+            return RedirectToAction("Create");
+        }
+
         // POST: PRODUCTO__/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.

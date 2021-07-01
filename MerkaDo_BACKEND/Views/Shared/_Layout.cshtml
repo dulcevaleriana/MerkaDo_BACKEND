@@ -22,7 +22,8 @@
                 <ul class="nav navbar-nav">
                     <a href="@Url.Action("Myorder", "AddToCart")" class="btn btn-info btn-lg">
                         <span class="glyphicon glyphicon-shopping-cart" style="color:green"></span>Cart <span class="badge">@Session["count"]</span>
-                     </a>
+                    </a>
+                    <li>@Html.ActionLink("PRODUCTO", "Index", "PRODUCTO__", new { area = "" }, null)</li>
                     <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</li>
                     <li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, null)</li>
                     <li>@Html.ActionLink("CARRITO_COMPRAS", "Index", "CARRITO_COMPRAS_", new { area = "" }, null)</li>
@@ -48,7 +49,6 @@
                     <li>@Html.ActionLink("METODO_ENVIO", "Index", "METODO_ENVIO", new { area = "" }, null)</li>
                     <li>@Html.ActionLink("NOTIFICACION", "Index", "NOTIFICACION_", new { area = "" }, null)</li>
                     <li>@Html.ActionLink("PREGUNTAS_FRECUENTES", "Index", "PREGUNTAS_FRECUENTES_", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("PRODUCTO", "Index", "PRODUCTO__", new { area = "" }, null)</li>
                     <li>@Html.ActionLink("ROL_USUARIO", "Index", "ROL_USUARIO", new { area = "" }, null)</li>
                     <li>@Html.ActionLink("SALA", "Index", "SALA__", new { area = "" }, null)</li>
                     <li>@Html.ActionLink("SALA_USUARIO", "Index", "SALA_USUARIO__", new { area = "" }, null)</li>
